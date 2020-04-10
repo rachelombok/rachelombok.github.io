@@ -1,0 +1,255 @@
+<!-- HandyMap -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>HandyMap · Rachel Ombok</title>
+    <meta name="Description" content="Rachel Ombok is a programmer and student at New York University. She's currently a Research Intern at NYU Game Innovation Lab.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>  
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="zk-favicon.ico"/>
+    <link rel="icon" type="image/png" href="zk-logo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+
+    <!-- Twitter Preview
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@zainkho"/>
+    <meta name="twitter:creator" content="@zainkho"/>
+    <meta name="twitter:title" content="Zain Khoja" />
+    <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/>
+    <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/> -->
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <!---<a href="/"><img alt="Zain Khoja logo" src="zk-logo.svg" class="zk-logo"></a>--->
+                <h3 class="medium content-web">Rachel Ombok</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="/">Work</a></h5>
+                    <h5 class="option"><a href="about">About</a></h5>
+                    <h5 class="option"><a href="travel">Travel</a></h5>
+                    <h5 class="option"><a href="resume">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">👨‍🦽</h1>
+                <div>
+                    <h1 class="content-mobile">👨‍🦽</h1>
+                    <h1 class="github-title">HandyMap.<br>
+                    <span class="medium">HackMIT Best Assistive Tech Winner 2019.</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="c12 main">
+        <div class="summary">
+            <div class="summary-section">
+                <div class="section summary-item">
+                    <h5 class="subtitle">Overview</h5>
+                    <p>
+                        An app that identifies wheelchair accessible entrances in buildings and helps users naviagate to the location in the easiest possible way.
+                    </p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Roles</h5>
+                    <p>Frontend/Backend Developer</p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Team</h5>
+                    <p>
+                        Joseph Ntaimo, Creative/Programming Lead
+                    </p>
+                    <p>
+                        Michelle Wen, Backend Developer
+                    </p>
+                    <p>
+                        Vanessa Sun, Graphic Designer
+                    </p>
+                    <p>
+                    </p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Timeline</h5>
+                    <p>September 2019</p>
+                </div>
+            </div>
+            <img alt="After winning best assistive tech project" src="work/handymap/handymapgroup2.png" class="summary-section">
+        </div>
+    </div>
+
+    <div class="c6 divider"></div>
+
+    <div class="c6">
+        <div class="section">
+            <h5 class="subtitle">Background</h5>
+            <h2 class="handymap-title">What is Handymap?</h2>
+            <p>
+                <a href="https://devpost.com/software/handymap" class="link" style="color: #7d1f1f">HandyMap</a> is an Android application created by Rachel Ombok, Michelle Wen, Joseph Ntaimo and Vanessa Sun at HackMIT 2019. It is an app that identifies wheelchair accessible entrances in buildings and helps users naviagate to the location in the easiest possible way. The project ranked in the Top 10 and won Best Assistive Tech project at the event against 200 other teams.
+            </p>
+            <br><br>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Problem</h5>
+            <h2 class="handymap-title">The Inspiration</h2>
+            <p>
+              The project is inspired by the sister of one our creators, Joseph Ntaimo. Joseph often needs to help locate wheelchair accessible entrances to accommodate her, but they can be hard to find when buildings have multiple entrances. Therefore, we created our app as an innovative piece of assistive tech to improve accessibility across the M.I.T campus.
+            </p>
+            <br><br>
+            
+            <img alt="working on HandyMap late at night" src="work/handymap/handymapgroup3.png" class="img" ALIGN="right">
+            <h5 class="subtitle">Ideation</h5>
+            <h2 class="handymap-title">How We Built It</h2>
+            <p>
+                We started off using MIT’s Accessible Routes interactive map to see where the wheelchair friendly entrances were located at MIT. We then inspected the JavaScript code running behind the map to find the latitude and longitude coordinates for each of the wheelchair locations. 
+            </p>
+            <br><br>    
+            <p>
+                We then created a Python script that filtered out the latitude and longitude values, ignoring the other syntax from the coordinate data, and stored the values in separate text files. 
+            </p><br><br> 
+            <img alt="MIT campus map" src="work/handymap/mitmap.jpg" width="900" class="center">
+            <br><br> 
+            <p>
+              We tested whether our method would work in Python first, because it is the language we all are most familiar with, by using string concatenation to add the proper Java syntax to the latitude and longitude points. Then we printed all of the points to the terminal and imported them into Android Studio.
+            </p>
+            <br><br> 
+            <p>After being certain that the method would work, we uploaded these files into the raw folder in Android Studio and wrote code in Java that would iterate through both of the latitude/longitude lists simultaneously and plot them onto the map.
+            </p>
+            <br><br> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rDeRYoFUZjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ALIGN="right" class="video"></iframe>
+            <p>
+              The next step was learning how to change the color and image associated with each marker, which was very time intensive, but led us to having our custom logo for each of the markers.
+            </p>
+            <br><br> 
+            <p>
+              Separately, we designed elements of the app in Adobe Illustrator and imported logos and button designs into Android Studio. Then, through trial and error (and YouTube videos), we figured out how to make buttons link to different pages, so we could have both a FAQ page and the map. We split the work between frontend and backend, but always helped each other along the way.
+            </p>
+            <br><br> 
+            <p>
+              Then we combined both of the apps together atop of the original maps directory and ironed out the errors so that the pages would display properly.
+            </p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Results</h5>
+            <h2 class="handymap-title">Challenges we ran into/Accomplishments</h2>
+            <p>
+                We had a lot more ideas than we were able to implement. Stripping our app to basic, reasonable features was something we had to tackle in the beginning, but it kept changing as we discovered the limitations of our project throughout the 24 hours. Therefore, we had to sacrifice features that we would otherwise have loved to add.
+            </p>
+            <br>
+            <p>
+                A big difficulty for our team was combining our different elements into a cohesive project. Since our team split up the usage of Android Studio, Adobe illustrator, and programming using the Google Maps API, it was most difficult to integrate all our work together.
+            </p>
+            <br><br>
+            <p>We were proud of how effectively we were able to split up our team’s roles based on everyone’s unique skills. In this way, we were able to be maximally productive and play to our strengths. We were also able to add Boston University accessible entrances in addition to MIT's, which proved that we could adopt this project for other schools and locations, not just MIT.</p>
+            <p></p>
+        </div>
+
+        <div class="section">
+            <h2 class="handymap-title">What we learned</h2>
+            <p>
+                We used Android Studio for the first time to make the application. We discovered how much Google API had to offer, allowing us to make our map and include features such as instant directions to a location. This helped us realize that we should use our resources to their full capabilities. For 3 of us on the team, it was our first hackathon and we learned how to use our time efficiently in times of crunch, and how to communicate our ideas effectively and proactively as a team.
+            </p>
+            <img alt="HandyMap Team picture" src="work/handymap/handymapgroup2.png" width="900" class="center">
+            <h2 class="handymap-title">What's next for Handymap</h2>
+            <p>
+                Given more time, we knew we would have added many features such as accessibility for visually impaired students to help them find entrances, alerts for issues with accessing ramps and power doors, a community rating system of entrances, using machine learning and the community feature to auto-import maps that aren't interactive, and much, much more. Most important of all, we would apply it to all colleges and even anywhere in the world.
+            </p><br>
+            <iframe width="800" height="470" src="https://www.youtube.com/embed/QS6WupVbfqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center"></iframe>
+        </div>
+
+           
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:rachel.ombok@nyu.edu?subject=Hey!" target="_blank" rel="noopener" >rachel.ombok@nyu.edu</a></p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/rachelombok" target="_blank" rel="noopener"><img alt="Github icon" src="icons/github.svg" class="icons"></a>
+            <a href="https://medium.com/@rachelombok" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://linkedin.com/in/rachelombok" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>  
+        
+        <!-- Back -->
+        <a href="/" aria-label="back" class="content-web no-display back"></a>
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+    
+</body>
+
+</html>
