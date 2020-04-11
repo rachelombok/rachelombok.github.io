@@ -218,11 +218,11 @@ video {
     flex-direction: row;
     line-height: 3em;
 }
-.zk-logo {
+.ro-logo {
     height: 3em;
     transition: 1.5s ease-in-out;
 }
-.zk-logo:hover {
+.ro-logo:hover {
     transform: rotate(1800deg);
     transition: 15.0s linear;
 }
@@ -786,7 +786,7 @@ footer p a:hover {
         line-height: 3em;
         justify-content: space-between;
     }
-    .zk-logo {
+    .ro-logo {
         margin-right: 1.5em;
         height: 3em;
     }
