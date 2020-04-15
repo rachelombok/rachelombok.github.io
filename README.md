@@ -2,4 +2,5 @@
 
 This is the GitHub repository for my portfolio!
 
-See my portfolio at rachelombok.github.io
+See my portfolio at [rachelombok.com](rachelombok.com)
+
