@@ -189,6 +189,7 @@ a {
     box-shadow: 0 0 8px 0 var(--gray-01);
 }
 
+
 /* GLOBAL */ 
 html {
     color: var(--black);
@@ -580,7 +581,7 @@ footer p a:hover {
     width: 90vw;
 }
 .city-paris {
-    background: url(../work/travel/webpics/paris6.jpeg) center / cover no-repeat;
+    background: url(../work/travel/webpics/paris5.jpeg) center / cover no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
