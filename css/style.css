@@ -146,10 +146,18 @@ a {
 .medium {
     font-weight: 500;
 }
+.griptape-orange{
+    color: #FFAB45;
+}
 .white {
     color: var(--white);
 }
 .link:hover {
+    opacity: 0.6;
+    transition: 0.28s;
+}
+
+.sulsulsimsim-link:hover{
     opacity: 0.6;
     transition: 0.28s;
 }
@@ -322,8 +330,20 @@ video {
 .exp-rds {
     background: #242424;
 }
+.exp-sulsulsimsim{
+    background: #50c839;
+    
+}
 .exp-ideo {
     background: #FFDB6D;
+}
+
+.exp-blackpink{
+    background: #ff99c5;
+}
+
+.exp-cvt{
+    background: linear-gradient(#168CA6, #20E8C4);
 }
 .exp-respond {
     background: linear-gradient(#FF7E7E, #FFB77E, #FFDE88);
@@ -333,6 +353,13 @@ video {
 }
 .exp-nalp {
     background: #0052A5;
+}
+
+.exp-griptape{
+    background: #f2841c;
+    /*#f6921e
+    #e66d1f
+    #f2841c*/
 }
 
 .handymap-logo {
@@ -377,10 +404,16 @@ video {
     position: relative;
     margin-bottom: 1.5em;
     height: 37.5%;
-    
     animation: 1.0s ease-in-out infinite infinite-bob;
 }
-.ideo-soundwaves-container {
+
+.sulsulsimsim-logo{
+    position: relative;
+    margin-bottom: 1.5em;
+    height: 50%;
+    animation: 1.0s ease-in-out infinite infinite-bob;
+}
+.blackpink-soundwaves-container {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -390,7 +423,7 @@ video {
     justify-content: center;
     align-items: center;
 }
-.ideo-soundwaves {
+.bp-soundwaves {
     display: inline-flex;
     margin: 1.25%;
     width: 0.5em;
@@ -398,28 +431,47 @@ video {
     border-radius: 10em;
     background: var(--gray-05);
 }
-.ideo-soundwaves-1 {
+.bp-soundwaves-1 {
     height: 25%;
 }
-.ideo-soundwaves-2 {
+.bp-soundwaves-2 {
     height: 35%;
 }
-.ideo-soundwaves-3 {
+.bp-soundwaves-3 {
     height: 45%;
 }
-.ideo-soundwaves-4 {
+.bp-soundwaves-4 {
     height: 55%;
 }
-.ideo-soundwaves-5 {
+.bp-soundwaves-5 {
     height: 65%;
 }
-.ideo-soundwaves-6 {
+.bp-soundwaves-6 {
     height: 75%;
 }
-.ideo-soundwaves-7 {
+.bp-soundwaves-7 {
     height: 85%;
 }
 .respond-logo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 1.5vw;
+    height: 45%;
+    align-items: center;
+    justify-content: center;
+}
+.griptape-logo-container{
+   display: flex;
+    flex-direction: row;
+position: relative;
+margin-bottom: 1.5vw;
+height: 55%;
+align-items: center;
+justify-content: center; 
+}
+
+.cvt-logo-container{
     display: flex;
     flex-direction: row;
     position: relative;
@@ -438,6 +490,13 @@ video {
     margin-bottom: 1.5em;
     height: 17.5%;
 }
+
+.cvt-logo{
+    position: relative;
+    margin-bottom: 1.5em;
+    height: 115.5%;
+}
+
 .nalp-logo {
     position: relative;
     margin-bottom: 1.5em;
@@ -714,13 +773,14 @@ footer p a:hover {
     color: #00704A
 }
 
-/* IDEO */
-.ideo-title {
+/* SulSulSimSim */
+.sulsulsimsim-title {
     color: var(--black);
+
     margin-bottom: 1.5vw;
 }
-.ideo-link {
-    color: #DBAB09;
+.sulsulsimsim-link {
+    color: #50c839;
 }
 
 /* RESPOND */
@@ -731,7 +791,13 @@ footer p a:hover {
 .respond-link {
     color: #D60000;
 }
-
+/* Griptape */
+.griptape-logo{
+    position: relative;
+    margin-bottom: 1.5em;
+    height: 140%;
+    animation: 1.0s ease-in-out infinite infinite-bob;
+}
 /* TINT */
 .tint-title {
     background: linear-gradient(135deg, #B2B2B2 0%, #666666 10%, #222222 10%);
@@ -929,3 +995,5 @@ footer p a:hover {
     clear: both;
     display: table;
 }
+
+.align-center {text-align: center; margin: auto;}

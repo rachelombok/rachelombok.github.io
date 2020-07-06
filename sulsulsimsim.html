@@ -1,0 +1,287 @@
+<!-- SulSulSimSim -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>SulSulSimSim · Rachel Ombok</title>
+    <meta name="Description" content="Rachel Ombok is a programmer and student at New York University. She's currently a Research Intern at NYU Game Innovation Lab.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="ro-favicon.ico"/>
+    <link rel="icon" type="image/png" href="ro-logo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+
+    <!-- Twitter Preview
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@zainkho"/>
+    <meta name="twitter:creator" content="@zainkho"/>
+    <meta name="twitter:title" content="Zain Khoja" />
+    <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/>
+    <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/>
+    -->
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="/"><img alt="Rachel Ombok logo" src="ro-logo.svg" class="ro-logo"></a>
+                <h3 class="medium content-web">Rachel Ombok</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="/">Work</a></h5>
+                    <h5 class="option"><a href="about">About</a></h5>
+                    <h5 class="option"><a href="travel">Travel</a></h5>
+                    <h5 class="option"><a href="resume">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">💾</h1>
+                <div>
+                    <h1 class="content-mobile">💾</h1>
+                    <h1 class="ideo-title">SulSul! SimSim!<br>
+                    <span class="medium">AIIDE 2020 Conference Paper.</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="c12 main">
+        <div class="summary">
+            <div class="summary-section">
+                <div class="section summary-item">
+                    <h5 class="subtitle">Overview</h5>
+                    <p>
+                        Say "Sul Sul!" to SimSim, A Sims-Inspired Platform for Sandbox Game AI
+                        <a href="https://webdocs.cs.ualberta.ca/~santanad/aiide/" class="sulsulsimsim-link">AIIDE-20 (16th AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment)</a>
+
+                    </p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Roles</h5>
+                    <p>Programmer</p>
+
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Team</h5>
+                    <p>
+                        <a target="_blank" rel="noopener" >Lisa Soros</a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" >Megan Charity</a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" >Dipika Rajesh</a>
+                    </p>
+
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Timeline</h5>
+                    <p>February 2020 to June 2020</p>
+                </div>
+            </div>
+            <img alt="TS4 group photo" src="work/sulsulsimsim/TS4.png" class="summary-section">
+        </div>
+    </div>
+
+    <div class="c6 divider"></div>
+
+    <div class="c6">
+    
+    <div class="section">
+      <h5 class="subtitle">Abstract</h5>
+      <p>
+        <i>This paper poses environment design in the life simulation game The Sims as an interesting domain for AI research. In this domain, the goal is to furnish a house with objects that satisfy the physical needs of a simulated agent. Importantly, the large number of objects available to the player (whether human or automated) affords a wide variety of solutions to the underlying design problem. Empirical studies in a novel open-source simulator called SimSim investigate the ability of novelty-based evolutionary algorithms to effectively explore the space of viable environment designs.</i>
+      </p>
+    </div>
+    
+        <div class="section">
+            <h5 class="subtitle">Background</h5>
+            <h2 class="sulsulsimsim-title">Research Introduction</h2>
+            <p>
+                This spring I applied to <a class=nyu-link href="https://game.engineering.nyu.edu">NYU’s Game Innovation Lab</a> for an internship, the lab does research focused on games as an innovation challenge and emphasizes on the technical/engineering/science side of games and simulation. For my internship, I worked on a project for <a href="https://www.ea.com/games/the-sims" class=sulsulsimsim-link>The Sims</a>. The general goal of the project was to create general intelligence for the game using a quality diversity algorithm. Throughout the semester I attended group meetings, coded game objects in the program for our experiments, and helped analyze and interpret the results.
+            </p>
+            <br><br>
+            <p>For the past 20 years, The Sims has pioneered sandbox gaming and given players the ability to simulate and play with life in any way they choose. The Sims’ autonomous nature and customizable options creates an immersive experience for players. “Build. Buy. Live” is the game’s tagline and explains its core mechanics. Being able to create sims and insert them into any environment you can think of is a big factor of why the game attracts so many. Even though some points can be farfetched, the gameplay purposefully aims to simulate aspects of real life and introduces new twists to reality.</p>
+            
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Problem/Ideation</h5>
+            <h2 class="ideo-title">What makes The Sims an interesting domain for AI?</h2>
+            <p>
+                Sandbox games require players to master the skill of constrained creativity, often exploring complex design spaces while avoiding nonviable portions. Classic examples of such games include Minecraft, in which players must build enemy-proof shelters out of natural resources, and SimCity, which requires players to set zoning policies and otherwise allocate resources to enable population growth in a simulated city. This genre is unique because of its minimal goals imposed upon the player, which can then be satisfied using an enormous variety of strategies. 
+            </p>
+            <br><br>
+            <p>While the relative freedom in the Sims creates a unique gaming experience for human players, it also presents an underexplored kind of challenge for game AI: finding a diverse set of creative artifacts that satisfy a set of minimal constraints. Such domains can serve as a particularly appropriate testbed for a specific class of divergent evolutionary search algorithms that are driven primarily by domain-specific minimal fitness criteria instead of by completely continuous fitness gradients. </p>
+            <br><br>
+            <p>In this game, the player controls simulated humans called Sims that inhabit a house, which can be either pre constructed or built and furnished by the player. Each Sim has a set of needs (hunger, sleep, TODO finish list) that must be satisfied, with the satisfaction level for each need decreasing over time. Note that objects, such as furniture, and interactions with other Sims, can have positive and negative effects on these need satisfaction levels. Then, a primary task for the player is to select actions that will prevent the Sim's needs from becoming critically low. Importantly, there are no "win" or end conditions beyond any personal goals that the player might set. However, a Sim can die if certain needs, such as hunger, go unmet for too long, or if a Sim is swimming in a pool and the ladder is removed (causing the Sim to die from exhaustion). Thus, The Sims can essentially be thought of as two separate yet related gameplay challenges: 1) designing a house containing sufficient objects to prevent a Sim's needs from becoming critically low, and 2) selecting interactions with these objects such that the Sim's decaying need satisfaction levels are actually replenished in a timely manner.
+</p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Development</h5>
+            <h2 class="ideo-title">Programming the Environment.</h2>
+            <p>
+                I contributed by applying my knowledge of object oriented programming to create the classes for Sims, Rooms and furniture Objects.When coding the Sim object, I made sure each sim kept track of which room they were in and had methods to fulfill and deplete their needs. When a Sim is initialized, they are given 5 points in each need, and no specified coordinate points. Then, for the Object class, each Object was given a vector of need effects that would affect each Sim, and would keep track of its coordinates and which room it is in. For example, when a ‘coffee maker’ is initialized, it is given an effects vector of {2,0,-3,3,0,0}, each value affects a Sim’s needs in order of hunger, hygiene, bladder, energy, social and fun. Rooms have a set dimension of 10x10.
+
+            </p>
+            <br><br>
+            <img alt="Project workflow" src="work/sulsulsimsim/projectoutline.jpg" class="summary-section">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Experiments</h5>
+            <h2 class="ideo-title">Making crazy ideas real.</h2>
+            <p>
+                The simulation agent is a "Sim" character that will live and interact with objects placed inside the generated houses. When a sim is generated inside a house, its needs are affected by the objects in the room and how they affect its needs. For example, a room with a fridge, toilet, and bed are very comfortable for a Sim to live in since those objects help their needs. Conversely, a room with only lawn gnome decorations would not be a suitable environment for a Sim to live in. A Sims’ needs decrement at a random rate and the simulation ends when a Sim “dies”, or after a certain number of generations.
+
+            </p>
+            <br><br>
+            <p>
+                Sim characters must navigate to the position of these objects in order to interact with it. Typically in the Sims games, a human user observing the Sim character would command the Sim to navigate to a particular object to interact with it to replenish one or more of its needs. For our experiment, our Sim character agent has full knowledge of every object in the room and what needs they must replenish. Needs are prioritized based on a preset order, so that the Sim will attend to a more critical need (i.e. hunger or energy) over less critical needs. 
+            </p>
+            <br><br>
+            <p>Below is an example of various rooms that the Sim may be placed in. The first is an example of a bad room, filled with objects that would not sustain life for a Sim, and doesn't fully satisfy their needs. The next room contains the bare necessities that a Sim would need to survive. If any of these objects were removed, the room would become nonviable and have a fitness of 0. The last room is the most ideal because it satisfies all the needs and has a variety of methods for the Sim to satisfy their needs.</p>
+            <br><br>
+            <br><br>
+            <div class="row">
+              <div class="column">
+                <img src="work/sulsulsimsim/badroomnew.jpg" alt="Bad Room" style="width:90%">
+              </div>
+              <div class="column">
+                <img src="work/sulsulsimsim/bareminimumroomnew.jpg" alt="Bare Minimum Room" style="width:90%">
+              </div>
+              <div class="column">
+                <img src="work/sulsulsimsim/bestroomnew.jpg" alt="Best Room" style="width:95%">
+              </div>
+            </div>
+            <br><br>
+            <p>The agent is completely independent of the user and navigates to the closest object that can replenish a need whose value has fallen below a certain threshold. This navigation is done using breadth-first search, where the agent is placed in a room based on X-Y positive integer coordinate values. The agent is allowed to move in any 4 directions (north, south, east, or west) once every tick. Once the agent has reached the targeted object position, it is able to interact with it. Sim agents will only interact with an object until the diminished need that it is fulfilling is above the threshold. Some objects replenish a need more than others on a single interaction, but it is unlikely that a Sim will have every need satisfied to the maximum value. </p>
+            <br><br>
+            <p>Each room that the Sim is generated into has a set number of objects that may or may not satisfy its needs. To evaluate the fitness of a room, there were different criteria we looked at: the amount of open space in the room, number of facilities, rating of average Sim experience (happiness, hygiene, hunger, etc.), number and variation of decorations, etc. Here are some of the algorithms we used in our search: </p>
+            
+            
+            <ol>
+            <li>Randon Search</li>
+            <li>Minimal Criterion Novelty Search</li>
+            <li>Regular Novelty Search</li>
+            <li>Regular Fitness-Based Evolutionary Algorithm</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Results</h5>
+            <h2 class="ideo-title">The SimSim Simulator</h2>
+            <p>
+                Each Sim house generated has a set of objects placed within the rooms. The count of these objects are encoded into vectors that are compared to another house. The vector distance between each house is calculated and used for the k-nearest neighbor calculation in the vector space. A generated house is considered novel, if its fitness value is above a set threshold and its vector distance to the other novel houses is greater than some minimum novelty search criteria threshold value. This new house is then added to the novel list. Here are some ASCII representations of the generated houses.
+            </p>
+            <br><br>
+            <div class="row">
+              <div class="column">
+                <img src="work/sulsulsimsim/evolvedhouse1.PNG" alt="ASCII of Evolved House 1" style="width:50%" ALIGN="right">
+              </div>
+              <div class="column">
+                <img src="work/sulsulsimsim/evolvedhouse2.PNG" alt="ASCII of Evolved House 2" style="width:65%" ALIGN="right">
+              </div>
+            </div>
+            <br><br>
+            
+            <p>
+                The system ideally wanted to replace the three starter objects in the house - consisting of a bed, toilet, and fridge - with more efficient and satisfiable objects that were available from the entire object list. This demonstrated how the algorithm was able to select which objects were the "best" objects for a house. For example, the "coffee maker" object replaced beds in 50% of the final houses produced - due to the fact that the coffee maker renewed more of the energy need than the bed object and also replenished hunger. Similarly, in 25% of the final houses, a "bidet" replaced the starting toilet object. While they replenished the same amount for the bladder need, the bidet also replenished the fun need and thus proved to be a more optimal object in the house. Needs that were also not addressed by the starter objects - such as the fun need and social need - were also optimized through the hillclimber algorithm. In 70% of the final houses, a "foosball table" or "table tennis" object were placed - both being the best objects that could replace both the social and the fun need. 
+            </p>
+            <br><br>
+            <p>For game AI, the Sims domain proves to be an interesting challenge - placing an agent that is typically made to evolve and find a singular solution in an game environment where there is no one solution or main objective. We encourage researchers to use and improve upon the SimSim project in hopes that these experiments and this framework will be the start of many more environment design exploration projects.</p>
+        </div>
+</div>
+
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:rachel.ombok@nyu.edu?subject=Hey!" target="_blank" rel="noopener" >rachel.ombok@nyu.edu</a></p>
+          </div>
+          <div class="social">
+            <a href="https://github.com/rachelombok" target="_blank" rel="noopener"><img alt="Github icon" src="icons/github.svg" class="icons"></a>
+            <a href="https://medium.com/@rachelombok" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://linkedin.com/in/rachelombok" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>
+
+        <!-- Back -->
+        <a href="/" aria-label="back" class="content-web no-display back"></a>
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+
+</body>
+
+</html>
