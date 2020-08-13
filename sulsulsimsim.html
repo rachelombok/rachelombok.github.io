@@ -148,7 +148,7 @@
 
                 <div class="section summary-item">
                     <h5 class="subtitle">Timeline</h5>
-                    <p>February 2020 to June 2020</p>
+                    <p>February 2020 to August 2020</p>
                 </div>
             </div>
             <img alt="TS4 group photo" src="work/sulsulsimsim/TS4.png" class="summary-section">
@@ -162,7 +162,7 @@
     <div class="section">
       <h5 class="subtitle">Abstract</h5>
       <p>
-        <i>This paper poses environment design in the life simulation game The Sims as an interesting domain for AI research. In this domain, the goal is to furnish a house with objects that satisfy the physical needs of a simulated agent. Importantly, the large number of objects available to the player (whether human or automated) affords a wide variety of solutions to the underlying design problem. Empirical studies in a novel open-source simulator called SimSim investigate the ability of novelty-based evolutionary algorithms to effectively explore the space of viable environment designs.</i>
+        <i>This paper proposes environment design in the life simulation game The Sims as a novel platform and challenge for testing divergent search algorithms. In this domain, which includes a minimal viability criterion, the goal is to furnish a house with objects that satisfy the physical needs of a simulated agent. Importantly, the large number of objects available to the player (whether human or automated) affords a wide variety of solutions to the underlying design problem. Empirical studies in a novel open source simulator called SimSim investigate the ability of novelty-based evolutionary algorithms to effectively generate viable environment designs. </i>
       </p>
     </div>
     
@@ -194,7 +194,7 @@
             <h5 class="subtitle">Development</h5>
             <h2 class="ideo-title">Programming the Environment.</h2>
             <p>
-                I contributed by applying my knowledge of object oriented programming to create the classes for Sims, Rooms and furniture Objects.When coding the Sim object, I made sure each sim kept track of which room they were in and had methods to fulfill and deplete their needs. When a Sim is initialized, they are given 5 points in each need, and no specified coordinate points. Then, for the Object class, each Object was given a vector of need effects that would affect each Sim, and would keep track of its coordinates and which room it is in. For example, when a ‘coffee maker’ is initialized, it is given an effects vector of {2,0,-3,3,0,0}, each value affects a Sim’s needs in order of hunger, hygiene, bladder, energy, social and fun. Rooms have a set dimension of 10x10.
+                I contributed by applying my knowledge of object oriented programming to create the classes for Sims, Rooms and furniture Objects. When coding the Sim object, I made sure each sim kept track of which room they were in and had methods to fulfill and deplete their needs. When a Sim is initialized, they are given 5 points in each need, and no specified coordinate points. Then, for the Object class, each Object was given a vector of need effects that would affect each Sim, and would keep track of its coordinates and which room it is in. For example, when a ‘coffee maker’ is initialized, it is given an effects vector of {2,0,-3,3,0,0}, each value affects a Sim’s needs in order of hunger, hygiene, bladder, energy, social and fun. Rooms have a set dimension of 10x10.
 
             </p>
             <br><br>
@@ -234,7 +234,7 @@
             
             
             <ol>
-            <li>Randon Search</li>
+            <li>Random Search</li>
             <li>Minimal Criterion Novelty Search</li>
             <li>Regular Novelty Search</li>
             <li>Regular Fitness-Based Evolutionary Algorithm</li>
@@ -263,6 +263,20 @@
             </p>
             <br><br>
             <p>For game AI, the Sims domain proves to be an interesting challenge - placing an agent that is typically made to evolve and find a singular solution in an game environment where there is no one solution or main objective. We encourage researchers to use and improve upon the SimSim project in hopes that these experiments and this framework will be the start of many more environment design exploration projects.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="ideo-title">Conclusion</h2>
+            <p>
+                This was my first research internship I've had, and I am proud that I was able to help contribute and 
+                author a published paper by the end of it. I learned many new things including Git control, object oriented programming and 
+                all the technical and procedural steps in conducting research. It was also a unique experience to research something related to
+                video development as that is a deep passion of mine, academically and personally. To see our code and experiments, check out our <a href='https://github.com/lsoros/simsim'>repo</a>.
+            </p>
+            <br><br>
+    
+           
+           
         </div>
 </div>
 
