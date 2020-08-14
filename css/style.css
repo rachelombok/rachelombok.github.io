@@ -452,7 +452,7 @@ video {
 .bp-soundwaves-7 {
     height: 85%;
 }
-.respond-logo-container {
+.blackpink-logo-container {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -480,7 +480,7 @@ justify-content: center;
     align-items: center;
     justify-content: center;
 }
-.respond-logo {
+.blackpink-logo {
     position: relative;
     margin: 1.5vw;
     width: 20%;
@@ -497,7 +497,7 @@ justify-content: center;
     height: 115.5%;
 }
 
-.nalp-logo {
+.griptape-logo {
     position: relative;
     margin-bottom: 1.5em;
     height: 17.5%;
@@ -695,7 +695,7 @@ footer p a:hover {
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
 .city-venice {
-    background: url(../work/travel/webpics/italy5.jpeg) center / cover no-repeat;
+    background: url(../work/travel/webpics/italy4.jpeg) center / cover no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
@@ -783,13 +783,13 @@ footer p a:hover {
     color: #50c839;
 }
 
-/* RESPOND */
-.respond-title {
-    color: #B31D28;
+/* The Pink Effect */
+.blackpink-title {
+    color: #ff99c5;
     margin-bottom: 1.5vw;
 }
-.respond-link {
-    color: #D60000;
+.blackpink-link {
+    color: #ff99c5;
 }
 /* Griptape */
 .griptape-logo{
@@ -798,24 +798,26 @@ footer p a:hover {
     height: 140%;
     animation: 1.0s ease-in-out infinite infinite-bob;
 }
-/* TINT */
-.tint-title {
-    background: linear-gradient(135deg, #B2B2B2 0%, #666666 10%, #222222 10%);
+/* CVT */
+.cvt-title {
+    /*background: linear-gradient(135deg, #B2B2B2 0%, #666666 10%, #222222 10%);*/
+    background: linear-gradient(#168CA6, #20E8C4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1.5vw;
 }
-.tint-link {
-    color: var(--gray-03);
+.cvt-link {
+    /*color: var(--gray-03);*/
+    color: linear-gradient(#168CA6, #20E8C4);
 }
 
 /* NALP */
-.nalp-title {
-    color: #0052A5;
+.griptape-title {
+    color: #f2841c;
     margin-bottom: 1.5vw;
 }
-.nalp-link {
-    color: #0366D6;
+.griptape-link {
+    color: #f2841c;
 }
 
 /* RESPONSIVE */
