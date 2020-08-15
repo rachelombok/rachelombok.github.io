@@ -170,6 +170,9 @@ a {
 .c12 {
     grid-column: 2 /12;
 }
+.c15{
+    grid-column: 2 /16;
+}
 .c6 {
     grid-column: 2 / 12;
 }
@@ -829,7 +832,13 @@ footer p a:hover {
     margin-bottom: 1.5vw;
 }
 .blackpink-link {
-    color: #ff99c5;
+    color: #fc6dbf;
+}
+
+.blackpink-link:hover{
+    opacity: 0.6;
+    transition: 0.28s;
+
 }
 /* Griptape */
 .griptape-logo{
@@ -838,6 +847,19 @@ footer p a:hover {
     height: 140%;
     animation: 1.0s ease-in-out infinite infinite-bob;
 }
+
+/* COV-IDEAS */
+.covideas-link{
+    color: #000000;
+    font-weight: bold;
+}
+
+.covideas-link:hover{
+    opacity: 0.6;
+    transition: 0.28s;
+
+}
+
 /* CVT */
 .cvt-title {
     /*background: linear-gradient(135deg, #B2B2B2 0%, #666666 10%, #222222 10%);*/
@@ -859,7 +881,16 @@ footer p a:hover {
 }
 
 .justshoot-link{
-    color: linear-gradient(90deg, rgba(18,21,168,1) 0%, rgba(163,0,232,1) 100%);   
+    background: linear-gradient( rgba(18,21,168,1) 0%, rgba(163,0,232,1) 100%);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5vw; 
+}
+
+.justshoot-link:hover{
+    opacity: 0.6;
+    transition: 0.28s;
+
 }
 
 /* Griptape */
