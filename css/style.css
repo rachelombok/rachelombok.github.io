@@ -646,7 +646,7 @@ footer p a:hover {
     width: 15em;
     border-radius: 100em;
 }
-.nyu-link {
+.nyu-link{
     color: #51158c;
 }
 
@@ -812,7 +812,7 @@ footer p a:hover {
 
 /* SulSulSimSim */
 .sulsulsimsim-title {
-    color: var(--black);
+    color: #50c839;
 
     margin-bottom: 1.5vw;
 }
@@ -822,7 +822,10 @@ footer p a:hover {
 
 /* The Pink Effect */
 .blackpink-title {
-    color: #ff99c5;
+    /*color: #fc6dbf;*/
+    background: linear-gradient(180deg, #000000, #fc6dbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1.5vw;
 }
 .blackpink-link {
@@ -847,8 +850,19 @@ footer p a:hover {
     /*color: var(--gray-03);*/
     color: linear-gradient(#168CA6, #20E8C4);
 }
+/* Just Shoot */
+.justshoot-title{
+    background: linear-gradient(#1215a8, #a30084);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5vw;
+}
 
-/* NALP */
+.justshoot-link{
+    color: linear-gradient(90deg, rgba(18,21,168,1) 0%, rgba(163,0,232,1) 100%);   
+}
+
+/* Griptape */
 .griptape-title {
     color: #f2841c;
     margin-bottom: 1.5vw;

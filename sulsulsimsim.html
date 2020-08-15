@@ -66,15 +66,7 @@
     <link rel="icon" type="image/x-icon" href="ro-favicon.ico"/>
     <link rel="icon" type="image/png" href="ro-logo.png"/>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-89012104-2');
-    </script>
+    
 
     <!-- Twitter Preview
     <meta name="twitter:card" content="summary_large_image"/>
@@ -107,7 +99,7 @@
                 <h1 class="content-web emoji">💾</h1>
                 <div>
                     <h1 class="content-mobile">💾</h1>
-                    <h1 class="ideo-title">SulSul! SimSim!<br>
+                    <h1 class="sulsulsimsim-title">SulSul! SimSim!<br>
                     <span class="medium">AIIDE 2020 Conference Paper.</span></h1>
                 </div>
             </div>
@@ -179,7 +171,7 @@
 
         <div class="section">
             <h5 class="subtitle">Problem/Ideation</h5>
-            <h2 class="ideo-title">What makes The Sims an interesting domain for AI?</h2>
+            <h2 class="sulsulsimsim-title">What makes The Sims an interesting domain for AI?</h2>
             <p>
                 Sandbox games require players to master the skill of constrained creativity, often exploring complex design spaces while avoiding nonviable portions. Classic examples of such games include Minecraft, in which players must build enemy-proof shelters out of natural resources, and SimCity, which requires players to set zoning policies and otherwise allocate resources to enable population growth in a simulated city. This genre is unique because of its minimal goals imposed upon the player, which can then be satisfied using an enormous variety of strategies. 
             </p>
@@ -192,7 +184,7 @@
 
         <div class="section">
             <h5 class="subtitle">Development</h5>
-            <h2 class="ideo-title">Programming the Environment.</h2>
+            <h2 class="sulsulsimsim-title">Programming the Environment.</h2>
             <p>
                 I contributed by applying my knowledge of object oriented programming to create the classes for Sims, Rooms and furniture Objects. When coding the Sim object, I made sure each sim kept track of which room they were in and had methods to fulfill and deplete their needs. When a Sim is initialized, they are given 5 points in each need, and no specified coordinate points. Then, for the Object class, each Object was given a vector of need effects that would affect each Sim, and would keep track of its coordinates and which room it is in. For example, when a ‘coffee maker’ is initialized, it is given an effects vector of {2,0,-3,3,0,0}, each value affects a Sim’s needs in order of hunger, hygiene, bladder, energy, social and fun. Rooms have a set dimension of 10x10.
 
@@ -203,7 +195,7 @@
 
         <div class="section">
             <h5 class="subtitle">Experiments</h5>
-            <h2 class="ideo-title">Making crazy ideas real.</h2>
+            <h2 class="sulsulsimsim-title">Making crazy ideas real.</h2>
             <p>
                 The simulation agent is a "Sim" character that will live and interact with objects placed inside the generated houses. When a sim is generated inside a house, its needs are affected by the objects in the room and how they affect its needs. For example, a room with a fridge, toilet, and bed are very comfortable for a Sim to live in since those objects help their needs. Conversely, a room with only lawn gnome decorations would not be a suitable environment for a Sim to live in. A Sims’ needs decrement at a random rate and the simulation ends when a Sim “dies”, or after a certain number of generations.
 
@@ -243,7 +235,7 @@
 
         <div class="section">
             <h5 class="subtitle">Results</h5>
-            <h2 class="ideo-title">The SimSim Simulator</h2>
+            <h2 class="sulsulsimsim-title">The SimSim Simulator</h2>
             <p>
                 Each Sim house generated has a set of objects placed within the rooms. The count of these objects are encoded into vectors that are compared to another house. The vector distance between each house is calculated and used for the k-nearest neighbor calculation in the vector space. A generated house is considered novel, if its fitness value is above a set threshold and its vector distance to the other novel houses is greater than some minimum novelty search criteria threshold value. This new house is then added to the novel list. Here are some ASCII representations of the generated houses.
             </p>
@@ -266,7 +258,7 @@
         </div>
 
         <div class="section">
-            <h2 class="ideo-title">Conclusion</h2>
+            <h2 class="sulsulsimsim-title">Conclusion</h2>
             <p>
                 This was my first research internship I've had, and I am proud that I was able to help contribute and 
                 author a published paper by the end of it. I learned many new things including Git control, object oriented programming and 
