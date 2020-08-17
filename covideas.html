@@ -6,7 +6,7 @@
 <!-- HEAD -->
 <head id="top">
 		<meta charset="UTF-8">
-		<title>COVID Forecasts · Rachel Ombok</title>
+		<title>COVIDforecasts · Rachel Ombok</title>
 		<meta name="Description" content="Rachel Ombok is a programmer and student at New York University. She's currently a Research Intern at NYU Game Innovation Lab.">
 
 		<!-- Viewport -->
@@ -97,7 +97,7 @@
 								<h1 class="content-web emoji">📈</h1>
 								<div>
 										<h1 class="content-mobile">📈</h1>
-										<h1 class="covideas-title">COVID Forecasts<br>
+										<h1 class="covideas-title">COVIDforecasts<br>
 										<span class="medium">Creating a prediction market for the pandemic.</span></h1>
 								</div>
 						</div>
@@ -110,13 +110,19 @@
 								<div class="section summary-item">
 										<h5 class="subtitle">Overview</h5>
 										<p>
-												Desc of proj
+												COVIDforecasts aims to showcase known and predicted pandemic data,
+												and also allows users to guess the future trajectory of COVID-19.
 										</p>
 								</div>
 
 								<div class="section summary-item">
 										<h5 class="subtitle">Roles</h5>
-										<p>Researcher</p>
+										<p>Jacob Abernethy, Project Lead</p>
+										<p>Bo Waggoner, Mentor</p>
+										<p>Raf Frongillo, Mentor</p>
+										<p>Sarah Yoo, Student</p>
+										<p>Annirudha Murali, Student</p>
+										<p>Aggregators Team, Student</p>
 										
 								</div>
 
@@ -125,7 +131,7 @@
 										<p>June 2020 to Present</p>
 								</div>
 						</div>
-						<img alt="Covideas logo" src="work/nalp/nalp-summary.png" class="summary-section">
+						<img alt="Covideas logo" src="work/covideas/COVIDforecasts-logo-black.png" class="summary-section covideas-img" >
 				</div>
 		</div>
 
@@ -133,12 +139,167 @@
 
 		<div class="c6">
 				<div class="section">
-						<h5 class="subtitle">Problem</h5>
-						<h2 class="covideas-title">Why a new logo?</h2>
+						<h5 class="subtitle">Background</h5>
+						<h2 class="covideas-title">What is COVIDforecasts?
+						</h2>
 						<p>
-								As part of my Introduction to Communication Design course, students were assigned to create a logo for the <a href="https://www.newamericanleaders.org" target="_blank" rel="noopener" class="link nalp-link">New American Leaders Project</a>. The objective was to help the organization reach a wider audience of minority participants in the program, businesses for sponsorship and funding, and a national population of voters and supporters.
+							The COVIDforecasts website aims to show various past data readings of coronavirus data, as well as future predictions from various sources. 
+							Different forecasts relating to the COVID-19 pandemic are displayed, and users can make their own predictions about the future trajectory of factors relating to the pandemic such as daily deaths, hospitalizations and cases. Our mission is to deliver future projections and collected data by providing the best information on the COVID-19 pandemic.
+						</p>
+						<br><br>
+						<p>
+							I worked on COVIDforecasts this summer as a research intern for Georgia Tech’s COV-IDEAS REU program. 
+							Through the summer, the project team I was a part of focused on aggregating data to show past readings of coronavirus data, as well as future predictions from various sources. 
+							The goal was to create a public prediction market for COVID-19, that anyone could use. 
+
 						</p>
 				</div>
+		</div>
+
+		<div class="c6">
+			<div class="section">
+					<h5 class="subtitle">Problem</h5>
+					<h2 class="covideas-title">Project Ideation
+					</h2>
+					<p>
+						The motivation for this project stemmed from the lack of understandable data that was being released on the future projections of the pandemic. 
+						Different data sources show very varying projections and can be hard to read for anyone not familiar with the pandemic already. 
+						Also, most data sources came from accredited academic institutions who were making future projections with the data they had collected themselves, so each source gave a different point of view. 
+						We wanted to take this data and transform it into a public prediction market. 
+						Since the pandemic has escalated, ‘super forecasters’ have made unique and accurate predictions relating to the pandemic, and we wanted to take the knowledge and showcase it for all to see. 
+					</p>
+					<br><br>
+					
+						  <img src="work/covideas/badforecast.png" alt="Bad Forecasts" width="300" ALIGN='center' style="margin-left: 250px;">
+						
+						  <img src="work/covideas/superforecasters.png" alt="Superforecasters and the Pandemic" width="300" ALIGN='center'>
+						
+					<br><br>
+					<p>
+						One large focus that was a part of the project ideation was the gamification of the site. 
+						Prediction markets can be fun because they let real people give their opinions and views on future events, but we wanted to make sure the site was engaging in the correct way, and that people would make meaningful earnest predictions on our site.
+
+
+					</p>
+					<br><br>
+					<p>
+						We wanted the main features of the site to include collecting user predictions, ranking forecasts based on accuracy, and evaluating forecast models and user predictions.
+
+					</p>
+					<br><br>
+					<div class="row">
+						<div class="column">
+						  <img src="work/covideas/firstsprint.png" alt="First Sprint landing page" with='400'>
+						</div>
+						<div class="column">
+						  <img src="work/covideas/miniarrow.png" alt="arrow" style="width:10%" >
+						</div>
+						<div class="column">
+						  <img src="work/covideas/finalproduct.png" alt="Final product landing page" width="400">
+						</div>
+					  </div>
+			</div>
+		</div>
+
+		<div class="c6">
+			<div class="section">
+					<h5 class="subtitle">Timeline</h5>
+					<h2 class="covideas-title">1st Sprint</h2>
+					<p>
+						We had various sprints where we developed our site in different stages. 
+						In the first sprint, we set up a basic Flask site and create our first visualizations in Chart.js. 
+						We first had all the charts separate and allowed for users to vote on a poll which prediction seemed the best. 
+						During this stage, we also programmed backend APIs for reading and sending forecast data. 
+
+
+					</p>
+					<br><br>
+
+					<div class="row">
+						
+						<div class="column">
+						  <img src="work/covideas/chartjs1.png" alt="ChartJS 1" width="400">
+						</div>
+						<div class="column">
+						  <img src="work/covideas/chartjs2.png" alt="ChartJS 2" width="100">
+						</div>
+					  </div>
+					  <br><br>
+					<h2 class="covideas-title">2nd Sprint</h2>
+					<!---<img src='work/covideas/reactrefactor.png' alt='React refactor' ALIGN='right' style='width:10%'>--->
+					<p>
+						The second sprint consisted of us refactoring the site with React, and organizing a separate frontend and backend for the structure. 
+						We used React on the frontend and kept Flask on the backend. 
+						This helped with improvements to the site’s UI and better organizing the files. 
+						This also helped us learn about running web apps locally and guiding others how to install and configure our app. 
+					</p>
+					
+					
+					<br><br>
+					<h2>MVP</h2>
+					<p>
+						Halfway through the 10-week program, we were given a seminar talk by Robin Hanson, an acclaimed professor and  economist, where he talked about forecasting, crowdsourcing, and policy in a pandemic, and how they all connect to each other. 
+						Since our project aligned with many of his points and economic interests, we wanted to prepare a Minimum Viable Product to present to him and receive feedback. 
+						For this sprint, we added D3.js visualizations with the option for users to draw their predictions, which were then saved in a database. 
+						We also added account authentication, a user profile page, and smoothed out the design and interface of the charts and site. 
+
+					</p>
+					<br><br>
+					<div class="row">
+						<div class="column">
+						  <img src="work/covideas/landingpage.png" alt="MVP landing page" style="width:80%">
+						</div>
+						<div class="column">
+						  <img src="work/covideas/profilechart.png" alt="MVP profile chart" style="width:80%">
+						</div>
+					  </div>
+					  <br><br>
+					<h2>Final Product</h2>
+					<p>
+						At the end of the 10 week program we wanted to do a soft release of the product that we could send out to people and have them make their predictions. 
+						For this final product we added an evaluation metric (Mean Squared Error), and a Top Forecasters page which ranks results of user and official forecaster predictions. 
+						The site was deployed on Heroku and is public and available for anyone to use. 
+					</p>
+					<br><br>
+					<div class="row">
+						<div class="column">
+						  <img src="work/covideas/finalchart.png" alt="Final Product chart" style="width:80%">
+						</div>
+						<div class="column">
+						  <img src="work/covideas/topforecasters.png" alt="Top Forecasters" style="width:80%">
+						</div>
+					  </div>
+					  <br><br>
+					<h5 class="subtitle">Technologies</h5>
+					<p>
+						
+						  <img alt="React" src="https://img.shields.io/badge/-React-red?style=flat-square&logo=react&logoColor=white" />
+						  
+						  <img alt="Heroku" src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white" />
+						  <img alt="Flask" src="https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white" />
+						  <img alt='MongoDB' src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+						  <img alt='D3' src="https://img.shields.io/badge/-D3-F9A03C?style=flat-square&logo=d3.js&logoColor=white"/>
+						  <img alt="Bootstrap" src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/>
+						</p>
+			</div>
+		</div>
+
+		<div class="c6">
+			<div class="section">
+					<h5 class="subtitle">Conclusion</h5>
+					<h2 class="covideas-title">End of Summer Program
+					</h2>
+					<p>
+						This was my first time researching in an REU program, and doing so remotely was a unique experience. 
+						I am glad I took part in the project and was able to produce not only a fully-fleshed project, but also something that can be used by others.
+					</p>
+					<br><br>
+					<p>
+						Besides working on this site, I also developed the landing site for the REU using React as a side project! You can check it out here. 
+
+
+					</p>
+			</div>
 		</div>
 		
 		<footer class="c12 grid">

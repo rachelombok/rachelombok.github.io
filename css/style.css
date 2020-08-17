@@ -860,6 +860,14 @@ footer p a:hover {
 
 }
 
+.covideas-img{
+    width: 600px;
+    height: 150px;
+    display: block;
+  margin-left: 0;
+  margin-right: 500px;
+}
+
 /* CVT */
 .cvt-title {
     /*background: linear-gradient(135deg, #B2B2B2 0%, #666666 10%, #222222 10%);*/
