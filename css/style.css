@@ -645,8 +645,8 @@ footer p a:hover {
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
-    height: 15em;
-    width: 15em;
+    height: 25em;
+    width: 25em;
     border-radius: 100em;
 }
 .nyu-link{
@@ -973,8 +973,8 @@ footer p a:hover {
     
     /* ABOUT */
     .avi {
-        height: 35vw;
-        width: 35vw;
+        height: 45vw;
+        width: 45vw;
     }
     /* TRAVEL */
     .scroll {
@@ -1023,8 +1023,8 @@ footer p a:hover {
     .avi {
         margin-top: auto;
         margin-bottom: auto;
-        height: 25em;
-        width: 25em;
+        height: 30em;
+        width: 30em;
     }
 }
 
