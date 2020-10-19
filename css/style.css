@@ -371,6 +371,10 @@ video {
     #f2841c*/
 }
 
+.exp-ultrahacks{
+    background: #1DA1F2;
+}
+
 .handymap-logo {
     position: relative;
     margin-bottom: 1.5em;
@@ -421,6 +425,12 @@ video {
     margin-bottom: 1.5em;
     height: 50%;
     animation: 1.0s ease-in-out infinite infinite-bob;
+}
+
+.ultrahacks-logo{
+    position: relative;
+    margin-bottom: 1.5em;
+    height: 37.5%;
 }
 .blackpink-soundwaves-container {
     display: flex;
@@ -821,6 +831,10 @@ footer p a:hover {
 }
 .sulsulsimsim-link {
     color: #50c839;
+}
+
+.sulsulsimsim-li{
+    list-style: none;
 }
 
 /* The Pink Effect */
