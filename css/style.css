@@ -197,6 +197,8 @@ a {
     margin-right: auto;
 }
 .img-center{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     display: block;
     margin-left: auto;
     margin-right: auto;
