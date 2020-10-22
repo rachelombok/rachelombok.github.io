@@ -6,8 +6,8 @@
 <!-- HEAD -->
 <head id="top">
     <meta charset="UTF-8">
-    <title>Tint · Zain Khoja</title>
-    <meta name="Description" content="Zain Khoja is a designer and student at Cornell. He's currently a Design Systems Intern at GitHub.">
+    <title>Bot Bouncer · Rachel Ombok</title>
+    <meta name="Description" content="Rachel Ombok is a programmer and student at New York University. She's currently a Research Intern at NYU Game Innovation Lab.">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,8 +63,8 @@
     </script>
 
     <!-- Webpage Icons -->
-    <link rel="icon" type="image/x-icon" href="zk-favicon.ico"/>
-    <link rel="icon" type="image/png" href="zk-logo.png"/>
+    <link rel="icon" type="image/x-icon" href="ro-favicon.ico"/>
+    <link rel="icon" type="image/png" href="ro-logo.png"/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
@@ -91,8 +91,8 @@
         <!-- Nav -->
         <div class="hero">
             <div class="header">
-                <a href="/"><img alt="Zain Khoja logo" src="zk-logo.svg" class="zk-logo"></a>
-                <h3 class="medium content-web">Zain Khoja</h3>
+                <a href="/"><img alt="Rachel Ombok logo" src="ro-logo.svg" class="ro-logo"></a>
+                <h3 class="medium content-web">Rachel Ombok</h3>
                 <nav class="nav">
                     <h5 class="option"><a href="/">Work</a></h5>
                     <h5 class="option"><a href="about">About</a></h5>
@@ -103,11 +103,12 @@
 
             <!-- Title -->
             <div class="title">
-                <h1 class="content-web emoji">📸</h1>
+                <h1 class="content-web emoji">🤖</h1>
                 <div>
-                    <h1 class="content-mobile">📸</h1>
-                    <h1 class="tint-title">Tint.<br>
-                    <span class="medium">Photo-organizing app concept.</span></h1>
+                    <h1 class="content-mobile">🤖</h1>
+                    <h1 class="ultrahacks-title">Bouncer Bot<br>
+                    <span class="medium">#UltraHacks 2020 2nd Place Winner
+                    </span></h1>
                 </div>
             </div>
         </div>
@@ -119,22 +120,22 @@
                 <div class="section summary-item">
                     <h5 class="subtitle">Overview</h5>
                     <p>
-                        An application that automatically detects and classifies images on the go.
+                        A Twitter bot that encourages healthy conversations by utilizing Twitter’s mute function.
                     </p>
                 </div>
-
                 <div class="section summary-item">
                     <h5 class="subtitle">Roles</h5>
-                    <p>User Interface Designer</p>
-                    <p>User Experience Designer</p>
+                    <p><a href='https://twitter.com/therachelplan' class='ultrahacks-link'>Rachel Ombok</a>, Team Member</p>
+                    <p><a href='https://twitter.com/presidentsham' class='ultrahacks-link'>Shameed Job</a>, Team Member</p>
+                    <p><a href='https://twitter.com/CarlaGaMe' class='ultrahacks-link'>Carla Garcia Medina</a>, Team Member</p>
                 </div>
 
                 <div class="section summary-item">
                     <h5 class="subtitle">Timeline</h5>
-                    <p>September 2018</p>
+                    <p>October 2020</p>
                 </div>
             </div>
-            <img alt="Tint project design system" src="work/tint/tint-summary.png" class="summary-section">
+            <img alt="#UltraHacks poster" src="work/ultrahacks/ultrahacks.jpeg" class="summary-section">
         </div>
     </div>
 
@@ -142,61 +143,76 @@
 
     <div class="c6">
         <div class="section">
-            <h5 class="subtitle">Problem</h5>
-            <h2 class="tint-title">Organize your photos.</h2>
+            <h5 class="subtitle">Background</h5>
+            <h2 class="ultrahacks-title">What is Bot Bouncer?</h2>
             <p>
-                We see a lot of cool things everyday, but we don’t have the time to make a note of all the objects that pique our curiosity. What if an application could automatically organize and compile knowledge about these objects while we’re out and remind us when we get home?
+                <a href= 'https://twitter.com/bot_bouncer' class='ultrahacks-link'>Bouncer Bot</a> is a Twitter bot that utilizes Twitter's mute function for users. The mute function can be a powerful and useful tool 
+                to curate and censor a user's timeline and content they interact with everyday. We wanted to create a bot that could help 
+                facilitate Twitter’s built in muting function in a useful way.
+
+            </p>
+            <br><br>
+            <p>
+                Bouncer Bot mutes certain words the user DMs the bot and censors it so that the user doesn't have to see content that includes 
+                that word. We also worked to incorporate images to the bot. The bot analyzes the image a user sends, and calculates the MSE 
+                (mean squared error) of the image model, and mutes all images in the future that are close in value to the muted image.
+
+            </p>
+            <img src='work/ultrahacks/botbouncer3.jpg' width='1100' height="550" class="img-center"/>
+
+            <p>
+                This project was created for the Twitter sponsored <a href='https://ultrahacks.devpost.com', class='ultrahacks-link'>#UltraHacks</a> virtual hackathon, which I got the opportunity to attend through 
+                <a href='https://techatnyu.org' class='ultrahacks-link'>Tech@NYU</a>’s program, Tech Undivided. Tech Undivided is a pilot program that connects Black and Latinx students with networking 
+                and professional opportunities to help their journey into tech.
             </p>
         </div>
 
         <div class="section">
             <h5 class="subtitle">Ideation</h5>
-            <h2 class="tint-title">Taking a shot.</h2>
+            <h2 class="ultrahacks-title">How we built it.</h2>
             <p>
-                People want to look up things that are interesting to them, but can’t because it’s time prohibitive. Playing around with the concept of a general camera app, I recognized the strong familiarity that users had with current applications. In order to retain user behaviors, I created a simple camera view. When you’re on the go, you just want to take the picture and move on with your day. The view simply contains a single button for taking pictures and accessing a library of previously taken photos.
+                The objective of the hackathon was to create a project for Twitter that would encourage healthy conversations, so first we had to get 
+                familiar with the Twitter API and the Tweepy Python library. We created Developer accounts and first programmed the bot to send a DM to 
+                users, and if that functionality failed, attempted to send a normal tweet. With the API’s mute functionality, we are able to receive a 
+                DM from another account, giving us a word they want to mute, and we mute it for them. 
+
             </p>
-            <img alt="camera page mockup" src="work/tint/tint-mockup-1.png" class="img">
+            <br><br>
+            <iframe class='img-center' width="860" height="455" src="https://www.youtube.com/embed/7f5pdKDcfJk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+            <p>
+                We also started to create an extra feature to the bot that would allow the bot to mute images as well. A user would send the image they want to mute, 
+                and we would save the image into our database. Then, if that same user was sent that image, or an image similar to it, our bot would calculate the 
+                mean squared error between the sent image and the muted image, and if the images are similar, our bot would mute the message of the picture. 
+                The bot was built with Python and Django, and deployed using Heroku. You can check out our work <a href='https://github.com/rachelombok/ultrahacks' class='ultrahacks-link'>here</a>. 
+
+            </p>
         </div>
 
         <div class="section">
             <h5 class="subtitle"></h5>
-            <h2 class="tint-title">A pinch of popularity.</h2>
+            <h2 class="ultrahacks-title">Conclusion</h2>
             <p>
-                The ability to modify images in this application is a mode of entertainment. As apps like Snapchat and the "Story" concept grow, it’s important to recognize the intended audience of a younger user base. Users expect to be able to play with photos, so this aspect is vital for familiarity.
+                At the end of the weekend, we placed 2nd among everyone and were able to present our projects to all the attendees and Twitter representatives at the event. 
+                It was my first online hackathon I participated in and it was all around a successful and enjoyable experience. 
             </p>
-            <img alt="edit photo page mockup" src="work/tint/tint-mockup-2.png" class="img">
+            <br><br>
+            <div class='img-center'>
+            <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">And the 2nd place winner of the <a href="https://twitter.com/hashtag/UltraHacks?src=hash&amp;ref_src=twsrc%5Etfw">#UltraHacks</a> Hackathon is......🥁 roll please.....<a href="https://twitter.com/hashtag/BOUNCERBOT?src=hash&amp;ref_src=twsrc%5Etfw">#BOUNCERBOT</a> 🤖<br><br>Congratulations to the <a href="https://twitter.com/techatnyu?ref_src=twsrc%5Etfw">@techatnyu</a> chapter representing <a href="https://twitter.com/nyuniversity?ref_src=twsrc%5Etfw">@nyuniversity</a>! <a href="https://t.co/klkXRk5VbI">pic.twitter.com/klkXRk5VbI</a></p>&mdash; Twitter University Recruiting (@TwitterU) <a href="https://twitter.com/TwitterU/status/1317933369729052672?ref_src=twsrc%5Etfw">October 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
         </div>
 
-        <div class="section">
-            <h5 class="subtitle"></h5>
-            <h2 class="tint-title">Reflecting on the day.</h2>
-            <p>
-                The idea is for a user to be able to "catch up" on their day, so the photo library is focused on memory and reflects on the last photo taken by the user. Users can look at their photos chronologically by default, by category (which is suggestable in the 'Edit' screen above or done automatically by machine learning APIs), and by keyword. 
-            </p>
-            <img alt="photo categorization mockup" src="work/tint/tint-mockup-3.png" class="img">
-            <p>
-                The background of the application will always be a blurred, tinted version of the last photo taken, providing the subtle "reflection" aspect mentioned earlier.
-            </p>
-        </div>
-
-        <div class="section">
-            <h5 class="subtitle">Results & Metrics</h5>
-            <h2 class="tint-title">Further Explorations</h2>
-            <p>
-                This project was originally an intended design for the <a href="http://www.getclip.io" target="_blank" rel="noopener" class="link tint-link">Y-Combinator Startup School project 'Clip'</a>. During the project, I produced a handful of more high-fidelity mockups to show scrolling and search results.
-            </p>
-            <img alt="further explorations mockup" src="work/tint/tint-mockup-4.png" class="img">
-        </div>
+        
     </div>
     
     <footer class="c12 grid">
         <div class="c6-left">
-            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:znk4@cornell.edu?subject=Hey!" target="_blank" rel="noopener">znk4@cornell.edu</a>.</p>
+            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:rachel.ombok@nyu.edu?subject=Hey!" target="_blank" rel="noopener" >rachel.ombok@nyu.edu</a></p>
         </div>
         <div class="social">
-            <a href="https://twitter.com/zainkho" target="_blank" rel="noopener"><img alt="Twitter icon" src="icons/twitter.svg" class="icons"></a>
-            <a href="https://medium.com/@zainkho" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
-            <a href="https://linkedin.com/in/zainkho" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+            <a href="https://github.com/rachelombok" target="_blank" rel="noopener"><img alt="Github icon" src="icons/github.svg" class="icons"></a>
+            <a href="https://medium.com/@rachelombok" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://linkedin.com/in/rachelombok" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
             <a href="https://twitter.com/therachelplan" target="_blank" rel="noopener"><img alt="Twitter icon" src="icons/twitter.svg" class="icons"></a>
         </div>  
         

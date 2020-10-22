@@ -196,6 +196,11 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .shadow {
     box-shadow: 0 0 8px 0 var(--gray-01);
 }
@@ -372,7 +377,7 @@ video {
 }
 
 .exp-ultrahacks{
-    background: #1DA1F2;
+    background: #c621a0;
 }
 
 .handymap-logo {
@@ -862,6 +867,14 @@ footer p a:hover {
     animation: 1.0s ease-in-out infinite infinite-bob;
 }
 
+.griptape-title {
+    color: #f2841c;
+    margin-bottom: 1.5vw;
+}
+.griptape-link {
+    color: #f2841c;
+}
+
 /* COV-IDEAS */
 .covideas-link{
     color: #000000;
@@ -915,13 +928,23 @@ footer p a:hover {
 
 }
 
-/* Griptape */
-.griptape-title {
-    color: #f2841c;
+/* #UltraHacks */
+
+.ultrahacks-title{
+    color: #c621a0;
     margin-bottom: 1.5vw;
+
 }
-.griptape-link {
-    color: #f2841c;
+
+.ultrahacks-link{
+    color: #c621a0;
+
+}
+
+.ultrahacks-link:hover{
+    opacity: 0.6;
+    transition: 0.28s;
+
 }
 
 /* RESPONSIVE */
