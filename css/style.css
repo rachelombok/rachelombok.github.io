@@ -670,6 +670,10 @@ footer p a:hover {
     color: #51158c;
 }
 
+.handymap-link{
+    color: #7d1f1f
+}
+
 /* TRAVEL */
 .travel-title {
     width: 90vw;
@@ -814,7 +818,7 @@ footer p a:hover {
 
 /* GITHUB */
 .handymap-title {
-    color: #24292E;
+    color: #7d1f1f;
     margin-bottom: 1.5vw;
 }
 .github-link {
@@ -947,6 +951,10 @@ footer p a:hover {
     opacity: 0.6;
     transition: 0.28s;
 
+}
+/* TWITTER */
+.twitter-link{
+    color: #08a0e9;
 }
 
 /* RESPONSIVE */
