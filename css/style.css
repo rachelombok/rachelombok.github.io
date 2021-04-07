@@ -17,11 +17,13 @@
     src: url(../fonts/SF-Pro-Display-Bold.woff);
     font-weight: bold;
 }
+
 @font-face {
     font-family: 'SF-Display';
     src: url(../fonts/SF-Pro-Display-Medium.woff);
     font-weight: 500;
 }
+
 @font-face {
     font-family: 'SF-Display';
     src: url(../fonts/SF-Pro-Display-Regular.woff);
