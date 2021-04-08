@@ -18,6 +18,11 @@
 
     <!-- Javascript -->
     <script src="js/jquery-3.4.1.min.js"></script>
+
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
     <script>  
         /* Back button appears on scroll */
         $(window).scroll(function(){
@@ -60,6 +65,20 @@
             }
           });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+  
+
     </script>
 
     <!-- Webpage Icons -->
@@ -87,54 +106,69 @@
                 <nav class="nav">
                     <h5 class="option"><a href="/">Work</a></h5>
                     <h5 class="option"><a href="about">About</a></h5>
-                    <h5 class="option"><a href="travel">Travel</a></h5>
+                   
                     <h5 class="option"><a href="resume">Resume</a></h5>
-                    <h5 class="option"><a href="huztle">Huztle</a></h5>
+                    <h5 class="option selected"><a href="huztle">Huztle</a></h5>
+                    <div class="dropdown-menu">
+                        <button class="menu-btn option" id='photodrop'>Photography</button>
+                        <div class="menu-content">
+                        <a class="links-hidden" href="gallery">Gallery</a>
+                        <a class="links-hidden" href="travel">Travel</a>
+                        </div>
+                        </div>
+                        
+                      
                 </nav>
             </div>
 
             <!-- Title -->
             <div class="title">
-                <h1 class="content-web emoji">💡</h1>
+                <h1 class="content-web emoji">🎙</h1>
                 <div>
-                    <h1 class="content-mobile">💡</h1>
-                    <h1 class="griptape-title">Huztle<br>
+                    <h1 class="content-mobile">🎙</h1>
+                    <h1 class="huztle-title">Huztle<br>
                     <span class="medium">A Gen-Z Podcast</span></h1>
                 </div>
             </div>
+
         </div>
     </header>
     
     <div class="c6 main">
         <div class="section">
-            <h5 class="subtitle">Education</h5>
-            <h3><a href="https://www.engineering.nyu.edu/" target="_blank" rel="noopener" class="link nyu-link">New York University, Tandon School of Engineering</a></h3>
-            <p class="medium">B.S. Computer Science · May 2022</p>
-            <br>
-            <p>Minor in Game Engineering <br>Relevant Coursework: Object Oriented Programming(C++), Data Structures and Algorithms(Python), Discrete
-            Mathematics, Data Analysis, Computer Architecture and Organization, Design and Analysis of Algorithms</p>
-        </div>
+        
         <div class="summary">
             <div class="summary-section">
                 <div class="section summary-item">
                     <h5 class="subtitle">Overview</h5>
                     <p>
-                        Griptape Challenge(under construction).
+                        A podcast about Gen-Z entrepreneurs, tech enthusiasts, founders and innovators who are at the intersection of STEM and leadership. Hosted by 
+Rachel Ombok.
+
+                    </p>
+                </div>
+                <div class="section summary-item">
+                    <h5 class="subtitle">Listen</h5>
+                    <p>
+                        <a class='huztle-link link'>Apple Music</a>
+                    </p>
+                    <p>
+                        <a class='huztle-link link'>Spotify</a>
+                    </p>
+                    <p>
+                        <a class='huztle-link link'>RSS</a>
                     </p>
                 </div>
 
                 <div class="section summary-item">
-                    <h5 class="subtitle">Roles</h5>
-                    
-                    <p>Youth Challenger</p>
+                    <h5 class="subtitle">Connect</h5>
+                    <p>
+                        <a class='huztle-link link' href='https://twitter.com/HUZTLEpod'>Twitter</a>
+                    </p>
                 </div>
 
-                <div class="section summary-item">
-                    <h5 class="subtitle">Timeline</h5>
-                    <p>June 2020 to August 2020</p>
-                </div>
             </div>
-            <img alt="Griptape logo" src="work/nalp/nalp-summary.png" class="summary-section">
+            <img alt="Huztle Art" src="work/huztle/huztleart.jpg" class="summary-section center" style='width:400px'>
         </div>
     </div>
 
@@ -142,45 +176,46 @@
 
     <div class="c6">
         <div class="section">
-            <h5 class="subtitle">Background</h5>
-            <h2 class="griptape-title">What is Griptape?</h2>
-            <p>
-                (Text here)
-            </p>
-        </div>
 
-        <div class="section">
-            <h5 class="subtitle">Research</h5>
-            <h2 class="griptape-title">How I approached the Challenge</h2>
-            <p>
-               (Under construction)
-            </p>
-            
-        </div>
+            <h5 class="subtitle">Episodes</h5>
+            <button class="accordion link"><h3 class='huztle-link' id="podcast-title">Episode 1: Anna Zhang - Youth Advocate, Photographer, Creative Director</h3>
+            </button>
 
-        <div class="section">
-            <h5 class="subtitle"></h5>
-            <h2 class="griptape-title">Another section</h2>
-            <p>
-               (More here)
-            </p>
-        </div>
-
-        <div class="section">
-            <h5 class="subtitle">Ideation</h5>
-            <h2 class="griptape-title">Guitar progression</h2>
-            <p>Here</p>
-        </div>
-
-        <div class="section">
-            <h5 class="subtitle"></h5>
-            <h2 class="griptape-title">Type matters.</h2>
-            <p>
-                
-            </p>
-            
-        </div>
-
+<div class="panel">
+    <h4>Show Notes</h4>
+    <br>
+  <p>Our guest today is Anna Zhang, a young creative, public speaker, student, photographer, and Forbes 30 Under 30 2021 nominee. 
+      Anna has worked with brands such as Uniqlo, Fujifilm, Walgreens, and creates editorial content for her nonprofit magazine, 
+      Pulse Spikes, which has garnered over 200,000 readers all over the world. She is incredibly passionate about making youth centered and 
+      driven content, and creating positive impact with her work.</p>
+    <br>
+      <p>
+          Anna speaks with me about how she stays motivated and focused, and how she connects 
+          all the things she learns from her projects, professionally and personally. She discusses all her current and past endevaors including Pulse Spikes,
+          working her on-campus job, and her last summer internship, as well as her views on what she will be doing in he future. 
+      </p>
+      <br>
+      <p>Huztle is a podcast series about GenZ entrepreneurship, in which host Rachel Ombok interviews tech enthusiasts, founders and innovators who are at the intersection of STEM and leadership. In each bi-monthly episode, guests will share their experiences, lessons they’ve learned, and their own visions for the future in their respective fields. 
+        Find out more at <a class="huztle-link link" href="https://www.rachelombok.com/huztle">rachelombok.com/huztle</a>.
+        </p>
+        <br>
+        <h4>Resources</h4>
+        <ul> 
+            <li><a href='https://www.codingitforward.com/civic-digital-fellowship' class='huztle-link link'>Coding It Forward's Civic Digital Fellowship</a></li>
+            <li><a href='https://play.google.com/about/changethegame/designchallenge2019/' class='huztle-link link'>Google Play's Change the Game Design Challenge</a></li>
+            <li><a href='https://www.colorflamestudio.com' class='huztle-link link'>Anna's Photography Website</a></li>
+            <li><a href='http://pulsespikes.com' class='huztle-link link'>Pulse Spikes Website</a></li>
+        </ul>
+        <p>
+            Feedback? Great! 
+        Please contact me at <a class="huztle-link link" href='mailto:rachel.ombok@nyu.edu?subject=Hey!'>rachel.ombok@nyu.edu</a> if you have any questions.
+        </p>
+        <p>
+            <a href='https://twitter.com/HUZTLEpod'><img alt="Huztle Twitter" src="https://img.shields.io/badge/-Huztle_Twitter-F894A2?style=flat-plastic&logo=twitter&logoColor=white" /></a>
+            <a href='https://twitter.com/therachelplan'><img alt="Rachel Twitter" src="https://img.shields.io/badge/-Rachel's_Twitter-1DA1F2?style=flat-plastic&logo=twitter&logoColor=white" /></a>
+            <a href='https://www.instagram.com/colorflame/'><img alt="Anna Instagram" src="https://img.shields.io/badge/-Anna's_Instagram-E4405F?style=flat-plastic&logo=instagram&logoColor=white" /></a>
+        </p>
+</div>
 
     </div>
     
@@ -200,6 +235,40 @@
         <!-- Scroll To Top -->
         <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
     </footer>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+    </script>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
     
 </body>
 

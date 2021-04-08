@@ -65,6 +65,7 @@ h3 {
     font-weight: bold;
     line-height: inherit;
     margin: 0;
+    
 }
 h4 {
     font-family: 'SF-Display';
@@ -338,6 +339,10 @@ video {
 .exp-handymap {
     background: #7d1f1f;
 
+}
+
+.exp-huztle{
+    background: #f894a2;
 }
 .exp-rds {
     background: #242424;
@@ -676,6 +681,10 @@ footer p a:hover {
     color: #7d1f1f
 }
 
+.huztle-link{
+    color: #f894a2;
+}
+
 /* TRAVEL */
 .travel-title {
     width: 90vw;
@@ -758,7 +767,7 @@ footer p a:hover {
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
 .city-venice {
-    background: url(../work/travel/webpics/italy4.jpeg) center / cover no-repeat;
+    background: url(../work/travel/webpics/italy3.jpeg) center / cover no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
@@ -823,6 +832,10 @@ footer p a:hover {
     color: #7d1f1f;
     margin-bottom: 1.5vw;
 }
+.huztle-title{
+    color: #f894a2;
+    margin-bottom: 1.5vw;
+}
 .github-link {
     color: #6F42C1;
 }
@@ -857,6 +870,10 @@ footer p a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1.5vw;
+}
+
+.blackpink-title-2{
+    color: #ffb3d0;
 }
 .blackpink-link {
     color: #fc6dbf;
@@ -958,7 +975,11 @@ footer p a:hover {
 .twitter-link{
     color: #08a0e9;
 }
-
+/* HUZTLE */
+.huztle-pic{
+    width: 400px;
+    
+}
 /* RESPONSIVE */
 .content-web {
     display: none;
@@ -1136,5 +1157,134 @@ footer p a:hover {
     clear: both;
     display: table;
 }
+
+  .accordion {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02C3'; /* Unicode character for right arrow (>) */
+    float: left;
+    font-size: 50px;
+    margin-left: 0px;
+    
+  }
+  
+  .active:after {
+    content: "\02C5"; /* Unicode character for down arrow  */
+  }
+
+  #podcast-title{
+    display: inline-block;
+    margin: 0;
+    margin-left: 15px;
+  }
+  
+
+
+  .menu-btn {
+    padding: 16px;
+    border: none;
+    background-color: inherit;
+    text-decoration: inherit;
+ }
+ .dropdown-menu {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: inherit;
+ }
+ .menu-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    font-weight: normal;
+    
+ }
+
+ .links,.links-hidden{
+    display: inline-block;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    
+ }
+ .links-hidden{
+    display: block;
+    color: var(--gray-03);
+ }
+ .links-hidden:hover{
+    color: black;
+ }
+ .links{
+    display: inline-block;
+ }
+
+ .dropdown-menu:hover .menu-content {
+    display: block;
+    font-size: 18px;
+    font-family: 'SF-Display';
+ }
+
+#photodrop{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 23px;
+    font-family: 'SF-Display';
+    font-weight: normal;
+    color: var(--gray-03);
+}
+.row-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column-gallery {
+    flex: 35%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+  
+  .column-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
 .align-center {text-align: center; margin: auto;}
