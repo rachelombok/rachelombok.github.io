@@ -295,6 +295,18 @@ video {
     border-top: 1px solid var(--gray-01);
     margin-bottom: 3em;
 }
+
+/* PAGINATION */
+.cssPagination .pages > .page:target ~ .page:last-child,
+.cssPagination .pages > .page {display: none;}
+.cssPagination .pages > :last-child,
+.cssPagination .pages > .page:target {display: block;}
+.pageNav a{
+    color: black;
+  float: left;
+  text-decoration: none;
+}
+
 /* BODY */
 .main {
     margin-top: 3em;
