@@ -1,0 +1,196 @@
+<!-- Griptape -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Gallery · Rachel Ombok</title>
+    <meta name="Description" content="Gallery Photos">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>  
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="ro-favicon.ico"/>
+    <link rel="icon" type="image/png" href="ro-logo.png"/>
+
+
+    <!-- Twitter Preview -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@therachelplan"/>
+    <meta name="twitter:creator" content="@therachelplan"/>
+    <meta name="twitter:title" content="Rachel Ombok" />
+    <meta name="twitter:description" content="Rachel Ombok is a designer and student at New York University."/>
+    <meta name="twitter:image:src" content="https://rachelombok.com/ro-screenshot.png"/>
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="/"><img alt="Rachel logo" src="ro-logo.svg" class="ro-logo"></a>
+                <h3 class="medium content-web">Rachel Ombok</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="/">Work</a></h5>
+                    <h5 class="option"><a href="about">About</a></h5>
+                   
+                    <h5 class="option"><a href="resume">Resume</a></h5>
+            <h5 class="option"><a href="huztle">Huztle</a></h5>
+                  
+                    <div class="dropdown-menu">
+                        <button class="menu-btn option" id='photodrop'>Photography</button>
+                        <div class="menu-content">
+                        <a class="links-hidden" href="gallery">Gallery</a>
+                        <a class="links-hidden" href="travel">Travel</a>
+                        </div>
+                        </div>
+                        
+                      
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">📷</h1>
+                <div>
+                    <h1 class="content-mobile">📷</h1>
+                    <h1 class="title">Gallery.<br>
+                  
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="c6">
+        
+
+        <div class="row-gallery"> 
+            <div class="column-gallery">
+              <img src="work/gallery/1.jpg">
+              <img src="work/gallery/2.jpg">
+              <img src="work/gallery/3.jpg">
+              <img src="work/gallery/4.jpg">
+              <img src="work/gallery/5.jpg">
+              <img src="work/gallery/6.jpg">
+              <img src="work/gallery/7.jpg">
+
+              <img src="work/gallery/51.jpg">
+              <img src="work/gallery/57.jpg">
+              <img src="work/gallery/53.jpg">
+              <img src="work/gallery/60.jpg">
+              <img src="work/gallery/61.jpg">
+              <img src="work/gallery/62.jpg">
+            </div>
+            <div class="column-gallery">
+              <img src="work/gallery/8.jpg">
+              <img src="work/gallery/9.jpg">
+              <img src="work/gallery/10.jpg">
+              <img src="work/gallery/11.jpg">
+              <img src="work/gallery/12.jpg">
+              <img src="work/gallery/13.jpg">
+
+              <img src="work/gallery/54.jpg">
+              <img src="work/gallery/55.jpg">
+              <img src="work/gallery/56.jpg">
+              <img src="work/gallery/63.jpg">
+              <img src="work/gallery/64.jpg">
+              <img src="work/gallery/65.jpg">
+              <img src="work/gallery/69.jpg">
+              <img src="work/gallery/70.jpg">
+              
+            </div> 
+            <div class="column-gallery">
+              <img src="work/gallery/14.jpg">
+              <img src="work/gallery/15.jpg">
+              <img src="work/gallery/16.jpg">
+              <img src="work/gallery/17.jpg">
+              <img src="work/gallery/18.jpg">
+              <img src="work/gallery/19.jpg">
+              <img src="work/gallery/20.jpg">
+
+              <img src="work/gallery/52.jpg">
+              <img src="work/gallery/58.jpg">
+              <img src="work/gallery/59.jpg">
+              <img src="work/gallery/66.jpg">
+              <img src="work/gallery/67.jpg">
+              <img src="work/gallery/68.jpg">
+              <img src="work/gallery/71.jpg">
+            </div>
+          </div>
+
+    </div>
+    
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:rachel.ombok@nyu.edu?subject=Hey!" target="_blank" rel="noopener" >rachel.ombok@nyu.edu</a></p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/rachelombok" target="_blank" rel="noopener"><img alt="Github icon" src="icons/github.svg" class="icons"></a>
+            <a href="https://medium.com/@rachelombok" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://linkedin.com/in/rachelombok" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+            <a href="https://twitter.com/therachelplan" target="_blank" rel="noopener"><img alt="Twitter icon" src="icons/twitter.svg" class="icons"></a>
+        </div>  
+        
+        <!-- Back -->
+        <a href="/" aria-label="back" class="content-web no-display back"></a>
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+    
+</body>
+
+</html>
