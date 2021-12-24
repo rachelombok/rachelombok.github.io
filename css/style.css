@@ -275,6 +275,28 @@ video {
     text-align: center
 }
 
+.column-course {
+    float: left;
+    width: 49%;
+    padding: 7px;
+   
+  }
+  
+.course-bullet {
+    font-weight: bold;
+  }
+.course-text{
+  font-weight: normal;
+  color: black;
+}
+
+  /* Clear floats after the columns */
+  .row-course:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 /* SUMMARY */
 .summary {
     display: grid;
@@ -282,6 +304,12 @@ video {
 }
 .summary-section {
     width: 100%;
+}
+
+.summary-section-course{
+    width: 100%;
+  
+    column-count: 2;
 }
 .summary-item {
     margin-bottom: 1.5em;
@@ -794,14 +822,14 @@ footer p a:hover {
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
 
-.city-sf {
-    background: url(../work/travel/sf1.jpg) center / cover no-repeat;
+.city-sanfrancisco {
+    background: url(../work/travel/webpics/sanfran12.jpg) center / cover no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
 
-.city-sendai {
-    background: url(../work/travel/sendai1.jpg) center / cover no-repeat;
+.city-dc {
+    background: url(../work/travel/webpics/washdc6.JPG) center / cover no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
@@ -811,7 +839,7 @@ footer p a:hover {
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
 .city-venice {
-    background: url(../work/travel/venice1.jpg) center / cover no-repeat;
+    background: url(../work/travel/webpics/italy3.jpeg) center / cover no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
@@ -931,7 +959,26 @@ footer p a:hover {
   margin-left: 0;
   margin-right: 500px;
 }
+/* CS 3113 */
 
+.cs3113-title{
+    color: #d3ab26;
+    margin-bottom: 1.5vw;
+}
+
+.cs3113-link{
+    color: #d3ab26;
+}
+/* DM 2133 */
+
+.dm2133-title{
+    color: #cca3e4;
+    margin-bottom: 1.5vw;
+}
+
+.dm2133-link{
+    color: #cca3e4;
+}
 /* CVT */
 .cvt-title {
     /*background: linear-gradient(135deg, #B2B2B2 0%, #666666 10%, #222222 10%);*/
@@ -1177,12 +1224,24 @@ footer p a:hover {
     width: 100%;
     text-align: left;
     border: none;
+    transition: 0.4s;
+  }
 
+  .accordion-game {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
     transition: 0.4s;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  
+  .game-panels{
+      column-count: 2;
+      column-width: 50%;
+  }
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
@@ -1198,10 +1257,21 @@ footer p a:hover {
     margin-left: 0px;
     
   }
-  
+  .accordion-game:after {
+    content: '\02C3'; /* Unicode character for right arrow (>) */
+    float: left;
+    font-size: 30px;
+    margin-left: 0px;
+    color:#d3ab26;
+    
+  }
   .active:after {
     content: "\02C5"; /* Unicode character for down arrow  */
   }
+  .active-game:after {
+    content: "\02C5"; /* Unicode character for down arrow  */
+  }
+
 
   #podcast-title{
     display: inline-block;
@@ -1209,7 +1279,11 @@ footer p a:hover {
     margin-left: 15px;
   }
   
-
+  #course-title{
+    display: inline-block;
+    margin: 0;
+    margin-left: 15px;
+  }
 
   .menu-btn {
     padding: 16px;
