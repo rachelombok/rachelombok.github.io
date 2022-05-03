@@ -786,6 +786,11 @@ footer p a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
+.city-dr {
+    background: url(../work/travel/webpics/dr5.jpg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
 .city-beijing {
     background: url(../work/travel/webpics/beijing3.jpeg) center / cover no-repeat;
     -webkit-background-clip: text;
