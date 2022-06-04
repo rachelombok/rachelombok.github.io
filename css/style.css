@@ -964,6 +964,16 @@ footer p a:hover {
   margin-left: 0;
   margin-right: 500px;
 }
+/* CS 4553 */
+
+.cs4553-title{
+    color: #a13517;
+    margin-bottom: 1.5vw;
+}
+
+.cs4553-link{
+    color: #a13517;
+}
 /* CS 3113 */
 
 .cs3113-title{
