@@ -1049,6 +1049,10 @@ footer p a:hover {
 .twitter-link{
     color: #08a0e9;
 }
+
+.trifacta-link{
+    color:rgb(17, 63, 181)
+}
 /* HUZTLE */
 .huztle-pic{
     width: 400px;
