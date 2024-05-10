@@ -1,0 +1,46 @@
+.site-background {
+    background-color: white;
+}
+
+.canvas {
+    position: relative;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+}
+
+.tier-one-bubble {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: 3.0s ease-in-out infinite infinite-bob;
+}
+
+.project-bubble-name {
+    margin: 10px auto auto auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 100px;
+    height: 100px; 
+    margin-top: 15%;
+}
+
+@keyframes infinite-bob {
+    0% {
+        transform:translateY(5%)
+    }
+    50% {
+        transform:translateY(2.5%)
+    }
+    100% {
+        transform:translateY(5%)
+    }
+}
