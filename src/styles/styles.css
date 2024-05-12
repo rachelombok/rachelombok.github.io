@@ -1,5 +1,5 @@
 .site-background {
-    background-color: white;
+    background-color: black;
 }
 
 .canvas {
@@ -18,6 +18,7 @@
     border-radius: 50%;
     text-align: center;
     justify-content: center;
+    
     align-items: center;
     animation: 3.0s ease-in-out infinite infinite-bob;
     &:hover {
@@ -25,6 +26,14 @@
         -webkit-animation-play-state:paused;
   -moz-animation-play-state:paused;
   -o-animation-play-state:paused;
+        p {
+            opacity: 1;
+            transform: translateY(-70px);
+        }
+        img {
+            max-height: 150px;
+            transform: translateY(-45px);
+        }
     }
 }
 
@@ -51,24 +60,38 @@
     transform: scale(1);
     text-decoration: none;
     position: relative;
-
 }
 
 .project-bubble-name {
     margin: 10px auto auto auto;
     font-size: 30px;
     font-weight: bold;
-    
+    opacity: 0;
+    transition: .5s;
 }
 
 .icon {
-    height: 40%; 
-    margin-top: 10%;
+    max-height: 170px; 
+    max-width: 280px;
+    margin-top: 25%;
+    margin-bottom: 25px;
+    transition: .5s;
 }
 
 .tagline{
     text-align: center;
     margin: 4px 15% auto 15%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.project-details {
+    transition: .5s;
+    display: none;
+    transform: translateY(200px);
+}
+
+.project-details:hover {
 }
 
 @keyframes infinite-bob {
