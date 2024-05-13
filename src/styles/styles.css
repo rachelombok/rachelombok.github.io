@@ -3,7 +3,6 @@
 }
 
 .canvas {
-    position: relative;
     display: flex;
         justify-content: center;
         align-items: center;
@@ -75,6 +74,7 @@
     max-width: 280px;
     margin-top: 25%;
     margin-bottom: 25px;
+    display: inline-flex;
     transition: .5s;
 }
 
