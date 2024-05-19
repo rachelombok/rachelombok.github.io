@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
 import { Navigation } from "./Navigation";
+import { Footer } from "./Footer";
 
 export default function SiteLayout() {
     return (
@@ -8,6 +9,7 @@ export default function SiteLayout() {
             <main>                
                 <Outlet />
             </main>
+            <Footer/>
         </>
     )
 }

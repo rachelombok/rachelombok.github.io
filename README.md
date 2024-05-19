@@ -3,7 +3,7 @@
 * [x] hover the circle component
 * [ ] create blank canvas w scroll
 * [ ] fill out bubble info file for tier 1 bubbles
-* [ ] finish Nav links titles & menu
+* [x] finish Nav links titles & menu
 * [ ] fill out all future path constants
 * [ ] make a theme toggler button
 * [ ] made w love by rachel
@@ -13,19 +13,19 @@
 * [ ] lazy load images on bubbles, skeleton for images (?)
 * [ ] create ProjectPage site header
 * [ ] create ProjectPage site details / description component
-* [ ] pages directory for all website pages
+* [x] pages directory for all website pages
 * [ ] create 'bring page back up' button
 * [ ] create 'back' page button
-* [ ] 
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
+* [ ] pagination page for projects (?)
+* [ ] pagination page for courses (?)
+* [ ] change font on site
+* [ ] replace some bubble pictures with daisyUI icons
+* [ ] make fonts and colors accessible
+* [ ] organize images in folders
 * [ ] slider to toggle bubbles view
-* [ ] make list of all projects to use/create (gwc)
+* [ ] make list of all projects to use/create
 * [ ] optimize site as much as possible for loading
-* [ ] make a speaking engagemenst list / brag doc
+* [ ] make a speaking engagemenst list / brag doc, on resume page
 * [ ] add alt descriptions to all images
 * [ ] contact section under about
 * [ ] click to view email
@@ -48,8 +48,8 @@
 * [ ] add skeletons for all paragraphs
 * [ ] animated emojis (?)
 * [ ] awards / recognition section
-* [ ]
-* [ ]
+* [ ] delete default react resources/assets
+* [ ] site navigation should be sticky and stay at the top
 * [ ]
 * [ ]
 * [ ]

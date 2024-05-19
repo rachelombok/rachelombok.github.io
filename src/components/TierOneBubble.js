@@ -2,8 +2,8 @@ import React from "react";
 
 export const TierOneBubble = ({ project }) => {
   const bubbleLinkStyles = {
-    top: project.canvasPosition[0],
-    left: project.canvasPosition[1],
+    top: project.canvasPosition[1],
+    left: project.canvasPosition[0],
   };
 
   const tierOneBubbleStyles = { background: project.bgColor, color: project.textColor, };
