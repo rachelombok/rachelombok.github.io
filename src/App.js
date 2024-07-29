@@ -7,6 +7,7 @@ import {
 import { Canvas } from './components/Canvas';
 import { pathConstants } from './fileinfo/pathConstants';
 import SiteLayout from './components/SiteLayout';
+import AboutPage  from './pages/About';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -24,7 +25,7 @@ function App() {
         // other pages....
         {
           path: pathConstants.ABOUT,
-          element: <div>Hello world!</div>,
+          element: <AboutPage/>,
         },
       ],
     },

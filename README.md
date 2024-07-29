@@ -50,9 +50,9 @@
 * [ ] awards / recognition section
 * [ ] delete default react resources/assets
 * [ ] site navigation should be sticky and stay at the top
-* [ ]
-* [ ]
-* [ ]
+* [ ] add dynamic font size adjustments
+* [ ] remove hover pill shape from name site header
+* [ ] make a transition for text headers to appear when loading a page
 * [ ]
 * [ ]
 * [ ]

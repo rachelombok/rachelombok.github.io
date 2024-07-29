@@ -3,12 +3,12 @@ import { Navbar, Button, Menu } from "react-daisyui";
 export const Navigation = () => {
 
     return(
-<Navbar >
+<Navbar className='px-28 pt-12 pb-20'>
 <div className="flex-1">
-    <a className="btn btn-ghost text-4xl">rachel ombok</a>
+    <a className="btn btn-ghost text-5xl">rachel ombok</a>
   </div>
   <div className="flex-none">
-    <ul className="menu menu-horizontal px-1 text-xl">
+    <ul className="menu menu-horizontal px-1 text-2xl">
       <li><a>Work</a></li>
       <li><a>About</a></li>
       <li><a>Resume</a></li>

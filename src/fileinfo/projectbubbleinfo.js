@@ -12,7 +12,7 @@ export const projectBubbleInfo = [
         bgColor: '#50c839',
         icon: sulsulsimsimLogo,
         linkPath: '',
-        canvasPosition: ['1600px', '650px'],
+        canvasPosition: ['80%', '650px'],
         textColor: 'white',
         tier: 1
     },
@@ -22,7 +22,7 @@ export const projectBubbleInfo = [
         bgColor: '#7d1f1f',
         icon: handyMapLogo,
         linkPath: '',
-        canvasPosition: ['1400px', '250px'],
+        canvasPosition: ['65%', '250px'],
         textColor: 'white',
         tier: 1
     },
@@ -32,7 +32,7 @@ export const projectBubbleInfo = [
         bgColor: 'linear-gradient(#1215a8, #a30084)',
         icon: justShootLogo,
         linkPath: '',
-        canvasPosition: ['-250px', '250px'],
+        canvasPosition: ['10%', '50%'],
         textColor: 'white',
         tier: 1
     },
