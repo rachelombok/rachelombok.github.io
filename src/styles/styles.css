@@ -9,6 +9,10 @@
         min-width: 100vw;
         min-height: 90vh;
         border: 5px solid red;
+        overflow: scroll;
+        scroll-padding: "100px 0 0 100px";
+    -ms-overflow-style: "none";
+    scrollbar-width: "none";
 }
 
 .tier-one-bubble {
@@ -63,7 +67,7 @@
     transition: all .5s ease-in-out;
     transform: scale(1);
     text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 
 .project-bubble-name {
@@ -96,9 +100,22 @@
     transform: translateY(200px);
 }
 
+.justshoot-description-img {
+    border-radius: 10%; 
+    width: 400px; 
+    margin-left: 120px;
+}
+
+.justshoot-title{
+    background: linear-gradient(#1215a8, #a30084);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5vw;
+}
+
 /* PAGE */
 .page-container {
-    margin: auto 10px auto 10%;
+    margin: auto 10px 50px 10%;
 }
 
 .page-title {
@@ -106,9 +123,14 @@
     flex-direction: row;
     font-size: 32px;
     margin-bottom: 50px;
+    height: fit-content;
     * {
         margin-bottom: 5px;
     }
+}
+
+.c12 {
+    grid-column: 2 /12;
 }
 
 .c15 {
@@ -136,12 +158,12 @@
     border-radius: 100em;
 }
 
+
+
 .scrollable-area{
     position: "relative";
     top: "0";
     left: "0";
-    height: "100%";
-    width: "100%";
     overflow: "scroll";
     scroll-padding: "100px 0 0 100px";
     -ms-overflow-style: "none";
@@ -154,6 +176,116 @@
 .content-mobile {
     display: inherit;
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 15%;
+    right: 4.5em;
+    z-index: 99;
+    width: 2em;
+    height:2em;
+    cursor: pointer;
+    outline: none !important;
+    background: url(../images/icons/chevron-up.svg) center / contain no-repeat;
+    opacity: 0.45;
+    transition: 0.28s;
+}
+.scroll-to-top:hover {
+    opacity: 1;
+    transition: 0.28s;
+}
+.scroll-to-top.no-display {
+    opacity: 0;
+}
+
+.goBack {
+    position: fixed;
+    bottom: 15%;
+    left: 4em;
+    z-index: 99;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    outline: none !important;
+    background: url(../images/icons/chevron-left.svg) center / contain no-repeat;
+    opacity: 0.45;
+    transition: 0.28s;
+}
+.goBack:hover {
+    opacity: 1;
+    transition: 0.28s;
+}
+.goBack.no-display {
+    opacity: 0;
+}
+
+.email-link {
+    text-decoration: underline;
+    transition: 0.28s;
+}
+
+.email-link:hover {
+    text-decoration: none;
+    transition: 0.28s;
+    text-shadow:1px 1px 3px #bbbbbb, 1px 1px 3px #c5c5c5;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+.summary-item {
+    margin-bottom: 1.5em;
+}
+.summary-section {
+    width: 100%;
+}
+.subtitle {
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.description-text {
+    font-size: 30px;
+    margin: 0 auto 0 auto;
+}
+
+.justshoot-link{
+    background: linear-gradient( rgba(18,21,168,1) 0%, rgba(163,0,232,1) 100%);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5vw; 
+    transition: 0.28s;
+}
+
+.justshoot-link:hover{
+    opacity: 0.6;
+    transition: 0.28s;
+
+}
+
+.btn-ghost:hover {
+    background-color: initial;
+}
+
+.site-title{
+    display: inline-block;
+}
+.site-title:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: currentColor;
+    transition: 400ms;
+}
+
+.site-title:hover:after {
+    width: 100%;
+}
+
 @media screen and (min-width: 550px) {
     /* GLOBAL */
     .content-web {
@@ -161,6 +293,40 @@
     }
     .content-mobile {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /* GLOBAL */
+    .content-web {
+        display: inline;
+    }
+    
+    /* HEADER */
+    .selected {
+        font-weight: 500;
+        color: var(--black);
+    }
+    .emoji {
+        margin-right: 1.5vw;
+    }
+    
+    /* SUMMARY */
+    .summary {
+        grid-template-columns: 50% 50%;
+    }
+    
+    /* BACK, FORWARD, SCROLL TO TOP */
+    .back, .forward, .scroll-to-top {
+        bottom: 11%;
+    }
+    
+    /* ABOUT */
+    .avi {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 30em;
+        width: 30em;
     }
 }
 

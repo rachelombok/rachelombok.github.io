@@ -1,9 +1,11 @@
-import sulsulsimsimLogo from '../images/plumbob1.svg';
-import handyMapLogo from '../images/handymaplogo.png';
-import justShootLogo from '../images/digcamtrans.png';
-import covideasLogo from '../images/COVIDforecasts-logo-white-2.png';
-import ultraHacksLogo from '../images/twitterlogo.png';
-import rdsLogo from '../images/rcclogo.png';
+import sulsulsimsimLogo from '../images/sulsulsimsim/plumbob1.svg';
+import handyMapLogo from '../images/handymap/handymaplogo.png';
+import justShootLogo from '../images/justshoot/digcamtrans.png';
+import covideasLogo from '../images/covidforecasts/COVIDforecasts-logo-white-2.png';
+import ultraHacksLogo from '../images/twitter/twitterlogo.png';
+import rdsLogo from '../images/rds/rcclogo.png';
+
+import { pathConstants } from './pathConstants';
 
 export const projectBubbleInfo = [
     {
@@ -12,7 +14,7 @@ export const projectBubbleInfo = [
         bgColor: '#50c839',
         icon: sulsulsimsimLogo,
         linkPath: '',
-        canvasPosition: ['80%', '650px'],
+        canvasPosition: ['1100px', '300px'],
         textColor: 'white',
         tier: 1
     },
@@ -22,7 +24,7 @@ export const projectBubbleInfo = [
         bgColor: '#7d1f1f',
         icon: handyMapLogo,
         linkPath: '',
-        canvasPosition: ['65%', '250px'],
+        canvasPosition: ['1200px', '-190px'],
         textColor: 'white',
         tier: 1
     },
@@ -31,8 +33,8 @@ export const projectBubbleInfo = [
         tagline: 'Improving community for photographers everywhere.',
         bgColor: 'linear-gradient(#1215a8, #a30084)',
         icon: justShootLogo,
-        linkPath: '',
-        canvasPosition: ['10%', '50%'],
+        linkPath: pathConstants.JUSTSHOOT,
+        canvasPosition: ['-500px', '100px'],
         textColor: 'white',
         tier: 1
     },
@@ -42,7 +44,7 @@ export const projectBubbleInfo = [
         bgColor: '#000',
         icon: covideasLogo,
         linkPath: '',
-        canvasPosition: ['-50px', '850px'],
+        canvasPosition: ['-650px', '750px'],
         textColor: 'white',
         tier: 2
     },
@@ -52,7 +54,7 @@ export const projectBubbleInfo = [
         bgColor: '#c621a0',
         icon: ultraHacksLogo,
         linkPath: '',
-        canvasPosition: ['-20px', '520px'],
+        canvasPosition: ['600px', '300px'],
         textColor: 'white',
         tier: 3
     },
@@ -62,7 +64,7 @@ export const projectBubbleInfo = [
         bgColor: '#242424',
         icon: rdsLogo,
         linkPath: '',
-        canvasPosition: ['-60px', '429px'],
+        canvasPosition: ['-1000px', '-380px'],
         textColor: 'white',
         tier: 1
     },

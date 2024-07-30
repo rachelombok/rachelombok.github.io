@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom"
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
+import ScrollToTop from "./ScrollToTop";
+import GoBack from "./GoBack";
 
 export default function SiteLayout() {
     return (
@@ -9,6 +11,8 @@ export default function SiteLayout() {
             <main>                
                 <Outlet />
             </main>
+            <ScrollToTop/>
+            <GoBack/>
             <Footer/>
         </>
     )

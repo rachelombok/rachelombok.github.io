@@ -8,6 +8,8 @@ import { Canvas } from './components/Canvas';
 import { pathConstants } from './fileinfo/pathConstants';
 import SiteLayout from './components/SiteLayout';
 import AboutPage  from './pages/About';
+import NotFoundPage from './pages/404NotFoundError';
+import JustShootPage from './pages/JustShoot';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -16,7 +18,7 @@ function App() {
       // parent route component
       element: <SiteLayout />,
       // child route components
-      errorElement: <p>oops</p>,
+      errorElement: <NotFoundPage/>,
       children: [
         {
           path: pathConstants.MAIN,
@@ -26,6 +28,10 @@ function App() {
         {
           path: pathConstants.ABOUT,
           element: <AboutPage/>,
+        },
+        {
+          path: pathConstants.JUSTSHOOT,
+          element: <JustShootPage/>,
         },
       ],
     },

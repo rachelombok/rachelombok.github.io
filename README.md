@@ -1,34 +1,36 @@
 * [x] create blank background
 * [x] create a main circle component
 * [x] hover the circle component
-* [ ] create blank canvas w scroll
-* [ ] fill out bubble info file for tier 1 bubbles
+* [x] create blank canvas w scroll
+* [x] fill out bubble info file for tier 1 bubbles
 * [x] finish Nav links titles & menu
-* [ ] fill out all future path constants
-* [ ] make a theme toggler button
-* [ ] made w love by rachel
-* [ ] create a footer component
-* [ ] create an error screen component
+* [x] fill out all future path constants
+* [x] make a theme toggler button
+* [x] made w love by rachel
+* [x] create a footer component
+* [x] create an error screen component
 * [ ] create a loading screen component
 * [ ] lazy load images on bubbles, skeleton for images (?)
-* [ ] create ProjectPage site header
-* [ ] create ProjectPage site details / description component
+* [x] create ProjectPage site header
+* [x] create ProjectPage site details / description component
 * [x] pages directory for all website pages
-* [ ] create 'bring page back up' button
-* [ ] create 'back' page button
+* [x] create 'bring page back up' button
+* [x] create 'back' page button
 * [ ] pagination page for projects (?)
 * [ ] pagination page for courses (?)
-* [ ] change font on site
+* [x] change font on site
 * [ ] replace some bubble pictures with daisyUI icons
-* [ ] make fonts and colors accessible
-* [ ] organize images in folders
+* [x] make fonts and colors accessible
+* [x] organize images in folders
 * [ ] slider to toggle bubbles view
 * [ ] make list of all projects to use/create
+    * [ ] explore csr
+    * [ ] gwc
 * [ ] optimize site as much as possible for loading
 * [ ] make a speaking engagemenst list / brag doc, on resume page
 * [ ] add alt descriptions to all images
 * [ ] contact section under about
-* [ ] click to view email
+* [❌] click to view email
 * [ ] speaking opportunities list
 * [ ] rewrite biography
 * [ ] new about picture
@@ -49,28 +51,28 @@
 * [ ] animated emojis (?)
 * [ ] awards / recognition section
 * [ ] delete default react resources/assets
-* [ ] site navigation should be sticky and stay at the top
+* [❌] site navigation should be sticky and stay at the top
 * [ ] add dynamic font size adjustments
-* [ ] remove hover pill shape from name site header
+* [x] remove hover pill shape from name site header
 * [ ] make a transition for text headers to appear when loading a page
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
+* [ ] move theme toggler button to bottom footer (?)
+* [ ] add emoji icons to theme toggler
+* [ ] make canvas a bit smaller so you can see footer at bottom
+* [ ] change red canvas border color to theme dependent color
+* [ ] add gif and theme appropriate bg to 404 page
+* [ ] figure out why bubbles dont have text on canvas in safari
+* [ ] compare fonts/images to old site, consider making them larger
+* [ ] link navigation tabs to pages
+* [ ] create Tier 2 bubbles
+* [ ] create Tier 3 bubbles
+* [ ] on tier 1 bubbles, add an image preview on hover
+* [ ] add 'scroll to explore' msg on canvas 
+* [ ] fix styles on About page
+* [ ] replace the pink effect icon
+* [ ] fade in page header + description with framer-motion fade up
+* [ ] make all pages transition w react framer motion
+* [ ] make Resume page
+* [ ] make Travel page
 * [ ]
 * [ ]
 * [ ]

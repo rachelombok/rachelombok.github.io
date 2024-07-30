@@ -2,6 +2,7 @@ import React from 'react';
 import { PageContainerOutline } from '../components/PageContainerOutline';
 import { PageHeader } from '../components/PageHeader';
 import roavi from '../images/about/ro-avi-1.jpg';
+import ScrollToTop from '../components/ScrollToTop';
 
 export default function AboutPage() {
 
@@ -33,7 +34,9 @@ at Brown University in their <a href="https://explorecsr.cs.brown.edu/ai/index.h
 </p>
 </div> 
 <img src={roavi} className='avi'/>
+
             </div>
+            
                
         </PageContainerOutline>
     );

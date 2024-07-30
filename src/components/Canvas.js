@@ -6,15 +6,13 @@ export const Canvas = () => {
     return(
       <div className='site-background'>
         <div className='canvas'>
-          <div className='container'>
+        {/* <div className='container'>  container css was here */}
 
          
-          <div className='scrollable-area'>
             {projectBubbleInfo.map((project) => {
                 return <TierOneBubble project={project}/>
             })}
-            </div>
-            </div>
+          {/*  </div>*/}
         </div>
 
       </div>
