@@ -10,6 +10,7 @@ import SiteLayout from './components/SiteLayout';
 import AboutPage  from './pages/About';
 import NotFoundPage from './pages/404NotFoundError';
 import JustShootPage from './pages/JustShoot';
+import ResumePage from './pages/Resume';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -32,6 +33,10 @@ function App() {
         {
           path: pathConstants.JUSTSHOOT,
           element: <JustShootPage/>,
+        },
+        {
+          path: pathConstants.RESUME,
+          element: <ResumePage/>,
         },
       ],
     },

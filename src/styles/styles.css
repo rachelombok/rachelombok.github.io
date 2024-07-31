@@ -227,7 +227,7 @@
 
 /* PAGE */
 .page-container {
-    margin: auto 10px 50px 10%;
+    margin: auto 10% 50px 10%;
 }
 
 .page-title {
@@ -236,6 +236,7 @@
     font-size: 32px;
     margin-bottom: 50px;
     height: fit-content;
+    max-width: 90%;
     * {
         margin-bottom: 5px;
     }
@@ -364,6 +365,13 @@
     margin: 0 auto 0 auto;
 }
 
+.project-heading {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+
 .justshoot-link{
     background: linear-gradient( rgba(18,21,168,1) 0%, rgba(163,0,232,1) 100%);  
     -webkit-background-clip: text;
@@ -376,6 +384,10 @@
     opacity: 0.6;
     transition: 0.28s;
 
+}
+.divider {
+    border-top: 1px solid var(--gray-01);
+    margin-bottom: 3em;
 }
 
 .btn-ghost:hover {
@@ -398,6 +410,73 @@
     width: 100%;
 }
 
+.resume-description {
+    margin-bottom: 3em;
+}
+
+.nyu{
+    color: #51158c;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:hover{
+    opacity: 0.6;
+    transition: 0.28s;
+}
+.medium {
+    font-weight: 500;
+}
+
+.dm2133{
+    color: #cca3e4;
+}
+.cs3113{
+    color: #d3ab26;
+}
+
+.cs4553{
+    color: #a13517;
+}
+.covideas{
+    color: #000000;
+}
+.griptape {
+    color: #f2841c;
+}
+.sulsulsimsim {
+    color: #50c839;
+}
+.rds {
+    color: #000000;
+}
+.handymap {
+    color: #7d1f1f;
+}
+.twitter{
+    color: #08a0e9;
+}
+.huztle{
+    color: #f894a2;
+}
+.explorecsr {
+    color: #4E3629;
+}
+.justshoot{
+    background: linear-gradient( rgba(18,21,168,1) 0%, rgba(163,0,232,1) 100%);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.alteryx{
+    color:rgb(17, 63, 181)
+}
+.site-page {
+    p, li {
+        font-size: calc(10px + 6 * ((100vw - 320px) / (680)));
+    }
+}
 @media screen and (min-width: 550px) {
     /* GLOBAL */
     .content-web {
@@ -452,5 +531,46 @@
     }
     100% {
         transform:translateY(5%)
+    }
+}
+
+@media screen and (min-width: 450px) {
+    h1 {
+        font-size: calc(36px + 36* ((100vw - 320px) / 680));
+    }
+    h2 {
+        font-size: calc(30px + 30 * ((100vw - 320px) / (680)));
+    }
+    h3 {
+        font-size: calc(18px + 18 * ((100vw - 320px) / (680)));
+    }
+    h4 {
+        font-size: calc(18px + 6 * ((100vw - 320px) / (680)));
+    }
+    h5 {
+        font-size: calc(16px + 4 * ((100vw - 320px) / (680)));
+    }
+    h6 {
+        font-size: calc(14px + 2 * ((100vw - 320px) / (680)));
+    }
+}
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 50px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 16px;
     }
 }

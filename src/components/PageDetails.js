@@ -2,6 +2,7 @@ import React from "react";
 
 export const PageDetails = (props) => {
   return (
+    <>
     <div className="c12">
       <div className="summary">
         <div class="summary-section">
@@ -25,5 +26,9 @@ export const PageDetails = (props) => {
         <img src={props.icon} className={`${props.id}-description-img`}/>
       </div>
     </div>
+    <div className="divider neutral-content">
+
+    </div>
+    </>
   );
 };

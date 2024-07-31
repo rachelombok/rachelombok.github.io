@@ -32,7 +32,7 @@
 * [ ] contact section under about
 * [❌] click to view email
 * [ ] speaking opportunities list
-* [ ] rewrite biography
+* [x] rewrite biography
 * [ ] new about picture
 * [ ] change about picture depending on theme
 * [ ] change bubbles view depending on theme
@@ -41,18 +41,18 @@
 * [ ] add Santa Clara to travel
 * [ ] pagination for travel
 * [ ] disable portfolio site for now, tooltip about WIP
-* [ ] new icon for website
-* [ ] click here to download my resume
+* [x] new icon for website
+* [x] click here to download my resume
 * [ ] make site accessible as possible
 * [ ] change HTML React defaults
-* [ ] change favicon w new icon
+* [x] change favicon w new icon
 * [ ] make all photos transition in w lazy loading
 * [ ] add skeletons for all paragraphs
 * [ ] animated emojis (?)
-* [ ] awards / recognition section
+* [x] awards / recognition section
 * [ ] delete default react resources/assets
 * [❌] site navigation should be sticky and stay at the top
-* [ ] add dynamic font size adjustments
+* [x] add dynamic font size adjustments
 * [x] remove hover pill shape from name site header
 * [ ] make a transition for text headers to appear when loading a page
 * [ ] move theme toggler button to bottom footer (?)
@@ -71,7 +71,7 @@
 * [ ] replace the pink effect icon
 * [ ] fade in page header + description with framer-motion fade up
 * [ ] make all pages transition w react framer motion
-* [ ] make Resume page
+* [x] make Resume page
 * [ ] make Travel page
 * [ ] make imports/exports cleaner
 * [ ] bold nav tab when selected
@@ -79,7 +79,7 @@
 * [ ] remove scroll from canvas
 * [ ] once bubble icon is added, fix pink effect icon
 * [ ] in ref to above, replace covid forecasts bubble icon w better cropped image
-* [ ]
+* [x] fill out resume page
 * [ ]
 * [ ]
 * [ ]
