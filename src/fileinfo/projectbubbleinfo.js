@@ -7,6 +7,38 @@ import rdsLogo from '../images/rds/rcclogo.png';
 
 import { pathConstants } from './pathConstants';
 
+const pinkEffectIcon = <>
+ <div class="hvr-float">
+                <div class="blackpink-soundwaves-container">
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-1"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-3"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-5"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-3"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-4"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-2"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-4"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-6"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-5"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-2"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-3"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-5"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-1"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-2"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-5"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-3"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-4"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-3"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-4"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-3"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-7"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-3"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-5"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-4"></div>
+                  <div class="hvr-bounce-in bp-soundwaves bp-soundwaves-1"></div>
+                </div>
+              </div>
+</>;
+
 export const projectBubbleInfo = [
     {
         title: 'SulSul! SimSim!',
@@ -72,10 +104,11 @@ export const projectBubbleInfo = [
         title: 'The Pink Effect',
         tagline: "Behind BLACKPINK's popularity in the K-Pop scene.",
         bgColor: '#ff99c5',
-        icon: rdsLogo,
+        icon: null,
+        elementIcon: pinkEffectIcon,
         linkPath: '',
         canvasPosition: ['-252px', '850px'],
         textColor: 'black',
-        tier: 3
+        tier: 2
     },
 ];

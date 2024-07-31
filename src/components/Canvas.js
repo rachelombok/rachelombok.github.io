@@ -1,5 +1,7 @@
 import React from 'react';
 import { TierOneBubble } from './TierOneBubble';
+import { TierTwoBubble } from './TierTwoBubble';
+import { TierThreeBubble } from './TierThreeBubble';
 import { projectBubbleInfo } from '../fileinfo/projectbubbleinfo';
 
 export const Canvas = () => {
@@ -10,7 +12,15 @@ export const Canvas = () => {
 
          
             {projectBubbleInfo.map((project) => {
+              if (project.tier == 1){
                 return <TierOneBubble project={project}/>
+              }
+              else if(project.tier == 2){
+                return <TierTwoBubble project={project}/>
+              }
+              else if(project.tier == 3){
+                return <TierThreeBubble project={project}/>
+              }
             })}
           {/*  </div>*/}
         </div>

@@ -1,5 +1,5 @@
 .site-background {
-    background-color: black;
+    background-color: white;
 }
 
 .canvas {
@@ -39,6 +39,62 @@
     }
 }
 
+.tier-two-bubble {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: 3.0s ease-in-out infinite infinite-bob;
+    display: flex;
+    &:hover {
+        animation-play-state:paused;
+        -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+        p {
+            opacity: 1;
+            transform: translateX(160px);
+        }
+        img { 
+            opacity: 0;
+            transform: translateX(95px);
+        }
+    }
+}
+
+.tier-three-bubble-link{
+    position: relative;
+}
+
+.tier-three-bubble {
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    animation: 3.0s ease-in-out infinite infinite-bob;
+    transition: width 1s;
+    display: flex;
+    &:hover {
+        animation-play-state:paused;
+        -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  min-width: max-content;
+        p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        img {
+            max-height: 100px;
+            transform: translateY(-5px);
+        }
+    }
+}
+
 .container {
     position: "relative";
     width: "100%";
@@ -70,6 +126,13 @@
     position: relative;
 }
 
+.tier-two-bubble-link {
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    text-decoration: none;
+    position: relative;
+}
+
 .project-bubble-name {
     margin: 10px auto auto auto;
     font-size: 30px;
@@ -77,6 +140,25 @@
     opacity: 0;
     transition: .5s;
 }
+
+.tier-two-project-bubble-name {
+   /* margin: auto 10px auto auto;*/ 
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.tier-three-project-bubble-name {
+    /* margin: auto 10px auto auto;*/ 
+     font-size: 25px;
+     font-weight: bold;
+     opacity: 0;
+     transition: .9s;
+     margin-right: 20px;
+     min-width: fit-content;
+ }
 
 .icon {
     max-height: 170px; 
@@ -87,11 +169,41 @@
     transition: .5s;
 }
 
+.tier-two-icon {
+    max-height: 100px; 
+    max-width: 230px;
+    margin-top: 15%;
+    margin-bottom: 20px;
+    margin-right: 220px;
+    display: inline-flex;
+    transition: .5s;
+}
+
+.tier-two-description {
+    min-width: 190px;
+}
+
 .tagline{
     text-align: center;
     margin: 4px 15% auto 15%;
     opacity: 0;
     transition: .5s;
+}
+
+.tier-two-tagline{
+    text-align: center;
+    /*margin: 4px 15% auto 15%;*/
+    opacity: 0;
+    transition: .5s;
+}
+
+.tier-three-icon {
+    max-height: 45px; 
+    max-width: 45px;
+    display: inline-flex;
+    transition: .5s;
+    margin: 20px auto auto 20px;
+    padding-right: 13px;
 }
 
 .project-details {

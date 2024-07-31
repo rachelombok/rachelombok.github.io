@@ -73,12 +73,12 @@
 * [ ] make all pages transition w react framer motion
 * [ ] make Resume page
 * [ ] make Travel page
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
+* [ ] make imports/exports cleaner
+* [ ] bold nav tab when selected
+* [ ] get transparent bp logo
+* [ ] remove scroll from canvas
+* [ ] once bubble icon is added, fix pink effect icon
+* [ ] in ref to above, replace covid forecasts bubble icon w better cropped image
 * [ ]
 * [ ]
 * [ ]

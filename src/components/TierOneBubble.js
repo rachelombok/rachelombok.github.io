@@ -10,8 +10,8 @@ export const TierOneBubble = ({ project }) => {
   const tierOneBubbleStyles = { background: project.bgColor, color: project.textColor, };
 
   return (
-    <Link to={project.linkPath}>
-    <a  className="bubble-link" style={bubbleLinkStyles}>
+    <Link to={project.linkPath} className="bubble-link" style={bubbleLinkStyles}>
+   
       <div
         className="tier-one-bubble"
         style={tierOneBubbleStyles}
@@ -20,7 +20,7 @@ export const TierOneBubble = ({ project }) => {
         <p className="project-bubble-name">{project.title}</p>
           <p className="tagline">{project.tagline}</p>
       </div>
-    </a>
+   
     </Link>
   );
 };

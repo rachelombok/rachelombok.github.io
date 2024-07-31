@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../styles/hover.css';
 
 export const TierTwoBubble = ({ project }) => {
   const bubbleLinkStyles = {
@@ -10,17 +11,18 @@ export const TierTwoBubble = ({ project }) => {
   const tierTwoBubbleStyles = { background: project.bgColor, color: project.textColor, };
 
   return (
-    <Link to={project.linkPath}>
-    <a  className="bubble-link" style={bubbleLinkStyles}>
+    <Link to={project.linkPath} className="tier-two-bubble-link" style={bubbleLinkStyles}>
       <div
         className="tier-two-bubble"
         style={tierTwoBubbleStyles}
       >
-        <img alt="project icon" src={project.icon} class="icon"/>
-        <p className="project-bubble-name">{project.title}</p>
-          <p className="tagline">{project.tagline}</p>
-      </div>
-    </a>
+        <div className="tier-two-description">
+        <p className="tier-two-project-bubble-name">{project.title}</p>
+          <p className="tier-two-tagline">{project.tagline}</p>
+          </div>
+        <img alt="project icon" src={project.icon} className="tier-two-icon"/> 
+        </div>
+        
     </Link>
   );
 };
