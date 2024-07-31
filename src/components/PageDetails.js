@@ -17,6 +17,13 @@ export const PageDetails = (props) => {
             <p className='description-text'>{props.roles}</p>
           </div>
 
+          {props.team ? 
+          <div className="section summary-item">
+          <h5 className="subtitle">Team</h5>
+          <p className='description-text'>{props.team}</p>
+        </div>
+          : ''}
+
           <div className="section summary-item">
             <h5 className="subtitle">Timeline</h5>
             <p className='description-text'>{props.timeline}</p>

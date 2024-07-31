@@ -3,7 +3,7 @@ export const pathConstants = {
     ABOUT: '/about',
     RESUME: '/resume',
     TRAVEL: '/travel',
-    SULSULSIMSIM: '',
+    SULSULSIMSIM: '/sulsulsimsim',
     HANDYMAP: '/handymap',
     JUSTSHOOT: '/justshoot',
     RDS: '/rds',

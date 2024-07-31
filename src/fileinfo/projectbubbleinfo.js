@@ -45,7 +45,7 @@ export const projectBubbleInfo = [
         tagline: 'Understanding how to play with life.',
         bgColor: '#50c839',
         icon: sulsulsimsimLogo,
-        linkPath: '',
+        linkPath: '/sulsulsimsim',
         canvasPosition: ['1100px', '300px'],
         textColor: 'white',
         tier: 1

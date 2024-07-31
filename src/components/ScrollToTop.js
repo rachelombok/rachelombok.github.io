@@ -5,7 +5,6 @@ const ScrollToTop = (props) => {
   
   const toggleVisible = () => { 
     const scrolled = document.documentElement.scrollTop; 
-    console.log('toggle')
     if (scrolled > 300){ 
       setVisible(true) 
     }  

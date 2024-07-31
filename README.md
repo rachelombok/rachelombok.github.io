@@ -63,8 +63,8 @@
 * [ ] figure out why bubbles dont have text on canvas in safari
 * [ ] compare fonts/images to old site, consider making them larger
 * [ ] link navigation tabs to pages
-* [ ] create Tier 2 bubbles
-* [ ] create Tier 3 bubbles
+* [x] create Tier 2 bubbles
+* [x] create Tier 3 bubbles
 * [ ] on tier 1 bubbles, add an image preview on hover
 * [ ] add 'scroll to explore' msg on canvas 
 * [ ] fix styles on About page
@@ -80,7 +80,7 @@
 * [ ] once bubble icon is added, fix pink effect icon
 * [ ] in ref to above, replace covid forecasts bubble icon w better cropped image
 * [x] fill out resume page
-* [ ]
+* [ ] update justshoot timeline on resume
 * [ ]
 * [ ]
 * [ ]

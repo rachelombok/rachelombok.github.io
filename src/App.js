@@ -11,6 +11,7 @@ import AboutPage  from './pages/About';
 import NotFoundPage from './pages/404NotFoundError';
 import JustShootPage from './pages/JustShoot';
 import ResumePage from './pages/Resume';
+import SulSulSimSimPage from './pages/SulSulSimSim';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -37,6 +38,10 @@ function App() {
         {
           path: pathConstants.RESUME,
           element: <ResumePage/>,
+        },
+        {
+          path: pathConstants.SULSULSIMSIM,
+          element: <SulSulSimSimPage/>,
         },
       ],
     },
