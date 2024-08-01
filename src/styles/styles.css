@@ -318,6 +318,10 @@
     transition: grid-template-rows 0.6s;
 }
 
+.image-level {
+    height: 850px;
+}
+
 .goBack {
     position: fixed;
     bottom: 15%;

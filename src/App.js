@@ -20,6 +20,7 @@ import TravelPage from './pages/Travel';
 import HuztlePage from './pages/Huztle';
 import GameDesignPage from './pages/CS4553';
 import GameProgrammingPage from './pages/CS3113';
+import ModelingPage from './pages/DM2133';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -82,6 +83,10 @@ function App() {
         {
           path: pathConstants.CS3113,
           element: <GameProgrammingPage/>,
+        },
+        {
+          path: pathConstants.DM2133,
+          element: <ModelingPage/>,
         },
       ],
     },

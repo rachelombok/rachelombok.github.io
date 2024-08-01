@@ -45,26 +45,26 @@ export default function GameProgrammingPage() {
 
   const objectives = (
     <ol>
-      <li class="course-bullet cs3113-title">
+      <li class="course-bullet cs3113">
         <span class="course-text">
           Gain proficiency in C# and the Unity development pipeline.
         </span>
       </li>
-      <li class="course-bullet cs3113-title">
+      <li class="course-bullet cs3113">
         <span class="course-text">
           Develop a range of methods for the expression and articulation of
           ideas, including experimentation, information gathering, testing and
           refinement.
         </span>
       </li>
-      <li class="course-bullet cs3113-title">
+      <li class="course-bullet cs3113">
         <span class="course-text">
           Be comfortable working with software and hardware limitations, and be
           able to come up with creative workarounds both in design and
           development.
         </span>
       </li>
-      <li class="course-bullet cs3113-title">
+      <li class="course-bullet cs3113">
         <span class="course-text">
           Create work of technical and conceptual depth, suitable for a
           professional portfolio
@@ -95,19 +95,19 @@ export default function GameProgrammingPage() {
   const projects = (
     <>
       <p className="not-prose my-0 font-medium">
-        <a href="https://razzve.itch.io/elemental-fury" class="cs3113 link">
+        <a href="https://razzve.itch.io/elemental-fury" class="cs3113">
           Elemental Fury
         </a>
       </p>
       <p className="not-prose my-0 font-medium">
-        <a href="https://mjm1175.itch.io/adventure-game" class="cs3113 link">
+        <a href="https://mjm1175.itch.io/adventure-game" class="cs3113">
           Great Escape
         </a>
       </p>
       <p className="not-prose my-0 font-medium">
         <a
           href="https://alok-roy-chatterjee.itch.io/maze-platformer-rush"
-          class="cs3113 link"
+          class="cs3113"
         >
           Pixel Maze Mobile Game
         </a>
