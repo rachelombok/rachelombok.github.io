@@ -105,7 +105,7 @@
 * [ ] make sure to use !! or ! on all ternary expressions in jsx
 * [ ] customize course objective bullet points
 * [ ] download not owned videos/assets
-* [ ]
+* [ ] update/fix social icons on bottom page
 * [ ]
 * [ ]
 * [ ]
