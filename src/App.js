@@ -16,6 +16,7 @@ import RDSPage from './pages/RDS';
 import HandyMapPage from './pages/HandyMap';
 import BouncerBotPage from './pages/BouncerBot';
 import CovideasPage from './pages/Covideas';
+import TravelPage from './pages/Travel';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -62,6 +63,10 @@ function App() {
         {
           path: pathConstants.COVIDFORECASTS,
           element: <CovideasPage/>,
+        },
+        {
+          path: pathConstants.TRAVEL,
+          element: <TravelPage/>,
         },
       ],
     },

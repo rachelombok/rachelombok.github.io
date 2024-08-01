@@ -81,11 +81,11 @@
 * [ ] in ref to above, replace covid forecasts bubble icon w better cropped image
 * [x] fill out resume page
 * [ ] update justshoot timeline on resume
-* [ ] create rds page
-* [ ] create handymap page
-* [ ] create covideas page
+* [x] create rds page
+* [x] create handymap page
+* [x] create covideas page
 * [ ] create bp effect page
-* [ ] create bouncer bot page
+* [x] create bouncer bot page
 * [ ] create gwc page
 * [ ] create huztle page
 * [ ] create podcasting workshop page
@@ -99,7 +99,7 @@
 * [ ] format all files
 * [ ] proofread all pages/articles
 * [ ] fix all warnings and errors in console
-* [ ]
+* [ ] change bg of canvas
 * [ ]
 * [ ]
 * [ ]

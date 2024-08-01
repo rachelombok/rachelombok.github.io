@@ -31,7 +31,7 @@ export const Navigation = () => {
             Photography
           </summary>
           <ul className="p-2 bg-base-100 w-56 rounded-t-none absolute right-0">
-            <li><Link to='/'>Travel</Link></li>
+            <li><Link to='/travel'>Travel</Link></li>
             <li><Link to='/'>Portfolio</Link></li>
           </ul>
         </details>
