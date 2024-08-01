@@ -1,7 +1,7 @@
 import sulsulsimsimLogo from '../images/sulsulsimsim/plumbob1.svg';
 import handyMapLogo from '../images/handymap/handymaplogo.png';
 import justShootLogo from '../images/justshoot/digcamtrans.png';
-import covideasLogo from '../images/covidforecasts/COVIDforecasts-logo-white-2.png';
+import covideasLogo from '../images/covidforecasts/updatedcovideaslogo.png';
 import ultraHacksLogo from '../images/twitter/twitterlogo.png';
 import rdsLogo from '../images/rds/rcclogo.png';
 
@@ -48,7 +48,8 @@ export const projectBubbleInfo = [
         linkPath: '/sulsulsimsim',
         canvasPosition: ['1100px', '300px'],
         textColor: 'white',
-        tier: 1
+        tier: 1,
+        showOnCanvas: true
     },
     {
         title: 'HandyMap',
@@ -58,7 +59,8 @@ export const projectBubbleInfo = [
         linkPath: '/handymap',
         canvasPosition: ['1200px', '-190px'],
         textColor: 'white',
-        tier: 1
+        tier: 1,
+        showOnCanvas: true
     },
     {
         title: 'JustShoot',
@@ -68,17 +70,19 @@ export const projectBubbleInfo = [
         linkPath: pathConstants.JUSTSHOOT,
         canvasPosition: ['-500px', '100px'],
         textColor: 'white',
-        tier: 1
+        tier: 1,
+        showOnCanvas: true
     },
     {
         title: 'Covid Forecasts',
         tagline: 'Creating a pandemic prediction market.',
         bgColor: '#000',
         icon: covideasLogo,
-        linkPath: '/covideas',
+        linkPath: '/covidforecasts',
         canvasPosition: ['-650px', '750px'],
         textColor: 'white',
-        tier: 2
+        tier: 2,
+        showOnCanvas: true
     },
     {
         title: 'Bouncer Bot',
@@ -88,7 +92,8 @@ export const projectBubbleInfo = [
         linkPath: '/bouncerbot',
         canvasPosition: ['600px', '300px'],
         textColor: 'white',
-        tier: 3
+        tier: 3,
+        showOnCanvas: true
     },
     {
         title: 'RDS',
@@ -98,7 +103,8 @@ export const projectBubbleInfo = [
         linkPath: '/rds',
         canvasPosition: ['-1000px', '-380px'],
         textColor: 'white',
-        tier: 1
+        tier: 1,
+        showOnCanvas: true
     },
     {
         title: 'The Pink Effect',
@@ -109,6 +115,7 @@ export const projectBubbleInfo = [
         linkPath: '',
         canvasPosition: ['-252px', '850px'],
         textColor: 'black',
-        tier: 2
+        tier: 2,
+        showOnCanvas: false
     },
 ];

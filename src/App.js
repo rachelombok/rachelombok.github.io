@@ -15,6 +15,7 @@ import SulSulSimSimPage from './pages/SulSulSimSim';
 import RDSPage from './pages/RDS';
 import HandyMapPage from './pages/HandyMap';
 import BouncerBotPage from './pages/BouncerBot';
+import CovideasPage from './pages/Covideas';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -57,6 +58,10 @@ function App() {
         {
           path: pathConstants.ULTRAHACKS,
           element: <BouncerBotPage/>,
+        },
+        {
+          path: pathConstants.COVIDFORECASTS,
+          element: <CovideasPage/>,
         },
       ],
     },
