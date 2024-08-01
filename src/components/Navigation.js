@@ -36,12 +36,7 @@ export const Navigation = () => {
           </ul>
         </details>
       </li>
-      <li><select data-choose-theme>
-      <option selected value="light">light default</option>
-  <option value="dark">dark</option>
-  <option value="cupcake">cupcake</option>
-  <option value="valentine">valentine</option>
-        </select></li>
+      
     </ul>
   </div>
     </Navbar>

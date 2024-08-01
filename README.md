@@ -81,19 +81,19 @@
 * [ ] in ref to above, replace covid forecasts bubble icon w better cropped image
 * [x] fill out resume page
 * [ ] update justshoot timeline on resume
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
+* [ ] create rds page
+* [ ] create handymap page
+* [ ] create covideas page
+* [ ] create bp effect page
+* [ ] create bouncer bot page
+* [ ] create gwc page
+* [ ] create huztle page
+* [ ] create podcasting workshop page
+* [ ] create 3d modeling page
+* [ ] create game design page
+* [ ] create game programming page
+* [ ] update page header bottom line cutting off
+* [ ] replace all class w className
 * [ ]
 * [ ]
 * [ ]

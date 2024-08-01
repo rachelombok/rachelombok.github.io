@@ -55,7 +55,7 @@ export const projectBubbleInfo = [
         tagline: 'Find accessible entrances easier than ever before.',
         bgColor: '#7d1f1f',
         icon: handyMapLogo,
-        linkPath: '',
+        linkPath: '/handymap',
         canvasPosition: ['1200px', '-190px'],
         textColor: 'white',
         tier: 1
@@ -75,7 +75,7 @@ export const projectBubbleInfo = [
         tagline: 'Creating a pandemic prediction market.',
         bgColor: '#000',
         icon: covideasLogo,
-        linkPath: '',
+        linkPath: '/covideas',
         canvasPosition: ['-650px', '750px'],
         textColor: 'white',
         tier: 2
@@ -85,7 +85,7 @@ export const projectBubbleInfo = [
         tagline: '#UltraHacks 2020 2nd place winner.',
         bgColor: '#c621a0',
         icon: ultraHacksLogo,
-        linkPath: '',
+        linkPath: '/bouncerbot',
         canvasPosition: ['600px', '300px'],
         textColor: 'white',
         tier: 3
@@ -95,7 +95,7 @@ export const projectBubbleInfo = [
         tagline: 'A solution to a unique robotics problem.',
         bgColor: '#242424',
         icon: rdsLogo,
-        linkPath: '',
+        linkPath: '/rds',
         canvasPosition: ['-1000px', '-380px'],
         textColor: 'white',
         tier: 1

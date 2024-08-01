@@ -30,7 +30,7 @@ export const PageDetails = (props) => {
           </div>
         
         </div>
-        <img src={props.icon} className={`${props.id}-description-img`}/>
+        <img src={props.icon} className={`${props.id}-description-img ml-8`}/>
       </div>
     </div>
     <div className="divider neutral-content">
