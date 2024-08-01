@@ -96,9 +96,9 @@
 * [ ] replace all class w className
 * [ ] crop handymap group picture on page desc
 * [ ] make emoji on page header larger
-* [ ]
-* [ ]
-* [ ]
+* [ ] format all files
+* [ ] proofread all pages/articles
+* [ ] fix all warnings and errors in console
 * [ ]
 * [ ]
 * [ ]

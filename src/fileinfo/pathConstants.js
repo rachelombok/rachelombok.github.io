@@ -8,7 +8,7 @@ export const pathConstants = {
     JUSTSHOOT: '/justshoot',
     RDS: '/rds',
     COVIDFORECASTS: '/covidforecasts',
-    ULTRAHACKS: '/ultrahacks',
+    ULTRAHACKS: '/bouncerbot',
     PINKEFFECT: '/pinkeffect',
     HUZTLE: '/huztle',
     CS3113: '/cs3113',

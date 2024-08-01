@@ -472,6 +472,10 @@
 .alteryx{
     color:rgb(17, 63, 181)
 }
+.bouncerbot{
+    color: #c621a0;
+
+}
 .site-page {
     p, li {
         font-size: calc(10px + 6 * ((100vw - 320px) / (680)));
