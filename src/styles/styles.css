@@ -102,6 +102,9 @@
     overflow: "hidden";
     
 }
+.carousel-img {
+    height: 1000px;
+}
 
 .bubble-link:hover {
     transform: scale(1.1) perspective(1px);
@@ -475,6 +478,91 @@
 .bouncerbot{
     color: #c621a0;
 
+}
+.paris {
+    background: url(../images//travel/paris7.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.heidelberg {
+    background: url(../images/travel/heidelberg5.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.amsterdam {
+    background: url(../images/travel/amsterdam5.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.seattle {
+    background: url(../images/travel/seattle4.jpg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.kenya {
+    background: url(../images/travel/kenya3.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.hongkong {
+    background: url(../images/travel/hongkong4.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+.shanghai {
+    background: url(../images/travel/shanghai2.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.dr {
+    background: url(../images/travel/dr5.jpg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.beijing {
+    background: url(../images/travel/beijing3.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.austria {
+    background: url(../images/travel/austria4.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.london {
+    background: url(../images/travel/london4.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.guilin {
+    background: url(../images/travel/guilin2.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.venice {
+    background: url(../images/travel/italy3.jpeg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+
+.sanfrancisco {
+    background: url(../images/travel/sanfran12.JPG) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+
+.dc {
+    background: url(../images/travel/washdc6.JPG) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+.travel-title {
+    background: url(../images/travel/dallas1.jpg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar {
+    display: none;
 }
 .site-page {
     p, li {

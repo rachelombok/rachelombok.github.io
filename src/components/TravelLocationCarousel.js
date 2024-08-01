@@ -4,17 +4,27 @@ import { Footer } from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 import GoBack from "./GoBack";
 
-export default function TravelLocationCarousel() {
+export default function TravelLocationCarousel(props) {
+
+    const location = props.locationName.split(",");
+    const city = location[0];
+    const country = location[1];
 
     return(
-<div className="carousel carousel-center bg-neutral rounded-box max-w-md space-x-4 p-4">
-
-  <div className="carousel-item">
+        <div className="not-prose my-16">
+            <h2 class={`text-7xl font-bold mb-6 ${props.stylename}`}>{city},<span class="medium"> {country}</span></h2>
+<div className="carousel carousel-center bg-neutral rounded-box space-x-6 p-6">
+{props.images.map((image) =>{
+    return <div className="carousel-item">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-      className="rounded-box" />
+      src={image}
+      className="carousel-img rounded-box" alt={`${props.locationName}`}/>
+    
   </div>
-  
+            
+        })}
+
+</div>
 </div>
     );
 

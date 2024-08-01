@@ -37,8 +37,8 @@
 * [ ] change about picture depending on theme
 * [ ] change bubbles view depending on theme
 * [ ] put memoji or bitmoji on there somewhere
-* [ ] create a carousel daisyUI for travel
-* [ ] add Santa Clara to travel
+* [x] create a carousel daisyUI for travel
+* [❌] add Santa Clara to travel
 * [ ] pagination for travel
 * [ ] disable portfolio site for now, tooltip about WIP
 * [x] new icon for website
@@ -72,7 +72,7 @@
 * [ ] fade in page header + description with framer-motion fade up
 * [ ] make all pages transition w react framer motion
 * [x] make Resume page
-* [ ] make Travel page
+* [x] make Travel page
 * [ ] make imports/exports cleaner
 * [ ] bold nav tab when selected
 * [ ] get transparent bp logo
@@ -100,8 +100,8 @@
 * [ ] proofread all pages/articles
 * [ ] fix all warnings and errors in console
 * [ ] change bg of canvas
-* [ ]
-* [ ]
+* [ ] align nav edges to site
+* [ ] choose different light mode(?)
 * [ ]
 * [ ]
 * [ ]
