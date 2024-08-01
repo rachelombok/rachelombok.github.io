@@ -13,6 +13,7 @@ import JustShootPage from './pages/JustShoot';
 import ResumePage from './pages/Resume';
 import SulSulSimSimPage from './pages/SulSulSimSim';
 import RDSPage from './pages/RDS';
+import HandyMapPage from './pages/HandyMap';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -47,6 +48,10 @@ function App() {
         {
           path: pathConstants.RDS,
           element: <RDSPage/>,
+        },
+        {
+          path: pathConstants.HANDYMAP,
+          element: <HandyMapPage/>,
         },
       ],
     },

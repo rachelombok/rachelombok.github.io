@@ -94,8 +94,8 @@
 * [ ] create game programming page
 * [ ] update page header bottom line cutting off
 * [ ] replace all class w className
-* [ ]
-* [ ]
+* [ ] crop handymap group picture on page desc
+* [ ] make emoji on page header larger
 * [ ]
 * [ ]
 * [ ]

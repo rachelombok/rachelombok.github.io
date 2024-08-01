@@ -1,6 +1,7 @@
 import React from "react";
 import { PageContainerOutline } from "../components/PageContainerOutline";
 import { PageHeader } from "../components/PageHeader";
+import { PageDetails } from "../components/PageDetails";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 import { Link } from "react-router-dom";
 
