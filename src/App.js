@@ -17,6 +17,8 @@ import HandyMapPage from './pages/HandyMap';
 import BouncerBotPage from './pages/BouncerBot';
 import CovideasPage from './pages/Covideas';
 import TravelPage from './pages/Travel';
+import HuztlePage from './pages/Huztle';
+import GameDesignPage from './pages/CS4553';
 
 // const About = React.lazy(() => import("../pages/About"))
 function App() {
@@ -67,6 +69,14 @@ function App() {
         {
           path: pathConstants.TRAVEL,
           element: <TravelPage/>,
+        },
+        {
+          path: pathConstants.HUZTLE,
+          element: <HuztlePage/>,
+        },
+        {
+          path: pathConstants.CS4553,
+          element: <GameDesignPage/>,
         },
       ],
     },

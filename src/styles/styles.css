@@ -443,6 +443,12 @@
 .cs4553{
     color: #a13517;
 }
+.cs4553-course li{
+    
+}
+.cs4553-course li::before{
+    color: #a13517;
+}
 .covideas{
     color: #000000;
 }
@@ -568,6 +574,11 @@
     p, li {
         font-size: calc(10px + 6 * ((100vw - 320px) / (680)));
     }
+}
+
+.huztle-description-img {
+    width: 700px;
+    border-radius: 8px;
 }
 @media screen and (min-width: 550px) {
     /* GLOBAL */

@@ -12,10 +12,12 @@ export const PageDetails = (props) => {
               {props.overview}
             </p>
           </div>
+          {props.roles ? 
           <div className="section summary-item">
-            <h5 className="subtitle">Roles</h5>
-            <p className='description-text'>{props.roles}</p>
-          </div>
+          <h5 className="subtitle">Roles</h5>
+          <p className='description-text'>{props.roles}</p>
+        </div>
+          : ''}
 
           {props.team ? 
           <div className="section summary-item">
@@ -24,10 +26,26 @@ export const PageDetails = (props) => {
         </div>
           : ''}
 
+{props.timeline ? 
           <div className="section summary-item">
-            <h5 className="subtitle">Timeline</h5>
-            <p className='description-text'>{props.timeline}</p>
-          </div>
+          <h5 className="subtitle">Timeline</h5>
+          <p className='description-text'>{props.timeline}</p>
+        </div>
+          : ''}
+
+          {props.listen ? 
+          <div className="section summary-item">
+          <h5 className="subtitle">Listen</h5>
+          <p className='description-text'>{props.listen}</p>
+        </div>
+          : ''}
+
+{props.connect ? 
+          <div className="section summary-item">
+          <h5 className="subtitle">Connect</h5>
+          <p className='description-text'>{props.connect}</p>
+        </div>
+          : ''}
         
         </div>
         <img src={props.icon} className={`${props.id}-description-img ml-8`}/>

@@ -87,8 +87,8 @@
 * [ ] create bp effect page
 * [x] create bouncer bot page
 * [ ] create gwc page
-* [ ] create huztle page
-* [ ] create podcasting workshop page
+* [x] create huztle page
+* [x] create podcasting workshop page
 * [ ] create 3d modeling page
 * [ ] create game design page
 * [ ] create game programming page
@@ -102,9 +102,9 @@
 * [ ] change bg of canvas
 * [ ] align nav edges to site
 * [ ] choose different light mode(?)
-* [ ]
-* [ ]
-* [ ]
+* [ ] make sure to use !! or ! on all ternary expressions in jsx
+* [ ] customize course objective bullet points
+* [ ] download not owned videos/assets
 * [ ]
 * [ ]
 * [ ]
