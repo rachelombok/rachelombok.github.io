@@ -6,12 +6,12 @@ import React, {
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState('cupcake');
+const ThemeProvider = ({ children }) => {
+    const [theme, setTheme] = useState(localStorage.getItem("theme"));
 
-    const toggleTheme = () => {
-        if (['cupcake', 'light', 'dark'].includes(theme)) {
-            setTheme(theme === 'light' ? 'dark' : 'light'); // add param newtheme
+    const toggleTheme = (newTheme) => {
+        if (['cupcake', 'light', 'luxury', 'valentine'].includes(newTheme)) {
+            setTheme(newTheme); // add param newtheme
         }
     };
 
@@ -23,3 +23,4 @@ export const ThemeProvider = ({ children }) => {
 };
 
 export const useTheme = () => useContext(ThemeContext);
+export { ThemeContext, ThemeProvider };

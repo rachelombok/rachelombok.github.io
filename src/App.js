@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import { Canvas } from './components/Canvas';
 import { pathConstants } from './fileinfo/pathConstants';
+import { ThemeProvider } from './contexts/ThemeContext';
 import SiteLayout from './components/SiteLayout';
 import AboutPage  from './pages/About';
 import NotFoundPage from './pages/404NotFoundError';
@@ -93,7 +94,9 @@ function App() {
   ])
   return (
     <>
+    <ThemeProvider>
     <RouterProvider router={router} />
+    </ThemeProvider>
     </>
   );
 }

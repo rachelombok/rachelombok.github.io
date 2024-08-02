@@ -24,11 +24,11 @@
 * [x] organize images in folders
 * [ ] slider to toggle bubbles view
 * [ ] make list of all projects to use/create
-    * [ ] explore csr
-    * [ ] gwc
+    * [x] explore csr
+    * [x] gwc
 * [ ] optimize site as much as possible for loading
 * [ ] make a speaking engagemenst list / brag doc, on resume page
-* [ ] add alt descriptions to all images
+* [x] add alt descriptions to all images
 * [ ] contact section under about
 * [❌] click to view email
 * [ ] speaking opportunities list
@@ -111,8 +111,8 @@
 * [ ] fix glitching routing
 * [ ] fix resume page links
 * [ ] make all elements scalable on sites
-* [ ]
-* [ ]
+* [ ] in all lists/maps, give elements unique keys
+* [ ] put borders on all images (?)
 * [ ]
 * [ ]
 * [ ]

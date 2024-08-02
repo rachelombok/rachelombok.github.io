@@ -1,6 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 export const Footer = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  function changeTheme(event){
+    // i18n.changeLanguage(event.target.value)
+    console.log('change!', event.target.value);
+    toggleTheme(event.target.value)
+  }
     return (
 <footer className="footer items-center p-10 bg-neutral text-neutral-content text-3xl">
   <aside className="items-center grid-flow-col">
@@ -8,9 +16,9 @@ export const Footer = () => {
   </aside> 
   <nav className="grid-flow-col gap-6 md:place-self-center md:justify-self-end">
 
-  <select data-choose-theme className='w-full bg-neutral h-14 text-5xl'>
+  <select data-choose-theme className='w-full bg-neutral h-14 text-5xl' onChange={changeTheme}>
       <option selected value="light" >💡</option>
-  <option value="dark">🌒</option>
+  <option value="luxury">🌒</option>
   <option value="cupcake">🧁</option>
   <option  value="valentine">💌</option>
         </select>

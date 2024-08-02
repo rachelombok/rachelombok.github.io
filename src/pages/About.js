@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { PageContainerOutline } from '../components/PageContainerOutline';
 import { PageHeader } from '../components/PageHeader';
-import roavi from '../images/about/ro-avi-1.jpg';
+import roavilight from '../images/about/ro-avi-14.JPG';
+import roavicupcake from '../images/about/ro-avi-1.jpg';
+import roaviluxury from '../images/about/ro-avi-17.jpg';
+import roavivalentine from '../images/about/ro-avi-11.jpg';
 import { Link } from 'react-router-dom';
-
+import { ThemeContext } from '../contexts/ThemeContext';
+import { AnimatePresence, motion, useCycle } from "framer-motion";
+// 3, 14,
 export default function AboutPage() {
+    
+    const [currentTheme, setCurrentTheme] = useState('');
+    const { theme } = useContext(ThemeContext);
+    
+
+    useEffect(() => {
+        setCurrentTheme(theme);
+      },[theme])
 
     return(
         <PageContainerOutline className='site-page'>
@@ -17,6 +30,7 @@ export default function AboutPage() {
    <div>        
 
 <p>
+    
 
 Hi, I'm Rachel! I'm a recent graduate of <a href='https://engineering.nyu.edu' class='link nyu'>New York University</a>, where I studied Computer Science
 and Game Engineering, and am currently exploring all of the opportunities I’m given that merge tech and artistic creativity together. 
@@ -33,7 +47,24 @@ at Brown University in their <a href="https://explorecsr.cs.brown.edu/ai/index.h
 
 </p>
 </div> 
-<img src={roavi} className='avi' alt='picture of Rachel Ombok'/>
+
+{currentTheme == 'light' && <motion.img src={roavilight} className='avi object-cover' alt='picture of Rachel Ombok' key='1' initial={{ opacity: 0.5 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 2 } }}
+      transition={{ duration: 1.5 }}/>}
+{currentTheme == 'luxury' && <motion.img src={roaviluxury} className='avi object-cover' alt='picture of Rachel Ombok' initial={{ opacity: 0.5 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 2 } }}
+      transition={{ duration: 1.5 }}/>}
+{currentTheme == 'cupcake' && <motion.img src={roavicupcake} className='avi' alt='picture of Rachel Ombok' initial={{ opacity: 0.5 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 2 } }}
+      transition={{ duration: 1.5 }}/>}
+{currentTheme == 'valentine' && <motion.img src={roavivalentine} className='avi object-cover' alt='picture of Rachel Ombok' initial={{ opacity: 0.5}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 2 } }}
+      transition={{ duration: 1.5 }}/>}
+
 
             </div>
             
