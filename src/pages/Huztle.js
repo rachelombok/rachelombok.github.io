@@ -72,6 +72,7 @@ export default function HuztlePage() {
         overview="A podcast about Gen-Z entrepreneurs, tech enthusiasts, founders and innovators who are at the intersection of STEM and leadership. Hosted by Rachel Ombok."
         listen={listen}
         connect={connect}
+        useBorder
       />
       <ProjectSectionDescription id="huztle" subtitle="description" heading="">
         Huztle is a podcast series about GenZ entrepreneurship, in which host

@@ -46,6 +46,7 @@ export default function BouncerBotPage() {
         overview="A Twitter bot that encourages healthy conversations by utilizing Twitter’s mute function."
         roles={roles}
         timeline="October 2020"
+        useBorder
       />
 
       <ProjectSectionDescription
@@ -78,7 +79,7 @@ export default function BouncerBotPage() {
           src={bouncerbot2}
           width="1100"
           height="550"
-          className="mx-auto"
+          className="mx-auto border border-8 rounded border-neutral-content"
           alt="bouncer bot demo picture"
         />
 
@@ -88,7 +89,7 @@ export default function BouncerBotPage() {
             #UltraHacks
           </a>{" "}
           virtual hackathon, which I got the opportunity to attend through
-          <a href="https://techatnyu.org" className="link bouncerbotk">
+          <a href="https://techatnyu.org" className="link bouncerbot">
             {" "}
             Tech@NYU
           </a>

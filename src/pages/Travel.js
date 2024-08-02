@@ -37,6 +37,7 @@ export default function TravelPage() {
             locationName={names[key]}
             images={value}
             stylename={key}
+            key={key}
           />
         );
       })}

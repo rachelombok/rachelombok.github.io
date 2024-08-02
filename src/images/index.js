@@ -132,7 +132,7 @@ export default {
     'kenya': [Kenya1, Kenya2, Kenya3, Kenya4, Kenya5, Kenya6],
     'beijing':[Beijing1, Beijing2, Beijing3, Beijing4, Beijing5, Beijing6, Beijing7, Beijing8, Beijing9, Beijing10],
     'sanfran': [SanFran1, SanFran2, SanFran3, SanFran4, SanFran5, SanFran6, SanFran7, SanFran8, SanFran9, SanFran10, SanFran11, SanFran12],
-    'dr': [DR1, DR2, DR3, DR4, DR5, DR6, DR7],
+    'dr': [DR1, DR3, DR4, DR5, DR6, DR7],
     'guilin':[Guilin1, Guilin2],
     
     'hongkong': [HongKong1, HongKong2, HongKong3, HongKong4, HongKong5],

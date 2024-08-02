@@ -68,6 +68,7 @@ export default function SulSulSimSimPage() {
         roles="Programmer"
         timeline="February 2020 to August 2020"
         team={team}
+        useBorder
       />
 
       <ProjectSectionDescription
@@ -95,11 +96,11 @@ export default function SulSulSimSimPage() {
         heading="Research Introduction"
       >
         <p>
-          In Spring of 2020 I applied to{" "}
+          In Spring of 2020 I interned at{" "}
           <a className="link nyu" href="https://game.engineering.nyu.edu">
             NYU’s Game Innovation Lab
           </a>{" "}
-          for an internship, the lab does research focused on games as an
+          , the lab does research focused on games as an
           innovation challenge and emphasizes on the
           technical/engineering/science side of games and simulation. For my
           internship, I worked on a project for{" "}
@@ -196,7 +197,7 @@ export default function SulSulSimSimPage() {
         <img
           alt="Project workflow outline on a notebook"
           src={projectoutline}
-          className="summary-section my-5"
+          className="summary-section my-5 border border-8 rounded border-neutral-content"
         />
       </ProjectSectionDescription>
       <ProjectSectionDescription
@@ -242,21 +243,21 @@ export default function SulSulSimSimPage() {
             <img
               src={badroom}
               alt="Bad Room for sim survival"
-              className="h-96"
+              className="h-96 border border-8 rounded border-neutral-content"
             />
           </div>
           <div className="column">
             <img
               src={bareroom}
               alt="Bare Minimum Room for sim survival"
-              className="h-96"
+              className="h-96 border border-8 rounded border-neutral-content"
             />
           </div>
           <div className="column">
             <img
               src={bestroom}
               alt="Best Room for sim survival"
-              className="h-96"
+              className="h-96 border border-8 rounded border-neutral-content"
             />
           </div>
         </div>

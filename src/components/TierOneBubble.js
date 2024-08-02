@@ -15,7 +15,7 @@ export const TierOneBubble = ({ project }) => {
   return (
     <Link
       to={project.linkPath}
-      className="bubble-link"
+      className="bubble-link my-4"
       style={bubbleLinkStyles}
     >
       <div className="tier-one-bubble" style={tierOneBubbleStyles}>

@@ -12,9 +12,9 @@ export const Navigation = () => {
   return (
     <Navbar className="px-28 pt-12 pb-20">
       <div className="flex-1">
-        <a className="btn btn-ghost text-5xl site-title">
-          <Link to={pathConstants.MAIN}>rachel ombok</Link>
-        </a>
+       
+          <Link to={pathConstants.MAIN} className="btn btn-ghost text-5xl site-title">rachel ombok</Link>
+       
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1 text-2xl space-x-1">

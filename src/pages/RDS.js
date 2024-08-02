@@ -14,7 +14,7 @@ import mindstormscode from "../images/rds/mindstormscode2.png";
 
 export default function RDSPage() {
   const overview =
-    "A project that solved a unique problem statment for my General Engineering & Prototyping course. Winner of Nick Russo Award for Outstanding General Engineering Design.";
+    "A project that solved a unique problem statement for my General Engineering & Prototyping course. Winner of Nick Russo Award for Outstanding General Engineering Design.";
   const team = (
     <>
       <p className="not-prose my-0">Christopher Glenn, Head Designer/Builder</p>
@@ -37,6 +37,7 @@ export default function RDSPage() {
         roles="Project Coordinator"
         timeline="September 2018 to December 2018"
         team={team}
+        useBorder
       />
 
       <ProjectSectionDescription
@@ -82,7 +83,7 @@ export default function RDSPage() {
         <img
           alt="Project's schedule"
           src={projectsched}
-          className="mx-auto grid my-5 size-4/5"
+          className="mx-auto grid my-5 size-4/5 border border-8 rounded border-neutral-content"
         />
         <p>
           All the milestone presentations and the final presentation were made
@@ -96,7 +97,7 @@ export default function RDSPage() {
         <img
           alt="RDS obstacle course for robot"
           src={course}
-          className="mx-auto grid my-5 size-4/5"
+          className="mx-auto grid my-5 size-4/5 border border-8 rounded border-neutral-content"
         ></img>
       </ProjectSectionDescription>
 
@@ -115,13 +116,13 @@ export default function RDSPage() {
         </p>
         <div className="row">
           <div className="column">
-            <img src={legopoppy1} alt="Leggo Poppy mindstorms render 1" />
+            <img src={legopoppy1} alt="Leggo Poppy mindstorms render 1 " className="border border-8 rounded border-neutral-content" />
           </div>
           <div className="column">
-            <img src={legopoppy2} alt="Lego Poppy mindstorms render 1" />
+            <img src={legopoppy2} alt="Lego Poppy mindstorms render 1" className="border border-8 rounded border-neutral-content"/>
           </div>
           <div className="column">
-            <img src={legopoppy3} alt="Lego Poppy mindstorms render 1" />
+            <img src={legopoppy3} alt="Lego Poppy mindstorms render 1" className="border border-8 rounded border-neutral-content"/>
           </div>
         </div>
         <p>
@@ -151,13 +152,13 @@ export default function RDSPage() {
             <img
               src={mindstormscode}
               alt="a section of the Lego mindstorms code"
-              className="my-5"
+              className="my-5 border border-8 rounded border-neutral-content"
             />
           </div>
           <img
             src={poppy}
             alt="Lego Poppy robot built in real life"
-            className="size-5/12 ml-16"
+            className="size-5/12 ml-16 border border-8 rounded border-neutral-content"
           />
         </div>
       </ProjectSectionDescription>

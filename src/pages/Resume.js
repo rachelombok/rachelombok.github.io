@@ -19,7 +19,7 @@ export default function ResumePage() {
 
   return (
     <PageContainerOutline className="site-page" title="Resume">
-      <PageHeader emoji={`💼`} lineOne="Resume" lineTwo={resumeDownload} />
+      <PageHeader emoji={`💼`} lineOne="Resume." lineTwo={resumeDownload} />
 
       <h5 className="subtitle base-300">Education</h5>
       <ResumeDescription
@@ -78,10 +78,10 @@ export default function ResumePage() {
           Drove a significant increase in user activation for Alteryx Analytics
           Cloud platform, by implementing customer-centric features like
           Intercom chat messenger and a streamlined trial registration process,
-          spearheaded the development and launch of an integration between
-          Alteryx’s Designer Cloud and Databricks, enabling seamless data
+          Spearheaded the development and launch of an integration between
+          Alteryx’s Designer Cloud and Databricks, Enabling seamless data
           transfer and a unified user experience between the two platforms, and
-          contributed to an increase of 1000 monthly trial sign-ups to Alteryx
+          Contributed to an increase of 1000 monthly trial sign-ups to Alteryx
           Analytics Cloud by optimizing usability and implementing user growth
           features.
         </p>
@@ -96,9 +96,9 @@ export default function ResumePage() {
         <p>
           {" "}
           Developed a Reply Prompt box prototype for embedded Tweets using React
-          to introduce more non-users to the Twitter platform, then conducted a
+          to introduce more non-users to the Twitter platform, then Conducted a
           user experiment to evaluate an alternative prompt box design,
-          resulting in a 7.5% increase in conversion clicks to on-platform
+          Resulting in a 7.5% increase in conversion clicks to on-platform
           content. Prototyped and tested a solution for Video Embeds that
           boosted conversion rates and user engagement with embedded Tweets
           containing video.{" "}
@@ -126,11 +126,11 @@ export default function ResumePage() {
         subline="Research Intern · Feb 2020 to August 2020"
       >
         <p>
-          Create general intelligence for The Sims 4 using a quality diversity
+          Created general intelligence for The Sims 4 using a quality diversity
           evolutionary algorithm, and code a C++ program that tests how in-game
-          objects affect a sims’ mood and environment. Analyze and interpret
+          objects affect a sims’ mood and environment. Analyzed and interpreted
           experiment results alongside graduate students and postdocs, and
-          organize notes & data within a thesis paper. This was the{" "}
+          organized notes & data within a thesis paper. This was the{" "}
           <Link to={pathConstants.SULSULSIMSIM} className="link sulsulsimsim">
             SulSulSimSim project
           </Link>
@@ -183,7 +183,7 @@ export default function ResumePage() {
           JustShoot is a community and platform for photo enthusiasts to find
           cool locations for photo shoots. Created a fullstack app with login
           authentication, multer-s3 deployment and MongoDB storage. Deployed
-          using Netlify and Hero
+          using Netlify and Heroku.
         </p>
       </ResumeDescription>
 
@@ -197,12 +197,13 @@ export default function ResumePage() {
         <p>
           {" "}
           Founder and organizer of bimonthly meetings for the Girls Who Code
-          (GWC) College Loop at New York University. Recruit members, plan
-          meetings, manage logistics, and serve as the point of contact with
-          Girls Who Code organization. Manage monthly challenges that hone
-          computer science skills, and provide professional development
+          (GWC) College Loop at New York University. Recruited members, plan.ed
+          meetings, managed logistics, and served as the point of contact with
+          Girls Who Code organization. Managed monthly challenges that hone
+          computer science skills, and provided professional development
           opportunities with industry professionals and Girls Who Code corporate
-          partners.
+          partners. Recognized as an exceptional leader within the Girls Who Code community by receiving the prestigious <a className="underline" href='https://www.linkedin.com/posts/tarikabarrett_womenempoweringwomenwednesday-activity-7181387765807288321-k-gF?utm_source=share&utm_medium=member_desktop'>Reshma Saujani Girls First
+    Leadership Award</a>, for my participation in many different Girls Who Code initiatives.
         </p>
       </ResumeDescription>
 
@@ -224,6 +225,19 @@ export default function ResumePage() {
         </p>
       </ResumeDescription>
 
+      <ResumeDescription
+        resumeLink='https://www.linkedin.com/posts/tarikabarrett_womenempoweringwomenwednesday-activity-7181387765807288321-k-gF?utm_source=share&utm_medium=member_desktop'
+        company="Reshma Saujani Girls First Leadership Award"
+        id=""
+        subline="April 2024"
+      >
+        <p>
+          {" "}
+          Each year, to commemorate Girls Who Code’s anniversary, the organization honors a member of the community who exemplifies the organization's values of bravery, sisterhood, and changing the face of tech. I was the recipient in 2024
+          for my leadership and participation in many different Girls Who Code initiatives such as College Loops, Hiring Summit, Staff Retreat, and Summer Immersion Program.
+        </p>
+      </ResumeDescription>
+
       <h5 className="subtitle base-300">Skills</h5>
       <ResumeDescription resumeLink="" company="Technical" id="" subline="">
         <p>
@@ -240,7 +254,7 @@ export default function ResumePage() {
         </p>
       </ResumeDescription>
       <ResumeDescription resumeLink="" company="Interests" id="" subline="">
-        <p> Photography, Volleyball, Guitar</p>
+        <p> Photography, Guitar, Videogames</p>
       </ResumeDescription>
     </PageContainerOutline>
   );

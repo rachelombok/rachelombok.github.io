@@ -103,21 +103,21 @@ export default function ModelingPage() {
           <div className="column">
             <img
               src={pic1}
-              className="shadow image-level"
+              className="shadow image-level border border-8 rounded border-neutral-content"
               alt="real life Lego Flower Bouquet"
             />
           </div>
           <div className="column ">
             <img
               src={pic2}
-              className="shadow image-level"
+              className="shadow image-level border border-8 rounded border-neutral-content"
               alt="Work in progress Maya model lego flower bouquet"
             />
           </div>
           <div className="column">
             <img
               src={pic4}
-              className="shadow image-level"
+              className="shadow image-level border border-8 rounded border-neutral-content"
               alt="Final render of 3D modeled lego flower bouquet"
             />
           </div>
@@ -135,13 +135,14 @@ export default function ModelingPage() {
         <img
           src={pic3}
           alt="Final render of 3D modeled lego flower bouquet 2"
-          className="img center"
+          className="img center border border-8 rounded border-neutral-content"
         />
 
         <img
           src={pic5}
           width="100%"
           alt="Final render of 3D modeled lego flower bouquet 3"
+          className="border border-8 rounded border-neutral-content"
         />
       </ProjectSectionDescription>
       <ProjectSectionDescription
@@ -175,7 +176,7 @@ export default function ModelingPage() {
           .obj file that I imported into Maya, and then rendered the finished
           product using Arnold.
         </p>
-        <img src={pic6} width="100%" alt="3d Model of Squidgame girl doll" />
+        <img src={pic6} width="100%" alt="3d Model of Squidgame girl doll" className="border border-8 rounded border-neutral-content" />
       </ProjectSectionDescription>
     </PageContainerOutline>
   );

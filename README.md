@@ -96,9 +96,9 @@
 * [x] replace all class w className
 * [x] crop handymap group picture on page desc
 * [❌] make emoji on page header larger
-* [ ] format all files
+* [x] format all files
 * [ ] proofread all pages/articles
-* [ ] fix all warnings and errors in console
+* [x] fix all warnings and errors in console
 * [x] change bg of canvas
 * [❌] align nav edges to site
 * [❌] choose different light mode(?)
@@ -107,12 +107,12 @@
 * [ ] download not owned videos/assets
 * [x] update/fix social icons on bottom page
 * [ ] add google analytics to site
-* [ ] replace appropriate href with Links
+* [x] replace appropriate href with Links
 * [ ] fix glitching routing
-* [ ] fix resume page links
+* [x] fix resume page links
 * [ ] make all elements scalable on sites
-* [ ] in all lists/maps, give elements unique keys
-* [ ] put borders on all images (?)
+* [x] in all lists/maps, give elements unique keys
+* [x] put borders on all images (?)
 * [x] put custom titles on tab depending on which page currently on
 * [ ] scale text to adjust with window zoom/size
 * [x] use path constants where ever there is a link

@@ -18,14 +18,15 @@ export const Canvas = () => {
       <div className="canvas border-solid border-8 border-current rounded-sm">
         {projectBubbleInfo.map((project) => {
           if (project.showOnCanvas) {
-            if (project.tier == 1) {
-              return <TierOneBubble project={project} />;
-            } else if (project.tier == 2) {
-              return <TierTwoBubble project={project} />;
-            } else if (project.tier == 3) {
-              return <TierThreeBubble project={project} />;
+            if (project.tier === 1) {
+              return <TierOneBubble project={project} key={project.title}/>;
+            } else if (project.tier === 2) {
+              return <TierTwoBubble project={project} key={project.title}/>;
+            } else if (project.tier === 3) {
+              return <TierThreeBubble project={project} key={project.title}/>;
             }
           }
+          return [];
         })}
         {/*  </div>*/}
       </div>

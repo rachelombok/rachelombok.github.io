@@ -34,7 +34,7 @@ export default function CovideasPage() {
         icon={covideasblacklogo}
         overview="COVIDforecasts aims to showcase known and predicted pandemic data, and also allows users to guess the future trajectory of COVID-19."
         roles="Student Researcher"
-        timeline="June 2020 to Present"
+        timeline="June 2020 to December 2020"
         team={team}
       />
 
@@ -58,7 +58,7 @@ export default function CovideasPage() {
         </p>
 
         <p>
-          I worked on COVIDforecasts this summer as a research intern for
+          I worked on COVIDforecasts in the summer of 2020 as a research intern for
           Georgia Tech’s{" "}
           <a href="http://www.covideas20reu.org" className="underline">
             COV-IDEAS REU
@@ -97,7 +97,7 @@ export default function CovideasPage() {
         />
 
         <p>
-          One large focus that was a part of the project ideation was the
+          One large focus that was apart of the project ideation was the
           gamification of the site. Prediction markets can be fun because they
           let real people give their opinions and views on future events, but we
           wanted to make sure the site was engaging in the correct way, and that
@@ -175,11 +175,11 @@ export default function CovideasPage() {
           Heroku and is public and available for anyone to use. Click{" "}
           <a
             href="https://www.covidforecasts.com/#/"
-            className="link covideas-link"
+            className="underline covideas-link"
           >
-            here{" "}
-          </a>
-          to see the live site.
+            here
+          </a> 
+           {" "}to see the live site.
         </p>
 
         <iframe

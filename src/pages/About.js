@@ -25,23 +25,23 @@ export default function AboutPage() {
         lineOne="Hey there,"
         lineTwo="Nice to meet you."
       />
-      <div className="c15 prose-2xl">
+      <div className="c15 prose-2xl space-x-2">
         <div>
           <p>
-            Hi, I'm Rachel! I'm a recent graduate of{" "}
+            Hi, I'm Rachel! I'm a graduate of{" "}
             <a href="https://engineering.nyu.edu" className="link nyu">
               New York University
             </a>
-            , where I studied Computer Science and Game Engineering, and am
+            , where I studied Computer Science and Game Engineering at the Tandon School of Engineering, and am
             currently exploring all of the opportunities I’m given that merge
             tech and artistic creativity together.
           </p>
           <p>
-            I recently worked as a Software Engineer at{" "}
+            After graduation I worked as a Software Engineer at{" "}
             <a href="https://www.alteryx.com" className="link alteryx">
               Alteryx
             </a>{" "}
-            working on{" "}
+            for two years working on{" "}
             <a href="https://www.trifacta.com" className="link alteryx">
               Trifacta
             </a>{" "}
@@ -52,7 +52,7 @@ export default function AboutPage() {
             >
               Twitter
             </a>{" "}
-            as a Software Engineering Intern, and this past school year I have
+            as a Software Engineering Intern, and in school I had
             taken courses such as{" "}
             <Link to={pathConstants.CS3113} className="link cs3113">
               Introduction to Game Programming
@@ -75,7 +75,7 @@ export default function AboutPage() {
         {currentTheme == "light" && (
           <motion.img
             src={roavilight}
-            className="avi object-cover"
+            className="avi object-cover "
             alt="picture of Rachel Ombok light theme"
             key="1"
             initial={{ opacity: 0.5 }}
@@ -98,7 +98,7 @@ export default function AboutPage() {
         {currentTheme == "cupcake" && (
           <motion.img
             src={roavicupcake}
-            className="avi"
+            className="avi object-cover"
             alt="picture of Rachel Ombok cupcake"
             initial={{ opacity: 0.5 }}
             animate={{ opacity: 1 }}

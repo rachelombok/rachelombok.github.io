@@ -403,7 +403,7 @@ export default function GameProgrammingPage() {
                   <p></p>
 
                   <h3 className="cs3113">Room Description Table</h3>
-                  <img src={roomdesctable} alt="Rooms description table" />
+                  <img src={roomdesctable} alt="Rooms description table" className="border border-8 rounded border-neutral"/>
 
                   <h3 className="cs3113">Debuffs</h3>
                   <p>
@@ -411,7 +411,7 @@ export default function GameProgrammingPage() {
                     slows the player speed by half.
                   </p>
                   <h3 className="cs3113">Level Layout</h3>
-                  <img src={levellayout} alt="Level layout" />
+                  <img src={levellayout} alt="Level layout" className="border border-8 rounded border-neutral" />
 
                   <h3 className="cs3113">Game Notes</h3>
                   <p>
@@ -550,6 +550,7 @@ export default function GameProgrammingPage() {
                   <img
                     src={greatescape1}
                     alt="in game picture of part of map"
+                    className="border border-8 rounded border-neutral"
                   />
                   <p>
                     Another success was the animations and sound effects. This
@@ -589,7 +590,7 @@ export default function GameProgrammingPage() {
                     outside, there were not a lot of matching assets to help
                     decorate the scene.
                   </p>
-                  <img src={greatescape2} alt="inside the dungeon in game" />
+                  <img src={greatescape2} alt="inside the dungeon in game" className="border border-8 rounded border-neutral" />
                   <p>
                     Additionally, coming up with a truly compelling story took
                     us some time as we wanted our ideas to be consistent with
@@ -609,7 +610,7 @@ export default function GameProgrammingPage() {
                     We also learned about using AI & NavMesh with unity to make
                     player and bots move and follow the player.
                   </p>
-                  <img src={greatescape4} alt="player fighting enemy" />
+                  <img src={greatescape4} alt="player fighting enemy" className="border border-8 rounded border-neutral"/>
 
                   <h3 className="cs3113">Possible Future Revisons</h3>
                   <p>
@@ -617,7 +618,7 @@ export default function GameProgrammingPage() {
                     random, so if given more time, we would like to go back and
                     implement that feature.
                   </p>
-                  <img src={greatescape3} alt="in game image" />
+                  <img src={greatescape3} alt="in game image" className="border border-8 rounded border-neutral"/>
                   <p>
                     We also would like to add a way to force the player to drink
                     debuffs when they enter a room with one, since right now
@@ -696,6 +697,7 @@ export default function GameProgrammingPage() {
                   <img
                     src={maze1}
                     alt="game end screen, player on 2d platform with different medals"
+                    className="border border-8 rounded border-neutral"
                   />
                   <p>
                     The easy level was developed so that the player having to
@@ -726,7 +728,7 @@ export default function GameProgrammingPage() {
                     around smaller spaces. The player can move in any direction
                     and can also have motion towards the ground.{" "}
                   </p>
-                  <img src={maze4} alt="start image for game" />
+                  <img src={maze4} alt="start image for game" className="border border-8 rounded border-neutral"/>
                   <p>
                     The medium level was developed so that the player having to
                     navigate through many maze style platforms while having to
@@ -744,7 +746,7 @@ export default function GameProgrammingPage() {
                     their enemy kills determine their score and will get a medal
                     based on the amount of enemies they destroy.{" "}
                   </p>
-                  <img src={maze3} alt="another game end screen" />
+                  <img src={maze3} alt="another game end screen" className="border border-8 rounded border-neutral"/>
                   <p>
                     The hard level was developed so that the player having to
                     navigate through many maze style platforms while having to

@@ -56,6 +56,7 @@ export default function HandyMapPage() {
         roles="Frontend/Backend Developer"
         timeline="September 2019"
         team={team}
+        useBorder
       />
 
       <ProjectSectionDescription
@@ -114,10 +115,10 @@ export default function HandyMapPage() {
           <img
             src={handymapgroupnight}
             alt="Lego Poppy mindstorms robot"
-            className="size-7/12 ml-1"
+            className="size-7/12 ml-4 border border-8 rounded border-neutral-content"
           />
         </div>
-        <img alt="MIT campus map" src={mitmap} className="center"></img>
+        <img alt="MIT campus map" src={mitmap} className="center border border-8 rounded border-neutral-content"></img>
 
         <div className="flex justify-around">
           <div className="space-y-5">
@@ -242,7 +243,7 @@ export default function HandyMapPage() {
         communicate our ideas effectively and proactively as a team.
         <img
           src={handymapgroup1}
-          className="mx-auto"
+          className="mx-auto mt-4 border border-8 rounded border-neutral-content"
           alt="HandyMap team after the hackathon"
         />
       </ProjectSectionDescription>

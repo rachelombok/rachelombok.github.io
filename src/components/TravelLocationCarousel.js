@@ -11,11 +11,11 @@ export default function TravelLocationCarousel(props) {
       <div className="carousel carousel-center bg-neutral rounded-box space-x-6 p-6">
         {props.images.map((image) => {
           return (
-            <div className="carousel-item">
+            <div className="carousel-item" >
               <img
                 src={image}
                 className="carousel-img rounded-box"
-                alt={`${props.locationName} travel image`}
+                alt={`${props.locationName} travel`}
                 loading="lazy"
               />
             </div>
