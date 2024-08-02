@@ -18,7 +18,7 @@ export default function ResumePage() {
   );
 
   return (
-    <PageContainerOutline className="site-page" title='Resume'>
+    <PageContainerOutline className="site-page" title="Resume">
       <PageHeader emoji={`💼`} lineOne="Resume" lineTwo={resumeDownload} />
 
       <h5 className="subtitle base-300">Education</h5>
@@ -189,7 +189,7 @@ export default function ResumePage() {
 
       <h5 className="subtitle base-300">Leadership Activities</h5>
       <ResumeDescription
-        resumeLink='' // {pathConstants.GIRLSWHOCODE}
+        resumeLink="" // {pathConstants.GIRLSWHOCODE}
         company="NYU Girls Who Code College Loop"
         id="nyu"
         subline="Founder/President · Oct 2019 to May 2022"

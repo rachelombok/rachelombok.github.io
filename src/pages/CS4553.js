@@ -1,11 +1,8 @@
 import React from "react";
 import { PageContainerOutline } from "../components/PageContainerOutline";
 import { PageHeader } from "../components/PageHeader";
-import { PageDetails } from "../components/PageDetails";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
-import { CollapsibleSection } from "../components/CollapsibleSection";
 import { CourseSectionDetails } from "../components/CourseSectionDetails";
-import { Link } from "react-router-dom";
 
 export default function GameDesignPage() {
   const overview = (
@@ -55,7 +52,7 @@ export default function GameDesignPage() {
   );
 
   return (
-    <PageContainerOutline className="site-page" title='CS4553'>
+    <PageContainerOutline className="site-page" title="CS4553">
       <PageHeader
         emoji={`🕹`}
         lineOne="CS-UY 4553"
@@ -193,7 +190,10 @@ export default function GameDesignPage() {
       >
         <p>
           Garden of Flora is a PCG collecting game.{" "}
-          <a className="cs4553 link" href="https://amykwan.itch.io/garden-of-flora">
+          <a
+            className="cs4553 link"
+            href="https://amykwan.itch.io/garden-of-flora"
+          >
             Play here.
           </a>
         </p>
@@ -218,7 +218,10 @@ export default function GameDesignPage() {
           This is a fun survival/action game with Ford GT as the main vehicle
           for the player. There are four types of power ups: Health, Nitro,
           Shield and Mine. Have fun destroying cars if you're good at it.{" "}
-          <a className="cs4553 link" href="https://naga-b.itch.io/3d-arena-fighter">
+          <a
+            className="cs4553 link"
+            href="https://naga-b.itch.io/3d-arena-fighter"
+          >
             Play here.
           </a>
         </p>

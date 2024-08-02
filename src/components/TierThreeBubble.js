@@ -7,18 +7,25 @@ export const TierThreeBubble = ({ project }) => {
     left: project.canvasPosition[0],
   };
 
-  const tierThreeBubbleStyles = { background: project.bgColor, color: project.textColor, };
+  const tierThreeBubbleStyles = {
+    background: project.bgColor,
+    color: project.textColor,
+  };
 
   return (
-    <Link to={project.linkPath} className="tier-three-bubble-link" style={bubbleLinkStyles}>
-      <div
-        className="tier-three-bubble"
-        style={tierThreeBubbleStyles}
-      >
-        <img alt="tier three project bubble icon" src={project.icon} className="tier-three-icon"/>
+    <Link
+      to={project.linkPath}
+      className="tier-three-bubble-link"
+      style={bubbleLinkStyles}
+    >
+      <div className="tier-three-bubble" style={tierThreeBubbleStyles}>
+        <img
+          alt="tier three project bubble icon"
+          src={project.icon}
+          className="tier-three-icon"
+        />
 
         <p className="tier-three-project-bubble-name">{project.title}</p>
-          {/*<p className="tagline">{project.tagline}</p>*/}
       </div>
     </Link>
   );

@@ -1,11 +1,9 @@
 import React from "react";
 import { PageContainerOutline } from "../components/PageContainerOutline";
 import { PageHeader } from "../components/PageHeader";
-import { PageDetails } from "../components/PageDetails";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 import { CollapsibleSection } from "../components/CollapsibleSection";
 import { CourseSectionDetails } from "../components/CourseSectionDetails";
-import { Link } from "react-router-dom";
 import shrine1 from "../images/cs3113/shrine1.png";
 import shrine2 from "../images/cs3113/shrine2.png";
 import shrine3 from "../images/cs3113/shrine3.png";
@@ -20,10 +18,10 @@ import greatescape1 from "../images/cs3113/greatescape1.png";
 import greatescape2 from "../images/cs3113/greatescape2.png";
 import greatescape3 from "../images/cs3113/greatescape3.png";
 import greatescape4 from "../images/cs3113/greatescape4.png";
-import maze1 from '../images/cs3113/maze1.jpeg';
-import maze2 from '../images/cs3113/maze3.jpeg';
-import maze3 from '../images/cs3113/maze4.jpeg';
-import maze4 from '../images/cs3113/maze5.jpeg';
+import maze1 from "../images/cs3113/maze1.jpeg";
+import maze2 from "../images/cs3113/maze3.jpeg";
+import maze3 from "../images/cs3113/maze4.jpeg";
+import maze4 from "../images/cs3113/maze5.jpeg";
 
 export default function GameProgrammingPage() {
   const overview = (
@@ -116,7 +114,7 @@ export default function GameProgrammingPage() {
   );
 
   return (
-    <PageContainerOutline className="site-page" title='CS3113'>
+    <PageContainerOutline className="site-page" title="CS3113">
       <PageHeader
         emoji={`🎮`}
         lineOne="CS-UY 3113"
@@ -146,7 +144,10 @@ export default function GameProgrammingPage() {
           of M2 the block is pushed away from the player. In air mode you gain
           multiple air jumps. Using elemental abilities requires elemental
           charges that can be replenished by locating the elemental shrines.{" "}
-          <a className="link cs3113" href="https://razzve.itch.io/elemental-fury">
+          <a
+            className="link cs3113"
+            href="https://razzve.itch.io/elemental-fury"
+          >
             Play here.
           </a>{" "}
         </p>
@@ -222,17 +223,17 @@ export default function GameProgrammingPage() {
                   </p>
                   <h3 className="cs3113">Shrines</h3>
                   <img src={shrine1} alt="shrine game asset 1" />
-                  <img src={shrine2} alt="shrine game asset 2"/>
+                  <img src={shrine2} alt="shrine game asset 2" />
                   <img src={shrine3} alt="shrine game asset 3" />
 
                   <h3 className="cs3113">Backgrounds</h3>
-                  <img src={background1} alt="background game asset 1"/>
-                  <img src={background2} alt="background game asset 2"/>
-                  <img src={background3} alt="background game asset 3"/>
+                  <img src={background1} alt="background game asset 1" />
+                  <img src={background2} alt="background game asset 2" />
+                  <img src={background3} alt="background game asset 3" />
 
                   <h3 className="cs3113">Player States</h3>
-                  <img src={playerstate1} alt="player state game asset 1"/>
-                  <img src={playerstate2} alt="player state game asset 2"/>
+                  <img src={playerstate1} alt="player state game asset 1" />
+                  <img src={playerstate2} alt="player state game asset 2" />
 
                   <h3 className="cs3113">Summary of Playtests:</h3>
 
@@ -328,7 +329,10 @@ export default function GameProgrammingPage() {
           up with seeing your fellow inmates go mysteriously missing and are
           determined to escape but not without first gathering enough evidence
           to take this place down with you.{" "}
-          <a className="cs3113 link" href="https://mjm1175.itch.io/adventure-game">
+          <a
+            className="cs3113 link"
+            href="https://mjm1175.itch.io/adventure-game"
+          >
             Play here.
           </a>
         </p>
@@ -399,7 +403,7 @@ export default function GameProgrammingPage() {
                   <p></p>
 
                   <h3 className="cs3113">Room Description Table</h3>
-                  <img src={roomdesctable} alt="Rooms description table"/>
+                  <img src={roomdesctable} alt="Rooms description table" />
 
                   <h3 className="cs3113">Debuffs</h3>
                   <p>
@@ -407,7 +411,7 @@ export default function GameProgrammingPage() {
                     slows the player speed by half.
                   </p>
                   <h3 className="cs3113">Level Layout</h3>
-                  <img src={levellayout} alt="Level layout"/>
+                  <img src={levellayout} alt="Level layout" />
 
                   <h3 className="cs3113">Game Notes</h3>
                   <p>
@@ -543,7 +547,10 @@ export default function GameProgrammingPage() {
                     seamless and to ensure that camera and spawn positions were
                     maintained throughout the routes.{" "}
                   </p>
-                  <img src={greatescape1} alt="in game picture of part of map"/>
+                  <img
+                    src={greatescape1}
+                    alt="in game picture of part of map"
+                  />
                   <p>
                     Another success was the animations and sound effects. This
                     is an area that our team had the least experience with and
@@ -582,7 +589,7 @@ export default function GameProgrammingPage() {
                     outside, there were not a lot of matching assets to help
                     decorate the scene.
                   </p>
-                  <img src={greatescape2} alt="inside the dungeon in game"/>
+                  <img src={greatescape2} alt="inside the dungeon in game" />
                   <p>
                     Additionally, coming up with a truly compelling story took
                     us some time as we wanted our ideas to be consistent with
@@ -602,7 +609,7 @@ export default function GameProgrammingPage() {
                     We also learned about using AI & NavMesh with unity to make
                     player and bots move and follow the player.
                   </p>
-                  <img src={greatescape4} alt="player fighting enemy"/>
+                  <img src={greatescape4} alt="player fighting enemy" />
 
                   <h3 className="cs3113">Possible Future Revisons</h3>
                   <p>
@@ -686,94 +693,211 @@ export default function GameProgrammingPage() {
                 title={<h5 className="subtitle">development log</h5>}
               >
                 <div className="space-y-4">
-              <img src={maze1} alt="game end screen, player on 2d platform with different medals"/>
-						<p>The easy level was developed so that the player having to navigate through many maze style platforms while having to kill enemies that can
-							 be on different platforms and between different barriers. This level includes a time limit, fewer enemies and fewer platforms so that
-							  the player is able to understand and adjust to the game’s setting while being able more easily navigate through the setting. Players will
-							   earn points each time they destroy an enemy. These points will determine their score and the player will get a medal based on their 
-							   amount of points. Different enemies were made to have different points given to the player when the player destroys different enemies. 
-							   This point scoring is the same for all levels.  </p>
-						<p>As part of the development process, a player can destroy an enemy by reaching the enemy and making contact with the enemy. The emphasis 
-							was placed on creating a maze style narrative where the player has to focus on using effective maze and platform navigation skills so 
-							that they are able to reach enemies under a time limit. Also, there are different amounts of points that need to be earned to get a gold
-							 medal, silver medal, or bronze medal. Throughout the levels, there are different maze structures and platforms placed so that the player
-							  has to jump at accurate angles and maneuver around smaller spaces. The player can move in any direction and can also have motion towards 
-							  the ground. </p>
-							  <img src={maze4} alt="start image for game"/>
-						<p>The medium level was developed so that the player having to navigate through many maze style platforms while having to kill enemies that are
-							 on many different maze style platforms and between barriers placed on the platforms. This level includes a time limit, more enemies, 
-							 barriers, and more maze style platforms than the easy level so that the player has to use better navigation and so that the player finds it
-							  more difficult to eliminate different types of enemies and gain points towards their medal score for the level. The platforms had less
-							   spacing and there more enemies where the maze platforms were harder to navigate so that the player was encouraged to move quickly around 
-							   the maze style platforms and reach the enemies. Players will still have their enemy kills determine their score and will get a medal based 
-							   on the amount of enemies they destroy. </p>
-						<img src={maze3} alt="another game end screen"/>
-						<p>The hard level was developed so that the player having to navigate through many maze style platforms while having to kill enemies to earn points
-							 and try for a medal score. This hard level includes a time limit, even more enemies, barriers, and more difficult maze style design platforms
-							  than the medium level so that the player has to use even better navigation throughout the platforms and so that the player finds it even more 
-							  difficult to destroy different types of enemies. The platforms will be harder to reach because of the time limit and how the player has to
-							   navigate around smaller spaces. There will also be more barriers placed on or around the platforms. Players will still have points that 
-							   determine their score and will get a medal based on the amount of enemies they destroy. </p>
-						<p>During playtesting, there were recommendations made to change the UI of the game that shows the current score of the player based on how many
-							 enemies they have destroyed and how many points are needed to get a gold, silver, or bronze medal for each level. The UI was not showing up 
-							 clearly initially, but after changing the aspect ratio, scaling settings, and reference resolution, it was much more efficient to change the 
-							 UI so that it shows well on the phone screen. The font size and position was changed to better show the score and medals score UI. Also, during
-							  playtesting, the player navigated well throughout the levels and the the point scoring system of the player gaining points by destroying enemies 
-							  had accurate behavior. The sound feedback after destroying enemies and background music was also working well. Also, when the player earned a
-							   medal score, the game behavior for moving to the next level automatically was working well. </p>
-                               </div>
+                  <img
+                    src={maze1}
+                    alt="game end screen, player on 2d platform with different medals"
+                  />
+                  <p>
+                    The easy level was developed so that the player having to
+                    navigate through many maze style platforms while having to
+                    kill enemies that can be on different platforms and between
+                    different barriers. This level includes a time limit, fewer
+                    enemies and fewer platforms so that the player is able to
+                    understand and adjust to the game’s setting while being able
+                    more easily navigate through the setting. Players will earn
+                    points each time they destroy an enemy. These points will
+                    determine their score and the player will get a medal based
+                    on their amount of points. Different enemies were made to
+                    have different points given to the player when the player
+                    destroys different enemies. This point scoring is the same
+                    for all levels.{" "}
+                  </p>
+                  <p>
+                    As part of the development process, a player can destroy an
+                    enemy by reaching the enemy and making contact with the
+                    enemy. The emphasis was placed on creating a maze style
+                    narrative where the player has to focus on using effective
+                    maze and platform navigation skills so that they are able to
+                    reach enemies under a time limit. Also, there are different
+                    amounts of points that need to be earned to get a gold
+                    medal, silver medal, or bronze medal. Throughout the levels,
+                    there are different maze structures and platforms placed so
+                    that the player has to jump at accurate angles and maneuver
+                    around smaller spaces. The player can move in any direction
+                    and can also have motion towards the ground.{" "}
+                  </p>
+                  <img src={maze4} alt="start image for game" />
+                  <p>
+                    The medium level was developed so that the player having to
+                    navigate through many maze style platforms while having to
+                    kill enemies that are on many different maze style platforms
+                    and between barriers placed on the platforms. This level
+                    includes a time limit, more enemies, barriers, and more maze
+                    style platforms than the easy level so that the player has
+                    to use better navigation and so that the player finds it
+                    more difficult to eliminate different types of enemies and
+                    gain points towards their medal score for the level. The
+                    platforms had less spacing and there more enemies where the
+                    maze platforms were harder to navigate so that the player
+                    was encouraged to move quickly around the maze style
+                    platforms and reach the enemies. Players will still have
+                    their enemy kills determine their score and will get a medal
+                    based on the amount of enemies they destroy.{" "}
+                  </p>
+                  <img src={maze3} alt="another game end screen" />
+                  <p>
+                    The hard level was developed so that the player having to
+                    navigate through many maze style platforms while having to
+                    kill enemies to earn points and try for a medal score. This
+                    hard level includes a time limit, even more enemies,
+                    barriers, and more difficult maze style design platforms
+                    than the medium level so that the player has to use even
+                    better navigation throughout the platforms and so that the
+                    player finds it even more difficult to destroy different
+                    types of enemies. The platforms will be harder to reach
+                    because of the time limit and how the player has to navigate
+                    around smaller spaces. There will also be more barriers
+                    placed on or around the platforms. Players will still have
+                    points that determine their score and will get a medal based
+                    on the amount of enemies they destroy.{" "}
+                  </p>
+                  <p>
+                    During playtesting, there were recommendations made to
+                    change the UI of the game that shows the current score of
+                    the player based on how many enemies they have destroyed and
+                    how many points are needed to get a gold, silver, or bronze
+                    medal for each level. The UI was not showing up clearly
+                    initially, but after changing the aspect ratio, scaling
+                    settings, and reference resolution, it was much more
+                    efficient to change the UI so that it shows well on the
+                    phone screen. The font size and position was changed to
+                    better show the score and medals score UI. Also, during
+                    playtesting, the player navigated well throughout the levels
+                    and the the point scoring system of the player gaining
+                    points by destroying enemies had accurate behavior. The
+                    sound feedback after destroying enemies and background music
+                    was also working well. Also, when the player earned a medal
+                    score, the game behavior for moving to the next level
+                    automatically was working well.{" "}
+                  </p>
+                </div>
               </CollapsibleSection>
             </div>{" "}
             <div className="summary-section">
               <CollapsibleSection
                 title={<h5 className="subtitle">postmortem</h5>}
               >
-               <div>
-               <h3 className='cs3113'>Successes</h3>
-								<p>The successes we had for developing this maze platformer mobile game were that the different levels had effective narrative, good creativity 
-									in maze style platforms design, many platforms, and barriers, and creating a time limit and medal score goals that would keep the player
-									 motivated. Each of the levels were successfully made so that the player is able to make the maneuvers, have a display of the amount of time
-									  left to complete the level, move across platforms, and understand the maze style game setting, narrative and the game’s objectives of 
-									  getting the most amount of points from destroying enemies and getting a medal score from user experience and real time UI feedback. There was
-									   also success in developing the logic behind the game where there was a time limit and the player can earn points and gain medals from
-									    destroying more enemies while navigating the maze style platformers. The barriers and maze structures were also well designed and developed 
-										so that each of the levels had more excitement, and created more interesting gameplay for the users. </p>
-								
-								<h3 className='cs3113'>Challenges</h3>
-								<p>The challenges for this maze platformer mobile game was the placement of barriers, and platforms so that each of the maze platformer levels would
-									 create enough difficulty for the player. When some of the traps and barriers were placed initially as part of the level design, it occasionally 
-									 interfered with the player’s navigation by creating too much difficulty or making it too easy for the player to destroy enemies while moving 
-									 across platforms. Also, another challenge was controlling player navigation in response to the player’s enemy kills because some maze style 
-									 structures did not always align with the difficulty of the level and some of the enemies were not placed correctly on the maze initially, so
-									  the player would not have been able to reach enemies. Also, having barriers too close or too far from platforms changed how the player would
-									   be able to destroy enemies to earn points. So, then this became a challenge of finding a way to have the player’s skills in navigation be the 
-									   ultimate decider of the player’s score from earning points. In some platforms and barriers for the levels, there was the challenge of maintaining
-									    clarity about what the game’s purpose and setting was. Also, the placement and quantity of platforms was also challenging because we had to 
-										maintain a certain difficulty on each level and even small changes to platform sizes and positions of where enemies were would vary how the 
-										difficulty of gameplay would be. Having too many barriers or platforms also crowded the screen so there had to be enough space between barriers
-										 and platforms so that the players could navigate around enemies. </p>	
-								<h3 className="cs3113">What We Learned</h3>
-								<p>We learned that the game’s difficulty on each of the levels would easily vary based on where the platforms, barriers, and enemies were placed. Even
-									 though the harder level would have less platforms and more barriers. There was a need for continuous testing of gameplay because of how the 
-									 player would still be able to find easier angles that would decrease the difficulty of a harder level even though the level had been designed as
-									  a medium or hard level. The position and size of barriers and the variation in the maze style platforms would change the entire level’s player 
-									  dynamics. Also, understanding how the enemies would be moved towards the player also changed the level difficulty and the player’s gameplay.
-									    We also learned that keeping platforms spaced too far apart would really change player experience because the screen did not always fit in 
-										the next platforms that the player could jump to, so understanding how the game works on different screen sizes was good to learn so that the
-										 platforms, barriers, and a player’s would be easily visible to the player. Then, the player would have more understanding and more clarity 
-										 of how to proceed and move throughout the levels. </p>	
-								<h3 className="cs3113">Possible Future Revisions</h3>
-								<p>Possible future revisions for this maze platformer mobile game include adding more animations to platforms like disappearing barriers and traps.
-									 Other future revisions could be adding enemies that would automatically create new barriers for the player while they are also trying to 
-									 eliminate the player.. Also, other revisions could be adding more barriers around platforms so that the player would have to navigate better 
-									 during landing onto the platforms. Also, adding a map for the player so that they can be better prepared with finding  enemies, barriers, and
-									  finding nearby platforms is easier. Additionally, other revisions could be that the enemies can jump off walls. Also, the enemies could 
-									  disrupt the player’s kills more by being able to place traps, in real time during the player’s gameplay, near the platforms. Also, other 
-									  future revisions could be adding more barriers on the walls so that the player’s jumping maneuver has increased difficulty and having 
-									  movable platforms that have the animation of sliding in towards the middle and slide out towards the side walls. </p>
-									  <iframe className='mx-auto my-4'width="560" height="315" src="https://www.youtube.com/embed/dxaseGN2D-c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-									
-               </div>
+                <div>
+                  <h3 className="cs3113">Successes</h3>
+                  <p>
+                    The successes we had for developing this maze platformer
+                    mobile game were that the different levels had effective
+                    narrative, good creativity in maze style platforms design,
+                    many platforms, and barriers, and creating a time limit and
+                    medal score goals that would keep the player motivated. Each
+                    of the levels were successfully made so that the player is
+                    able to make the maneuvers, have a display of the amount of
+                    time left to complete the level, move across platforms, and
+                    understand the maze style game setting, narrative and the
+                    game’s objectives of getting the most amount of points from
+                    destroying enemies and getting a medal score from user
+                    experience and real time UI feedback. There was also success
+                    in developing the logic behind the game where there was a
+                    time limit and the player can earn points and gain medals
+                    from destroying more enemies while navigating the maze style
+                    platformers. The barriers and maze structures were also well
+                    designed and developed so that each of the levels had more
+                    excitement, and created more interesting gameplay for the
+                    users.{" "}
+                  </p>
+
+                  <h3 className="cs3113">Challenges</h3>
+                  <p>
+                    The challenges for this maze platformer mobile game was the
+                    placement of barriers, and platforms so that each of the
+                    maze platformer levels would create enough difficulty for
+                    the player. When some of the traps and barriers were placed
+                    initially as part of the level design, it occasionally
+                    interfered with the player’s navigation by creating too much
+                    difficulty or making it too easy for the player to destroy
+                    enemies while moving across platforms. Also, another
+                    challenge was controlling player navigation in response to
+                    the player’s enemy kills because some maze style structures
+                    did not always align with the difficulty of the level and
+                    some of the enemies were not placed correctly on the maze
+                    initially, so the player would not have been able to reach
+                    enemies. Also, having barriers too close or too far from
+                    platforms changed how the player would be able to destroy
+                    enemies to earn points. So, then this became a challenge of
+                    finding a way to have the player’s skills in navigation be
+                    the ultimate decider of the player’s score from earning
+                    points. In some platforms and barriers for the levels, there
+                    was the challenge of maintaining clarity about what the
+                    game’s purpose and setting was. Also, the placement and
+                    quantity of platforms was also challenging because we had to
+                    maintain a certain difficulty on each level and even small
+                    changes to platform sizes and positions of where enemies
+                    were would vary how the difficulty of gameplay would be.
+                    Having too many barriers or platforms also crowded the
+                    screen so there had to be enough space between barriers and
+                    platforms so that the players could navigate around enemies.{" "}
+                  </p>
+                  <h3 className="cs3113">What We Learned</h3>
+                  <p>
+                    We learned that the game’s difficulty on each of the levels
+                    would easily vary based on where the platforms, barriers,
+                    and enemies were placed. Even though the harder level would
+                    have less platforms and more barriers. There was a need for
+                    continuous testing of gameplay because of how the player
+                    would still be able to find easier angles that would
+                    decrease the difficulty of a harder level even though the
+                    level had been designed as a medium or hard level. The
+                    position and size of barriers and the variation in the maze
+                    style platforms would change the entire level’s player
+                    dynamics. Also, understanding how the enemies would be moved
+                    towards the player also changed the level difficulty and the
+                    player’s gameplay. We also learned that keeping platforms
+                    spaced too far apart would really change player experience
+                    because the screen did not always fit in the next platforms
+                    that the player could jump to, so understanding how the game
+                    works on different screen sizes was good to learn so that
+                    the platforms, barriers, and a player’s would be easily
+                    visible to the player. Then, the player would have more
+                    understanding and more clarity of how to proceed and move
+                    throughout the levels.{" "}
+                  </p>
+                  <h3 className="cs3113">Possible Future Revisions</h3>
+                  <p>
+                    Possible future revisions for this maze platformer mobile
+                    game include adding more animations to platforms like
+                    disappearing barriers and traps. Other future revisions
+                    could be adding enemies that would automatically create new
+                    barriers for the player while they are also trying to
+                    eliminate the player.. Also, other revisions could be adding
+                    more barriers around platforms so that the player would have
+                    to navigate better during landing onto the platforms. Also,
+                    adding a map for the player so that they can be better
+                    prepared with finding enemies, barriers, and finding nearby
+                    platforms is easier. Additionally, other revisions could be
+                    that the enemies can jump off walls. Also, the enemies could
+                    disrupt the player’s kills more by being able to place
+                    traps, in real time during the player’s gameplay, near the
+                    platforms. Also, other future revisions could be adding more
+                    barriers on the walls so that the player’s jumping maneuver
+                    has increased difficulty and having movable platforms that
+                    have the animation of sliding in towards the middle and
+                    slide out towards the side walls.{" "}
+                  </p>
+                  <iframe
+                    className="mx-auto my-4"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/dxaseGN2D-c"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </CollapsibleSection>
             </div>
           </div>{" "}

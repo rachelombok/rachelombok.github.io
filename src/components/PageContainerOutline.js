@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
-import { AnimatePresence, motion, useCycle } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const PageContainerOutline = (props) => {
   useEffect(() => {
-    document.title = props.title ? `${props.title} · Rachel Ombok` : 'Rachel Ombok';
+    document.title = props.title
+      ? `${props.title} · Rachel Ombok`
+      : "Rachel Ombok";
   }, []);
 
   return (
-   
     <motion.div
       className={`page-container prose lg:prose-xl ${props.className}`}
       initial={{ opacity: 0 }}

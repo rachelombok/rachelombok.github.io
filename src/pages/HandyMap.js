@@ -2,12 +2,11 @@ import React from "react";
 import { PageContainerOutline } from "../components/PageContainerOutline";
 import { PageHeader } from "../components/PageHeader";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
-import { Link } from "react-router-dom";
 import { PageDetails } from "../components/PageDetails";
 import handymapgroupwin from "../images/handymap/handymapgroup2.png";
 import handymapgroupnight from "../images/handymap/handymapgroup3.png";
 import mitmap from "../images/handymap/mitmap.jpg";
-import handymapgroup1 from '../images/handymap/handymapgroup1.png';
+import handymapgroup1 from "../images/handymap/handymapgroup1.png";
 
 export default function HandyMapPage() {
   const overview =
@@ -42,7 +41,7 @@ export default function HandyMapPage() {
     </>
   );
   return (
-    <PageContainerOutline className="site-page" title='HandyMap'>
+    <PageContainerOutline className="site-page" title="HandyMap">
       <PageHeader
         emoji={`👨‍🦽`}
         lineOne="HandyMap"
@@ -64,7 +63,10 @@ export default function HandyMapPage() {
         subtitle="background"
         heading="What is HandyMap?"
       >
-        <a href="https://devpost.com/software/handymap" className="link handymap">
+        <a
+          href="https://devpost.com/software/handymap"
+          className="link handymap"
+        >
           HandyMap
         </a>{" "}
         is an Android application created by Rachel Ombok, Michelle Wen, Joseph
@@ -117,17 +119,15 @@ export default function HandyMapPage() {
         </div>
         <img alt="MIT campus map" src={mitmap} className="center"></img>
 
-       
-
         <div className="flex justify-around">
           <div className="space-y-5">
-          <p>
-          We tested whether our method would work in Python first, because it is
-          the language we all are most familiar with, by using string
-          concatenation to add the proper Java syntax to the latitude and
-          longitude points. Then we printed all of the points to the terminal
-          and imported them into Android Studio.
-        </p>
+            <p>
+              We tested whether our method would work in Python first, because
+              it is the language we all are most familiar with, by using string
+              concatenation to add the proper Java syntax to the latitude and
+              longitude points. Then we printed all of the points to the
+              terminal and imported them into Android Studio.
+            </p>
             <p>
               After being certain that the method would work, we uploaded these
               files into the raw folder in Android Studio and wrote code in Java
@@ -177,12 +177,28 @@ export default function HandyMapPage() {
         subtitle="technologies"
         heading=""
       >
-       <div className="flex space-x-2">
-       <img  width="100px" alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-                <img  width="100px" alt="Javascript" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=javascript&logoColor=white" />
-                <img width="160px" alt="Android Studio" src="https://img.shields.io/badge/-AndroidStudio-3DDC84?style=flat-square&logo=android-studio&logoColor=white" />
-                <img width="150px" alt='Google Maps' src="https://img.shields.io/badge/-GoogleMaps-4285F4?style=flat-square&logo=google-maps&logoColor=white"/>
-       </div>
+        <div className="flex space-x-2">
+          <img
+            width="100px"
+            alt="Python"
+            src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white"
+          />
+          <img
+            width="100px"
+            alt="Javascript"
+            src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=javascript&logoColor=white"
+          />
+          <img
+            width="160px"
+            alt="Android Studio"
+            src="https://img.shields.io/badge/-AndroidStudio-3DDC84?style=flat-square&logo=android-studio&logoColor=white"
+          />
+          <img
+            width="150px"
+            alt="Google Maps"
+            src="https://img.shields.io/badge/-GoogleMaps-4285F4?style=flat-square&logo=google-maps&logoColor=white"
+          />
+        </div>
       </ProjectSectionDescription>
       <ProjectSectionDescription
         id="handymap"
@@ -190,13 +206,26 @@ export default function HandyMapPage() {
         heading="Challenges we ran into/Accomplishments"
       >
         <p>
-                We had a lot more ideas than we were able to implement. Stripping our app to basic, reasonable features was something we had to tackle in the beginning, but it kept changing as we discovered the limitations of our project throughout the 24 hours. Therefore, we had to sacrifice features that we would otherwise have loved to add.
-            </p>
-            <p>
-                A big difficulty for our team was combining our different elements into a cohesive project. Since our team split up the usage of Android Studio, Adobe illustrator, and programming using the Google Maps API, it was most difficult to integrate all our work together.
-            </p>
-            <p>We were proud of how effectively we were able to split up our team’s roles based on everyone’s unique skills. In this way, we were able to be maximally productive and play to our strengths. We were also able to add Boston University accessible entrances in addition to MIT's, which proved that we could adopt this project for other schools and locations, not just MIT.</p>
-           
+          We had a lot more ideas than we were able to implement. Stripping our
+          app to basic, reasonable features was something we had to tackle in
+          the beginning, but it kept changing as we discovered the limitations
+          of our project throughout the 24 hours. Therefore, we had to sacrifice
+          features that we would otherwise have loved to add.
+        </p>
+        <p>
+          A big difficulty for our team was combining our different elements
+          into a cohesive project. Since our team split up the usage of Android
+          Studio, Adobe illustrator, and programming using the Google Maps API,
+          it was most difficult to integrate all our work together.
+        </p>
+        <p>
+          We were proud of how effectively we were able to split up our team’s
+          roles based on everyone’s unique skills. In this way, we were able to
+          be maximally productive and play to our strengths. We were also able
+          to add Boston University accessible entrances in addition to MIT's,
+          which proved that we could adopt this project for other schools and
+          locations, not just MIT.
+        </p>
       </ProjectSectionDescription>
 
       <ProjectSectionDescription
@@ -204,8 +233,18 @@ export default function HandyMapPage() {
         subtitle="conclusion"
         heading="What we learned"
       >
-       We used Android Studio for the first time to make the application. We discovered how much Google API had to offer, allowing us to make our map and include features such as instant directions to a location. This helped us realize that we should use our resources to their full capabilities. For 3 of us on the team, it was our first hackathon and we learned how to use our time efficiently in times of crunch, and how to communicate our ideas effectively and proactively as a team.
-       <img src={handymapgroup1} className="mx-auto" alt="HandyMap team after the hackathon"/>
+        We used Android Studio for the first time to make the application. We
+        discovered how much Google API had to offer, allowing us to make our map
+        and include features such as instant directions to a location. This
+        helped us realize that we should use our resources to their full
+        capabilities. For 3 of us on the team, it was our first hackathon and we
+        learned how to use our time efficiently in times of crunch, and how to
+        communicate our ideas effectively and proactively as a team.
+        <img
+          src={handymapgroup1}
+          className="mx-auto"
+          alt="HandyMap team after the hackathon"
+        />
       </ProjectSectionDescription>
 
       <ProjectSectionDescription
@@ -213,12 +252,30 @@ export default function HandyMapPage() {
         subtitle="future"
         heading="What's next for HandyMap"
       >
-       <p>
-                Given more time, we knew we would have added many features such as accessibility for visually impaired students to help them find entrances, alerts for issues with accessing ramps and power doors, a community rating system of entrances, using machine learning and the community feature to auto-import maps that aren't interactive, and much, much more. Most important of all, we would apply it to all colleges and even anywhere in the world.
-                Check out our <a href='https://devpost.com/software/handymap' className='link handymap'>Devpost</a> writeup!
-            </p>
-            <iframe width="1100" height="670" src="https://www.youtube.com/embed/QS6WupVbfqM"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="mx-auto"></iframe>
-      
+        <p>
+          Given more time, we knew we would have added many features such as
+          accessibility for visually impaired students to help them find
+          entrances, alerts for issues with accessing ramps and power doors, a
+          community rating system of entrances, using machine learning and the
+          community feature to auto-import maps that aren't interactive, and
+          much, much more. Most important of all, we would apply it to all
+          colleges and even anywhere in the world. Check out our{" "}
+          <a
+            href="https://devpost.com/software/handymap"
+            className="link handymap"
+          >
+            Devpost
+          </a>{" "}
+          writeup!
+        </p>
+        <iframe
+          width="1100"
+          height="670"
+          src="https://www.youtube.com/embed/QS6WupVbfqM"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="mx-auto"
+        ></iframe>
       </ProjectSectionDescription>
     </PageContainerOutline>
   );

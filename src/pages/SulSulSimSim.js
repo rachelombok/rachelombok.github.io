@@ -4,12 +4,12 @@ import { PageHeader } from "../components/PageHeader";
 import { PageDetails } from "../components/PageDetails";
 import ts4pic from "../images/sulsulsimsim/ts4.png";
 import projectoutline from "../images/sulsulsimsim/projectoutline.jpg";
-import badroom from '../images/sulsulsimsim/badroomnew.jpg';
-import bareroom from '../images/sulsulsimsim/bareminimumroomnew.jpg';
-import bestroom from '../images/sulsulsimsim/bestroomnew.jpg';
-import evolvedhouse1 from '../images/sulsulsimsim/evolvedhouse1.PNG';
-import evolvedhouse2 from '../images/sulsulsimsim/evolvedhouse2.PNG';
-import simsimsdiscord from '../images/sulsulsimsim/simsimdiscord.jpg';
+import badroom from "../images/sulsulsimsim/badroomnew.jpg";
+import bareroom from "../images/sulsulsimsim/bareminimumroomnew.jpg";
+import bestroom from "../images/sulsulsimsim/bestroomnew.jpg";
+import evolvedhouse1 from "../images/sulsulsimsim/evolvedhouse1.PNG";
+import evolvedhouse2 from "../images/sulsulsimsim/evolvedhouse2.PNG";
+import simsimsdiscord from "../images/sulsulsimsim/simsimdiscord.jpg";
 
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 
@@ -42,7 +42,10 @@ export default function SulSulSimSimPage() {
         </a>
       </p>
       <p className="not-prose my-0 font-medium">
-        <a className="link sulsulsimsim" href="https://twitter.com/dipikarajesh18">
+        <a
+          className="link sulsulsimsim"
+          href="https://twitter.com/dipikarajesh18"
+        >
           Dipika Rajesh
         </a>
       </p>
@@ -50,7 +53,7 @@ export default function SulSulSimSimPage() {
   );
 
   return (
-    <PageContainerOutline className="site-page" title='SulSul! SimSim!'>
+    <PageContainerOutline className="site-page" title="SulSul! SimSim!">
       <PageHeader
         emoji={`💾`}
         lineOne="SulSul! SimSim!"
@@ -100,7 +103,10 @@ export default function SulSulSimSimPage() {
           innovation challenge and emphasizes on the
           technical/engineering/science side of games and simulation. For my
           internship, I worked on a project for{" "}
-          <a href="https://www.ea.com/games/the-sims" className="link sulsulsimsim">
+          <a
+            href="https://www.ea.com/games/the-sims"
+            className="link sulsulsimsim"
+          >
             The Sims
           </a>
           . The general goal of the project was to create general intelligence
@@ -233,7 +239,11 @@ export default function SulSulSimSimPage() {
 
         <div className="row w-auto">
           <div className="column">
-            <img src={badroom} alt="Bad Room for sim survival" className="h-96"/>
+            <img
+              src={badroom}
+              alt="Bad Room for sim survival"
+              className="h-96"
+            />
           </div>
           <div className="column">
             <img
@@ -243,7 +253,11 @@ export default function SulSulSimSimPage() {
             />
           </div>
           <div className="column">
-            <img src={bestroom} alt="Best Room for sim survival" className="h-96"/>
+            <img
+              src={bestroom}
+              alt="Best Room for sim survival"
+              className="h-96"
+            />
           </div>
         </div>
         <p>
@@ -271,16 +285,13 @@ export default function SulSulSimSimPage() {
           search:{" "}
         </p>
 
-            <ul>
-                <li>✅ Random Search</li>
-                <li>✅ Minimal Criterion Novelty Search</li>
-                <li>✅ Regular
-          Novelty Search</li>
-                <li>✅ Regular Fitness-Based Evolutionary Algorithm</li>
-            </ul>
-        <p>
-             
-        </p>
+        <ul>
+          <li>✅ Random Search</li>
+          <li>✅ Minimal Criterion Novelty Search</li>
+          <li>✅ Regular Novelty Search</li>
+          <li>✅ Regular Fitness-Based Evolutionary Algorithm</li>
+        </ul>
+        <p></p>
       </ProjectSectionDescription>
 
       <ProjectSectionDescription
@@ -288,23 +299,52 @@ export default function SulSulSimSimPage() {
         subtitle="results"
         heading="The SimSim Simulator"
       >
-          <p>
-                Each Sim house generated has a set of objects placed within the rooms. The count of these objects are encoded into vectors that are compared to another house. The vector distance between each house is calculated and used for the k-nearest neighbor calculation in the vector space. A generated house is considered novel, if its fitness value is above a set threshold and its vector distance to the other novel houses is greater than some minimum novelty search criteria threshold value. This new house is then added to the novel list. Here are some ASCII representations of the generated houses.
-            </p>
-            <div className="row w-auto">
-              <div className="column">
-                <img src={evolvedhouse1} alt="ASCII of Evolved House 1"/>
-              </div>
-              <div className="column">
-                <img src={evolvedhouse2} alt="ASCII of Evolved House 2"/>
-              </div>
-            </div>
-            
-            <p>
-                The system ideally wanted to replace the three starter objects in the house - consisting of a bed, toilet, and fridge - with more efficient and satisfiable objects that were available from the entire object list. This demonstrated how the algorithm was able to select which objects were the "best" objects for a house. For example, the "coffee maker" object replaced beds in 50% of the final houses produced - due to the fact that the coffee maker renewed more of the energy need than the bed object and also replenished hunger. Similarly, in 25% of the final houses, a "bidet" replaced the starting toilet object. While they replenished the same amount for the bladder need, the bidet also replenished the fun need and thus proved to be a more optimal object in the house. Needs that were also not addressed by the starter objects - such as the fun need and social need - were also optimized through the hillclimber algorithm. In 70% of the final houses, a "foosball table" or "table tennis" object were placed - both being the best objects that could replace both the social and the fun need. 
-            </p>
-            <p>For game AI, the Sims domain proves to be an interesting challenge - placing an agent that is typically made to evolve and find a singular solution in an game environment where there is no one solution or main objective. We encourage researchers to use and improve upon the SimSim project in hopes that these experiments and this framework will be the start of many more environment design exploration projects.</p>
-       
+        <p>
+          Each Sim house generated has a set of objects placed within the rooms.
+          The count of these objects are encoded into vectors that are compared
+          to another house. The vector distance between each house is calculated
+          and used for the k-nearest neighbor calculation in the vector space. A
+          generated house is considered novel, if its fitness value is above a
+          set threshold and its vector distance to the other novel houses is
+          greater than some minimum novelty search criteria threshold value.
+          This new house is then added to the novel list. Here are some ASCII
+          representations of the generated houses.
+        </p>
+        <div className="row w-auto">
+          <div className="column">
+            <img src={evolvedhouse1} alt="ASCII of Evolved House 1" />
+          </div>
+          <div className="column">
+            <img src={evolvedhouse2} alt="ASCII of Evolved House 2" />
+          </div>
+        </div>
+
+        <p>
+          The system ideally wanted to replace the three starter objects in the
+          house - consisting of a bed, toilet, and fridge - with more efficient
+          and satisfiable objects that were available from the entire object
+          list. This demonstrated how the algorithm was able to select which
+          objects were the "best" objects for a house. For example, the "coffee
+          maker" object replaced beds in 50% of the final houses produced - due
+          to the fact that the coffee maker renewed more of the energy need than
+          the bed object and also replenished hunger. Similarly, in 25% of the
+          final houses, a "bidet" replaced the starting toilet object. While
+          they replenished the same amount for the bladder need, the bidet also
+          replenished the fun need and thus proved to be a more optimal object
+          in the house. Needs that were also not addressed by the starter
+          objects - such as the fun need and social need - were also optimized
+          through the hillclimber algorithm. In 70% of the final houses, a
+          "foosball table" or "table tennis" object were placed - both being the
+          best objects that could replace both the social and the fun need.
+        </p>
+        <p>
+          For game AI, the Sims domain proves to be an interesting challenge -
+          placing an agent that is typically made to evolve and find a singular
+          solution in an game environment where there is no one solution or main
+          objective. We encourage researchers to use and improve upon the SimSim
+          project in hopes that these experiments and this framework will be the
+          start of many more environment design exploration projects.
+        </p>
       </ProjectSectionDescription>
 
       <ProjectSectionDescription
@@ -313,26 +353,71 @@ export default function SulSulSimSimPage() {
         heading="Conclusion"
       >
         <p>
-                This was my first research internship I've had, and I am proud that I was able to help contribute and 
-                author a published paper by the end of it. I learned many new things including Git control, object oriented programming and 
-                all the technical and procedural steps in conducting research. It was also a unique experience to research something related to
-                video development as that is a deep passion of mine, academically and personally.
-            </p>
-            
-            <p>
-                To see our code and experiments, check out our <a className='link sulsulsimsim' href='https://github.com/lsoros/simsim'>repo</a>.
-            </p>
-            
-            <p>
-                To read the paper, check it out <a className='link sulsulsimsim' href='https://arxiv.org/abs/2008.11258'>here</a>.
-            </p>
-            
-            <div className="justify-items-center grid space-y-5">
-            <iframe  width="1060" height="555" src="https://www.youtube.com/embed/LxrX5QHi00k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen display='block' ></iframe>
-          
-            <iframe className='items-center' src="https://onedrive.live.com/embed?cid=51C5E7B980EAB28A&amp;resid=51C5E7B980EAB28A%211845&amp;authkey=AKpJ5tc9ki6-L9Q&amp;em=2&amp;wdAr=1.7777777777777777" width="1162px" height="665px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-          
-            <img src={simsimsdiscord} width='1060' alt="presenting our research at the virtual conference on Discord"/></div>
+          This was my first research internship I've had, and I am proud that I
+          was able to help contribute and author a published paper by the end of
+          it. I learned many new things including Git control, object oriented
+          programming and all the technical and procedural steps in conducting
+          research. It was also a unique experience to research something
+          related to video development as that is a deep passion of mine,
+          academically and personally.
+        </p>
+
+        <p>
+          To see our code and experiments, check out our{" "}
+          <a
+            className="link sulsulsimsim"
+            href="https://github.com/lsoros/simsim"
+          >
+            repo
+          </a>
+          .
+        </p>
+
+        <p>
+          To read the paper, check it out{" "}
+          <a
+            className="link sulsulsimsim"
+            href="https://arxiv.org/abs/2008.11258"
+          >
+            here
+          </a>
+          .
+        </p>
+
+        <div className="justify-items-center grid space-y-5">
+          <iframe
+            width="1060"
+            height="555"
+            src="https://www.youtube.com/embed/LxrX5QHi00k"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            display="block"
+          ></iframe>
+
+          <iframe
+            className="items-center"
+            src="https://onedrive.live.com/embed?cid=51C5E7B980EAB28A&amp;resid=51C5E7B980EAB28A%211845&amp;authkey=AKpJ5tc9ki6-L9Q&amp;em=2&amp;wdAr=1.7777777777777777"
+            width="1162px"
+            height="665px"
+            frameborder="0"
+          >
+            This is an embedded{" "}
+            <a target="_blank" href="https://office.com">
+              Microsoft Office
+            </a>{" "}
+            presentation, powered by{" "}
+            <a target="_blank" href="https://office.com/webapps">
+              Office
+            </a>
+            .
+          </iframe>
+
+          <img
+            src={simsimsdiscord}
+            width="1060"
+            alt="presenting our research at the virtual conference on Discord"
+          />
+        </div>
       </ProjectSectionDescription>
     </PageContainerOutline>
   );
