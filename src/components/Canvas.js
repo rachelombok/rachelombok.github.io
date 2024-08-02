@@ -12,7 +12,7 @@ export const Canvas = () => {
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0 } } }}
       transition={{ duration: 1.5 }}>
-        <div className='canvas'>
+        <div className='canvas border-solid border-8 border-current rounded-sm'>
         {/* <div className='container'>  container css was here */}
 
          

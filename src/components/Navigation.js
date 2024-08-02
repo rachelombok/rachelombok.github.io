@@ -5,14 +5,8 @@ import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
 
-  const toggleTheme = (theme) => {
-    document.querySelector('html').setAttribute('data-theme', theme);
-    // localStorage.getItem("theme")
-    // localStorage.setItem("theme", theme === "light" ? "dark" : "light");
-  };
   useEffect(() => {
     themeChange(false)
-    // 👆 false parameter is required for react project
   }, [])
 
     return(
@@ -21,7 +15,7 @@ export const Navigation = () => {
     <a className="btn btn-ghost text-5xl site-title"><Link to='/'>rachel ombok</Link></a>
   </div>
   <div className="flex-none">
-    <ul className="menu menu-horizontal px-1 text-2xl">
+    <ul className="menu menu-horizontal px-1 text-2xl space-x-1">
       <li><Link to='/'>Work</Link></li>
       <li><Link to='/about'>About</Link></li>
       <li><Link to='/resume'>Resume</Link></li>
@@ -32,7 +26,7 @@ export const Navigation = () => {
           </summary>
           <ul className="p-2 bg-base-100 w-56 rounded-t-none absolute right-0">
             <li><Link to='/travel'>Travel</Link></li>
-            <li><Link to='/'>Portfolio</Link></li>
+            <li className="disabled"><Link to='/' >Portfolio (WIP 🚧)</Link></li>
           </ul>
         </details>
       </li>

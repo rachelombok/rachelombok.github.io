@@ -21,8 +21,8 @@ export const CourseSectionDetails = (props) => {
     <>
     <div className="c12">
       <motion.div className="summary" variants={container} initial='hidden' animate='show'>
-        <div class="summary-section">
-          <div class="section summary-item overflow-hidden">
+        <div className="summary-section">
+          <div className="section summary-item overflow-hidden">
             <motion.h5 className="subtitle base-300" variants={item}>Overview</motion.h5>
             <motion.p className='description-text' variants={item}>
               {props.overview}

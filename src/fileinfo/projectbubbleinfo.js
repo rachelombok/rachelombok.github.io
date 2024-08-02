@@ -76,7 +76,7 @@ export const projectBubbleInfo = [
     {
         title: 'Covid Forecasts',
         tagline: 'Creating a pandemic prediction market.',
-        bgColor: '#000',
+        bgColor: 'linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(31,31,31,0.9738489145658263) 86%)',
         icon: covideasLogo,
         linkPath: '/covidforecasts',
         canvasPosition: ['-650px', '750px'],

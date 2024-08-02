@@ -130,7 +130,7 @@ export default function ResumePage() {
           objects affect a sims’ mood and environment. Analyze and interpret
           experiment results alongside graduate students and postdocs, and
           organize notes & data within a thesis paper. This was the{" "}
-          <Link to="sulsulsimsim" className="link sulsulsimsim">
+          <Link to="/sulsulsimsim" className="link sulsulsimsim">
             SulSulSimSim project
           </Link>
           .

@@ -33,52 +33,52 @@
 * [❌] click to view email
 * [ ] speaking opportunities list
 * [x] rewrite biography
-* [ ] new about picture
-* [ ] change about picture depending on theme
+* [x] new about picture
+* [x] change about picture depending on theme
 * [ ] change bubbles view depending on theme
 * [ ] put memoji or bitmoji on there somewhere
 * [x] create a carousel daisyUI for travel
 * [❌] add Santa Clara to travel
-* [ ] pagination for travel
-* [ ] disable portfolio site for now, tooltip about WIP
+* [❌] pagination for travel
+* [x] disable portfolio site for now, tooltip about WIP
 * [x] new icon for website
 * [x] click here to download my resume
-* [ ] make site accessible as possible
-* [ ] change HTML React defaults
+* [x] make site accessible as possible
+* [x] change HTML React defaults
 * [x] change favicon w new icon
-* [ ] make all photos transition in w lazy loading
-* [ ] add skeletons for all paragraphs
-* [ ] animated emojis (?)
+* [❌] make all photos transition in w lazy loading
+* [❌] add skeletons for all paragraphs
+* [❌] animated emojis (?)
 * [x] awards / recognition section
-* [ ] delete default react resources/assets
+* [x] delete default react resources/assets
 * [❌] site navigation should be sticky and stay at the top
 * [x] add dynamic font size adjustments
 * [x] remove hover pill shape from name site header
-* [ ] make a transition for text headers to appear when loading a page
-* [ ] move theme toggler button to bottom footer (?)
-* [ ] add emoji icons to theme toggler
-* [ ] make canvas a bit smaller so you can see footer at bottom
-* [ ] change red canvas border color to theme dependent color
-* [ ] add gif and theme appropriate bg to 404 page
+* [x] make a transition for text headers to appear when loading a page
+* [x] move theme toggler button to bottom footer (?)
+* [x] add emoji icons to theme toggler
+* [❌] make canvas a bit smaller so you can see footer at bottom
+* [x] change red canvas border color to theme dependent color
+* [x] add gif and theme appropriate bg to 404 page
 * [ ] figure out why bubbles dont have text on canvas in safari
 * [ ] compare fonts/images to old site, consider making them larger
-* [ ] link navigation tabs to pages
+* [x] link navigation tabs to pages
 * [x] create Tier 2 bubbles
 * [x] create Tier 3 bubbles
 * [ ] on tier 1 bubbles, add an image preview on hover
 * [ ] add 'scroll to explore' msg on canvas 
-* [ ] fix styles on About page
+* [x] fix styles on About page
 * [ ] replace the pink effect icon
-* [ ] fade in page header + description with framer-motion fade up
-* [ ] make all pages transition w react framer motion
+* [x] fade in page header + description with framer-motion fade up
+* [x] make all pages transition w react framer motion
 * [x] make Resume page
 * [x] make Travel page
 * [ ] make imports/exports cleaner
-* [ ] bold nav tab when selected
+* [❌] bold nav tab when selected
 * [ ] get transparent bp logo
 * [ ] remove scroll from canvas
 * [ ] once bubble icon is added, fix pink effect icon
-* [ ] in ref to above, replace covid forecasts bubble icon w better cropped image
+* [x] in ref to above, replace covid forecasts bubble icon w better cropped image
 * [x] fill out resume page
 * [ ] update justshoot timeline on resume
 * [x] create rds page
@@ -92,16 +92,16 @@
 * [x] create 3d modeling page
 * [x] create game design page
 * [x] create game programming page
-* [ ] update page header bottom line cutting off
+* [x] update page header bottom line cutting off
 * [ ] replace all class w className
 * [ ] crop handymap group picture on page desc
 * [ ] make emoji on page header larger
 * [ ] format all files
 * [ ] proofread all pages/articles
 * [ ] fix all warnings and errors in console
-* [ ] change bg of canvas
+* [x] change bg of canvas
 * [ ] align nav edges to site
-* [ ] choose different light mode(?)
+* [❌] choose different light mode(?)
 * [ ] make sure to use !! or ! on all ternary expressions in jsx
 * [ ] customize course objective bullet points
 * [ ] download not owned videos/assets
@@ -113,8 +113,8 @@
 * [ ] make all elements scalable on sites
 * [ ] in all lists/maps, give elements unique keys
 * [ ] put borders on all images (?)
-* [ ]
-* [ ]
-* [ ]
+* [ ] put custom titles on tab depending on which page currently on
+* [ ] scale text to adjust with window zoom/size
+* [ ] use path constants where ever there is a link
 * [ ]
 * [ ]
