@@ -53,7 +53,7 @@ export default function RDSPage() {
             <img alt="Project's schedule" src={projectsched} className="mx-auto grid my-5 size-4/5"/>
           <p>All the milestone presentations and the final presentation were made by myself as well, and I always made sure we covered every detail that would showcase our robot’s best features. When we submitted our project, we successfully completed the mission, budgeted an inexpensive cost estimate, had a higher performance than our competitors, and created innovative code that ensured Poppy stay on course.
           </p>
-          <img alt="MIT campus map" src={course}  className="mx-auto grid my-5 size-4/5"></img>
+          <img alt="RDS obstacle course for robot" src={course}  className="mx-auto grid my-5 size-4/5"></img>
 
       </ProjectSectionDescription>
 
@@ -67,13 +67,13 @@ export default function RDSPage() {
             </p>
             <div class="row">
               <div class="column">
-                <img src={legopoppy1} alt="Leggo Poppy"/>
+                <img src={legopoppy1} alt="Leggo Poppy mindstorms render 1"/>
               </div>
               <div class="column">
-                <img src={legopoppy2} alt="Lego Poppy"/>
+                <img src={legopoppy2} alt="Lego Poppy mindstorms render 1"/>
               </div>
               <div class="column">
-                <img src={legopoppy3} alt="Lego Poppy"/>
+                <img src={legopoppy3} alt="Lego Poppy mindstorms render 1"/>
               </div>
             </div>
             <p>
@@ -84,9 +84,9 @@ export default function RDSPage() {
             <p>The efficient mechanism of four arm pairs on the robot, made it so multiple fuel cells can be carried at once. They all operated on a gear mechanism too easily be reset automatically by Poppy. The wider arm design also lowered the margin of error when obtaining fuel cells.</p>
             
             <p >In our Mindstorms code, we used structured code blocks that had designated purposes, such as a straight driving function, retrieval of a fuel cell, and loops that would execute these commands.</p>
-            <img src={mindstormscode} alt="Lego Poppy" className="my-5"/>
+            <img src={mindstormscode} alt="a section of the Lego mindstorms code" className="my-5"/>
             </div>
-             <img src={poppy} alt="Lego Poppy" className="size-5/12 ml-16"/>
+             <img src={poppy} alt="Lego Poppy robot built in real life" className="size-5/12 ml-16"/>
              
             </div>
             
@@ -101,7 +101,7 @@ export default function RDSPage() {
        <p>
                 To see our final presentation and more details on the RDS project, see below.
             </p>
-            <p><a href="https://manual.eg.poly.edu/index.php/Retrieval_and_Delivery_System_(RDS)" >RDS Project Site</a></p>
+            <p className="underline"><a href="https://manual.eg.poly.edu/index.php/Retrieval_and_Delivery_System_(RDS)" >RDS Project Site</a></p>
             <div className="justify-items-center grid space-y-5">
             <iframe src="https://onedrive.live.com/embed?cid=51C5E7B980EAB28A&amp;resid=51C5E7B980EAB28A%211839&amp;authkey=AEtkPXvW5RZSBYk&amp;em=2&amp;wdAr=1.7777777777777777" width="910px" height="497px" >This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
         

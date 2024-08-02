@@ -16,7 +16,8 @@ export const TierOneBubble = ({ project }) => {
         className="tier-one-bubble"
         style={tierOneBubbleStyles}
       >
-        <img alt="project icon" src={project.icon} class="icon"/>
+        {<img alt="tier one project bubble icon" src={project.icon} class="icon"/> ?? <div className="skeleton h-32 w-32"/>}
+        
         <p className="project-bubble-name">{project.title}</p>
           <p className="tagline">{project.tagline}</p>
       </div>

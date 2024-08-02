@@ -221,18 +221,18 @@ export default function GameProgrammingPage() {
                     shrines to replenish those charges.
                   </p>
                   <h3 class="cs3113">Shrines</h3>
-                  <img src={shrine1} />
-                  <img src={shrine2} />
-                  <img src={shrine3} />
+                  <img src={shrine1} alt="shrine game asset 1" />
+                  <img src={shrine2} alt="shrine game asset 2"/>
+                  <img src={shrine3} alt="shrine game asset 3" />
 
                   <h3 class="cs3113">Backgrounds</h3>
-                  <img src={background1} />
-                  <img src={background2} />
-                  <img src={background3} />
+                  <img src={background1} alt="background game asset 1"/>
+                  <img src={background2} alt="background game asset 2"/>
+                  <img src={background3} alt="background game asset 3"/>
 
                   <h3 class="cs3113">Player States</h3>
-                  <img src={playerstate1} />
-                  <img src={playerstate2} />
+                  <img src={playerstate1} alt="player state game asset 1"/>
+                  <img src={playerstate2} alt="player state game asset 2"/>
 
                   <h3 class="cs3113">Summary of Playtests:</h3>
 
@@ -399,7 +399,7 @@ export default function GameProgrammingPage() {
                   <p></p>
 
                   <h3 class="cs3113">Room Description Table</h3>
-                  <img src={roomdesctable} />
+                  <img src={roomdesctable} alt="Rooms description table"/>
 
                   <h3 class="cs3113">Debuffs</h3>
                   <p>
@@ -407,7 +407,7 @@ export default function GameProgrammingPage() {
                     slows the player speed by half.
                   </p>
                   <h3 class="cs3113">Level Layout</h3>
-                  <img src={levellayout} />
+                  <img src={levellayout} alt="Level layout"/>
 
                   <h3 class="cs3113">Game Notes</h3>
                   <p>
@@ -543,7 +543,7 @@ export default function GameProgrammingPage() {
                     seamless and to ensure that camera and spawn positions were
                     maintained throughout the routes.{" "}
                   </p>
-                  <img src={greatescape1} />
+                  <img src={greatescape1} alt="in game picture of part of map"/>
                   <p>
                     Another success was the animations and sound effects. This
                     is an area that our team had the least experience with and
@@ -582,7 +582,7 @@ export default function GameProgrammingPage() {
                     outside, there were not a lot of matching assets to help
                     decorate the scene.
                   </p>
-                  <img src={greatescape2} />
+                  <img src={greatescape2} alt="inside the dungeon in game"/>
                   <p>
                     Additionally, coming up with a truly compelling story took
                     us some time as we wanted our ideas to be consistent with
@@ -602,7 +602,7 @@ export default function GameProgrammingPage() {
                     We also learned about using AI & NavMesh with unity to make
                     player and bots move and follow the player.
                   </p>
-                  <img src={greatescape4} />
+                  <img src={greatescape4} alt="player fighting enemy"/>
 
                   <h3 class="cs3113">Possible Future Revisons</h3>
                   <p>
@@ -610,7 +610,7 @@ export default function GameProgrammingPage() {
                     random, so if given more time, we would like to go back and
                     implement that feature.
                   </p>
-                  <img src={greatescape3} />
+                  <img src={greatescape3} alt="in game image" />
                   <p>
                     We also would like to add a way to force the player to drink
                     debuffs when they enter a room with one, since right now
@@ -686,7 +686,7 @@ export default function GameProgrammingPage() {
                 title={<h5 className="subtitle">development log</h5>}
               >
                 <div className="space-y-4">
-              <img src={maze1}/>
+              <img src={maze1} alt="game end screen, player on 2d platform with different medals"/>
 						<p>The easy level was developed so that the player having to navigate through many maze style platforms while having to kill enemies that can
 							 be on different platforms and between different barriers. This level includes a time limit, fewer enemies and fewer platforms so that
 							  the player is able to understand and adjust to the game’s setting while being able more easily navigate through the setting. Players will
@@ -699,7 +699,7 @@ export default function GameProgrammingPage() {
 							 medal, silver medal, or bronze medal. Throughout the levels, there are different maze structures and platforms placed so that the player
 							  has to jump at accurate angles and maneuver around smaller spaces. The player can move in any direction and can also have motion towards 
 							  the ground. </p>
-							  <img src={maze4}/>
+							  <img src={maze4} alt="start image for game"/>
 						<p>The medium level was developed so that the player having to navigate through many maze style platforms while having to kill enemies that are
 							 on many different maze style platforms and between barriers placed on the platforms. This level includes a time limit, more enemies, 
 							 barriers, and more maze style platforms than the easy level so that the player has to use better navigation and so that the player finds it
@@ -707,7 +707,7 @@ export default function GameProgrammingPage() {
 							   spacing and there more enemies where the maze platforms were harder to navigate so that the player was encouraged to move quickly around 
 							   the maze style platforms and reach the enemies. Players will still have their enemy kills determine their score and will get a medal based 
 							   on the amount of enemies they destroy. </p>
-						<img src={maze3}/>
+						<img src={maze3} alt="another game end screen"/>
 						<p>The hard level was developed so that the player having to navigate through many maze style platforms while having to kill enemies to earn points
 							 and try for a medal score. This hard level includes a time limit, even more enemies, barriers, and more difficult maze style design platforms
 							  than the medium level so that the player has to use even better navigation throughout the platforms and so that the player finds it even more 

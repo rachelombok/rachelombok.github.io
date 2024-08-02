@@ -15,7 +15,7 @@ export const TierThreeBubble = ({ project }) => {
         className="tier-three-bubble"
         style={tierThreeBubbleStyles}
       >
-        <img alt="project icon" src={project.icon} className="tier-three-icon"/>
+        <img alt="tier thre project bubble icon" src={project.icon} className="tier-three-icon"/>
 
         <p className="tier-three-project-bubble-name">{project.title}</p>
           {/*<p className="tagline">{project.tagline}</p>*/}

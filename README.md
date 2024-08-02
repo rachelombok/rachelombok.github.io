@@ -9,7 +9,7 @@
 * [x] made w love by rachel
 * [x] create a footer component
 * [x] create an error screen component
-* [ ] create a loading screen component
+* [x] create a loading screen component
 * [ ] lazy load images on bubbles, skeleton for images (?)
 * [x] create ProjectPage site header
 * [x] create ProjectPage site details / description component
@@ -19,7 +19,7 @@
 * [ ] pagination page for projects (?)
 * [ ] pagination page for courses (?)
 * [x] change font on site
-* [ ] replace some bubble pictures with daisyUI icons
+* [❌] replace some bubble pictures with daisyUI icons
 * [x] make fonts and colors accessible
 * [x] organize images in folders
 * [ ] slider to toggle bubbles view
@@ -89,9 +89,9 @@
 * [ ] create gwc page
 * [x] create huztle page
 * [x] create podcasting workshop page
-* [ ] create 3d modeling page
-* [ ] create game design page
-* [ ] create game programming page
+* [x] create 3d modeling page
+* [x] create game design page
+* [x] create game programming page
 * [ ] update page header bottom line cutting off
 * [ ] replace all class w className
 * [ ] crop handymap group picture on page desc
@@ -106,11 +106,11 @@
 * [ ] customize course objective bullet points
 * [ ] download not owned videos/assets
 * [ ] update/fix social icons on bottom page
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
+* [ ] add google analytics to site
+* [ ] replace appropriate href with Links
+* [ ] fix glitching routing
+* [ ] fix resume page links
+* [ ] make all elements scalable on sites
 * [ ]
 * [ ]
 * [ ]

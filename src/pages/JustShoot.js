@@ -70,9 +70,9 @@ export default function JustShootPage() {
           a collaborative open community and platform for photography
           enthusiasts, both amateur and professional.
         </p>
-        <img src={jsimg1} className="my-5" />
-        <img src={jsimg2} className="my-5" />
-        <img src={jsimg3} className="my-5" />
+        <img src={jsimg1} className="my-5" alt="homescreen of JustShoot"/>
+        <img src={jsimg2} className="my-5"  alt="the form that pops up when creating a new data point on the map"/>
+        <img src={jsimg3} className="my-5" alt="How the new data point appears on the map after creation"/>
       </ProjectSectionDescription>
 
       <ProjectSectionDescription

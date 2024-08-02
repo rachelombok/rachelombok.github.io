@@ -3,10 +3,15 @@ import { TierOneBubble } from './TierOneBubble';
 import { TierTwoBubble } from './TierTwoBubble';
 import { TierThreeBubble } from './TierThreeBubble';
 import { projectBubbleInfo } from '../fileinfo/projectbubbleinfo';
+import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 export const Canvas = () => {
     return(
-      <div className='site-background'>
+      <motion.div className='site-background' initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+      variants={{ visible: { transition: { staggerChildren: 0 } } }}
+      transition={{ duration: 1.5 }}>
         <div className='canvas'>
         {/* <div className='container'>  container css was here */}
 
@@ -28,6 +33,6 @@ export const Canvas = () => {
           {/*  </div>*/}
         </div>
 
-      </div>
+      </motion.div>
     );
 }

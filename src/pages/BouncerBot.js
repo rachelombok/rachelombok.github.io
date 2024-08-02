@@ -46,7 +46,7 @@ export default function BouncerBotPage() {
                 (mean squared error) of the image model, and mutes all images in the future that are close in value to the muted image.
 
             </p>
-            <img src={bouncerbot2} width='1100' height="550" className="mx-auto"/>
+            <img src={bouncerbot2} width='1100' height="550" className="mx-auto" alt='bouncer bot demo picture'/>
 
             <p>
                 This project was created for the Twitter sponsored <a href='https://ultrahacks.devpost.com' class='link bouncerbot'>#UltraHacks</a> virtual hackathon, which I got the opportunity to attend through 

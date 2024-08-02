@@ -111,7 +111,7 @@ export default function HandyMapPage() {
           </div>
           <img
             src={handymapgroupnight}
-            alt="Lego Poppy"
+            alt="Lego Poppy mindstorms robot"
             className="size-7/12 ml-1"
           />
         </div>
@@ -205,7 +205,7 @@ export default function HandyMapPage() {
         heading="What we learned"
       >
        We used Android Studio for the first time to make the application. We discovered how much Google API had to offer, allowing us to make our map and include features such as instant directions to a location. This helped us realize that we should use our resources to their full capabilities. For 3 of us on the team, it was our first hackathon and we learned how to use our time efficiently in times of crunch, and how to communicate our ideas effectively and proactively as a team.
-       <img src={handymapgroup1} className="mx-auto"/>
+       <img src={handymapgroup1} className="mx-auto" alt="HandyMap team after the hackathon"/>
       </ProjectSectionDescription>
 
       <ProjectSectionDescription

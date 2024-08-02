@@ -33,7 +33,7 @@ at Brown University in their <a href="https://explorecsr.cs.brown.edu/ai/index.h
 
 </p>
 </div> 
-<img src={roavi} className='avi'/>
+<img src={roavi} className='avi' alt='picture of Rachel Ombok'/>
 
             </div>
             

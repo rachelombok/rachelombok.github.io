@@ -46,7 +46,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    animation: 3.0s ease-in-out infinite infinite-bob;
+    animation: 2.5s ease-in-out infinite infinite-bob;
     display: flex;
     &:hover {
         animation-play-state:paused;
@@ -75,11 +75,11 @@
     text-align: start;
     justify-content: center;
     align-items: center;
-    animation: 3.0s ease-in-out infinite infinite-bob;
+    animation: 2.0s ease-in-out infinite infinite-bob;
     transition: width 1s;
     display: flex;
     &:hover {
-        width: max-content; /*calc-size(max-content) later on*/
+        width: 230px; /*calc-size(max-content) later on*/
         animation-play-state:paused;
         -webkit-animation-play-state:paused;
   -moz-animation-play-state:paused;

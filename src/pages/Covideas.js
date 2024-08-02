@@ -67,7 +67,7 @@ export default function CovideasPage() {
 					</p>
 					
 
-					<img src={slide1} alt="Bad Forecasts" width="1350" className="mx-auto"/>
+					<img src={slide1} width="1350" className="mx-auto" alt='bad forecasts on the covidforecasts website'/>
 					
 						 
 					<p>
@@ -82,7 +82,7 @@ export default function CovideasPage() {
 
 					</p>
 					
-					<img src={slide6} alt="First Sprint landing page" width='1350' className="mx-auto"/>
+					<img src={slide6} alt="Covidforecasts First Sprint landing page" width='1350' className="mx-auto"/>
       </ProjectSectionDescription>
       <ProjectSectionDescription
         id=""
@@ -100,7 +100,7 @@ export default function CovideasPage() {
 					</p>
 					
 
-					<img src={slide3} alt="First Sprint landing page" width='1350' className="mx-auto"/>
+					<img src={slide3} alt="Covidforecasts First Sprint landing page" width='1350' className="mx-auto"/>
 					  
 					<h3 class="covideas-title">2nd Sprint</h3>
 				
@@ -120,7 +120,7 @@ export default function CovideasPage() {
 						We also added account authentication, a user profile page, and smoothed out the design and interface of the charts and site. 
 
 					</p>
-					<img src={slide7} alt="First Sprint landing page" className="mx-auto"/>
+					<img src={slide7} alt="Covidforecasts First Sprint landing page" className="mx-auto"/>
 					
 					<h3>Final Product</h3>
 					<p>

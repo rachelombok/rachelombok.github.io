@@ -16,7 +16,7 @@ import { ProjectSectionDescription } from "../components/ProjectSectionDescripti
 export default function SulSulSimSimPage() {
   const overview = (
     <>
-      Say "Sul Sul!" to SimSim, A Sims-Inspired Platform for Sandbox Game AI
+      Say "Sul Sul!" to SimSim, A Sims-Inspired Platform for Sandbox Game AI.
       <a
         href="https://webdocs.cs.ualberta.ca/~santanad/aiide/"
         class="link sulsulsimsim"
@@ -188,7 +188,7 @@ export default function SulSulSimSimPage() {
         hunger, hygiene, bladder, energy, social and fun. Rooms have a set
         dimension of 10x10.
         <img
-          alt="Project workflow"
+          alt="Project workflow outline on a notebook"
           src={projectoutline}
           class="summary-section my-5"
         />
@@ -233,17 +233,17 @@ export default function SulSulSimSimPage() {
 
         <div className="row w-auto">
           <div class="column">
-            <img src={badroom} alt="Bad Room" className="h-96"/>
+            <img src={badroom} alt="Bad Room for sim survival" className="h-96"/>
           </div>
           <div class="column">
             <img
               src={bareroom}
-              alt="Bare Minimum Room"
+              alt="Bare Minimum Room for sim survival"
               className="h-96"
             />
           </div>
           <div class="column">
-            <img src={bestroom} alt="Best Room" className="h-96"/>
+            <img src={bestroom} alt="Best Room for sim survival" className="h-96"/>
           </div>
         </div>
         <p>
@@ -332,7 +332,7 @@ export default function SulSulSimSimPage() {
           
             <iframe class='items-center' src="https://onedrive.live.com/embed?cid=51C5E7B980EAB28A&amp;resid=51C5E7B980EAB28A%211845&amp;authkey=AKpJ5tc9ki6-L9Q&amp;em=2&amp;wdAr=1.7777777777777777" width="1162px" height="665px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
           
-            <img src={simsimsdiscord} width='1060' /></div>
+            <img src={simsimsdiscord} width='1060' alt="presenting our research at the virtual conference on Discord"/></div>
       </ProjectSectionDescription>
     </PageContainerOutline>
   );

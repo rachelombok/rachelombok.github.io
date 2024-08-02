@@ -64,13 +64,13 @@ export default function ModelingPage() {
 								
                                 <div class='row w-auto'>
                                 <div class="column">
-                                        <img src={pic1} class='shadow image-level' />
+                                        <img src={pic1} class='shadow image-level' alt="real life Lego Flower Bouquet" />
                                  </div>
                                  <div class="column ">
-                                        <img src={pic2} class='shadow image-level'/>
+                                        <img src={pic2} class='shadow image-level'alt="Work in progress Maya model lego flower bouquet"/>
                                    </div>
                                    <div class="column">
-                                        <img src={pic4} class='shadow image-level'/>
+                                        <img src={pic4} class='shadow image-level' alt="Final render of 3D modeled lego flower bouquet"/>
                                    </div>
                                 </div>
                             
@@ -81,9 +81,9 @@ export default function ModelingPage() {
                                 </p>
                                 
                               
-                                <img src={pic3} class='img center'/>
+                                <img src={pic3} alt="Final render of 3D modeled lego flower bouquet 2" class='img center'/>
                                 
-                                <img src={pic5} width='100%'/>
+                                <img src={pic5} width='100%' alt="Final render of 3D modeled lego flower bouquet 3"/>
       </ProjectSectionDescription>
       <ProjectSectionDescription
         id="dm2133"
@@ -106,7 +106,7 @@ export default function ModelingPage() {
                     and then created a UV Map so that I could export the texture to use in Maya. From my model I created a .obj file that I imported into Maya, and then 
                     rendered the finished product using Arnold. 
                 </p>
-                <img src={pic6} width='100%'/>
+                <img src={pic6} width='100%' alt="3d Model of Squidgame girl doll"/>
       </ProjectSectionDescription>
       </PageContainerOutline>
     );

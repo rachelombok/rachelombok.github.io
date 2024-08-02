@@ -20,7 +20,7 @@ export const TierTwoBubble = ({ project }) => {
         <p className="tier-two-project-bubble-name">{project.title}</p>
           <p className="tier-two-tagline">{project.tagline}</p>
           </div>
-        <img alt="project icon" src={project.icon} className="tier-two-icon"/> 
+        <img alt="tier two project bubble icon" src={project.icon} className="tier-two-icon"/> 
         </div>
         
     </Link>
