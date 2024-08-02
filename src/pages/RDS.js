@@ -18,7 +18,7 @@ export default function RDSPage() {
     const team = <><p className="not-prose my-0">Christopher Glenn, Head Designer/Builder</p>
     <p className="not-prose my-0">Cameron Noori, Director of Software</p></>;
     return(
-<PageContainerOutline className="site-page">
+<PageContainerOutline className="site-page" title='RDS'>
       <PageHeader
         emoji={`🤖`}
         lineOne="Retrieval & Delivery System"

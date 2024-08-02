@@ -23,7 +23,7 @@ export default function JustShootPage() {
   const roles = "Fullstack Developer";
   const timeline = "August 2020 to 2023";
   return (
-    <PageContainerOutline className="site-page">
+    <PageContainerOutline className="site-page" title='JustShoot'>
       <PageHeader
         emoji={`📸`}
         lineOne="JustShoot"

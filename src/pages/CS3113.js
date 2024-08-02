@@ -116,7 +116,7 @@ export default function GameProgrammingPage() {
   );
 
   return (
-    <PageContainerOutline className="site-page">
+    <PageContainerOutline className="site-page" title='CS3113'>
       <PageHeader
         emoji={`🎮`}
         lineOne="CS-UY 3113"

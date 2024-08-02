@@ -27,7 +27,7 @@ export default function TravelPage() {
         'washdc' : 'Washington, District of Columbia',
     };
   return (
-    <PageContainerOutline className="site-page">
+    <PageContainerOutline className="site-page" title='Travel'>
       <PageHeader
         emoji={`🧳`}
         lineOne="Travel"

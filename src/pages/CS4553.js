@@ -55,7 +55,7 @@ export default function GameDesignPage() {
   );
 
   return (
-    <PageContainerOutline className="site-page">
+    <PageContainerOutline className="site-page" title='CS4553'>
       <PageHeader
         emoji={`🕹`}
         lineOne="CS-UY 4553"

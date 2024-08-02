@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 export const PageContainerOutline = (props) => {
+  useEffect(() => {
+    document.title = props.title ? `${props.title} · Rachel Ombok` : 'Rachel Ombok';
+  }, []);
+
   return (
    
     <motion.div

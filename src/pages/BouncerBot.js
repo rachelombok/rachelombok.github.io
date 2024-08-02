@@ -13,7 +13,7 @@ export default function BouncerBotPage() {
     <p className="not-prose my-0"><a href='https://twitter.com/CarlaGaMe' className='link bouncerbot'>Carla Garcia Medina</a>, Team Member</p></>;
 
     return(
-<PageContainerOutline className="site-page">
+<PageContainerOutline className="site-page" title='Bouncer Bot'>
       <PageHeader
         emoji={`🤖`}
         lineOne="Bouncer Bot"

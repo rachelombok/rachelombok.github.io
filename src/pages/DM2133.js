@@ -32,7 +32,7 @@ export default function ModelingPage() {
 </ol>;
 
     return(
-<PageContainerOutline className="site-page">
+<PageContainerOutline className="site-page" title='DM2133'>
       <PageHeader
         emoji={`🦾`}
         lineOne="DM-UY 2133"

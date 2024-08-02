@@ -20,7 +20,7 @@ export default function AboutPage() {
       },[theme])
 
     return(
-        <PageContainerOutline className='site-page'>
+        <PageContainerOutline className='site-page' title='About'>
             <PageHeader
             emoji={`✌🏾`}
             lineOne='Hey there,'

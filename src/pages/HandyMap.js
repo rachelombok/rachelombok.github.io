@@ -42,7 +42,7 @@ export default function HandyMapPage() {
     </>
   );
   return (
-    <PageContainerOutline className="site-page">
+    <PageContainerOutline className="site-page" title='HandyMap'>
       <PageHeader
         emoji={`👨‍🦽`}
         lineOne="HandyMap"

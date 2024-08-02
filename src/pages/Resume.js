@@ -17,7 +17,7 @@ export default function ResumePage() {
   );
 
   return (
-    <PageContainerOutline className="site-page">
+    <PageContainerOutline className="site-page" title='Resume'>
       <PageHeader emoji={`💼`} lineOne="Resume" lineTwo={resumeDownload} />
 
       <h5 className="subtitle base-300">Education</h5>

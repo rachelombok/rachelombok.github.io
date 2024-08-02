@@ -50,7 +50,7 @@ export default function SulSulSimSimPage() {
   );
 
   return (
-    <PageContainerOutline className="site-page">
+    <PageContainerOutline className="site-page" title='SulSul! SimSim!'>
       <PageHeader
         emoji={`💾`}
         lineOne="SulSul! SimSim!"

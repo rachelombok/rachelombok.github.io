@@ -18,7 +18,7 @@ export default function CovideasPage() {
     <p className="not-prose my-0">Annirudha Murali, Student Researcher</p></>
 
     return(
-<PageContainerOutline className="site-page">
+<PageContainerOutline className="site-page" title='COVIDforecasts'>
       <PageHeader
         emoji={`💾`}
         lineOne="COVIDforecasts"

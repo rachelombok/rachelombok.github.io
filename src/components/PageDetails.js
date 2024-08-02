@@ -32,35 +32,35 @@ export const PageDetails = (props) => {
               {props.overview}
             </motion.p>
           </div>
-          {props.roles ? 
+          {!!props.roles ? 
           <div className="section summary-item overflow-hidden">
           <motion.h5 className="subtitle" variants={item}>Roles</motion.h5>
           <motion.p className='description-text' variants={item}>{props.roles}</motion.p>
         </div>
           : ''}
 
-          {props.team ? 
+          {!!props.team ? 
           <div className="section summary-item overflow-hidden">
           <motion.h5 className="subtitle" variants={item}>Team</motion.h5>
           <motion.p className='description-text' variants={item}>{props.team}</motion.p>
         </div>
           : ''}
 
-{props.timeline ? 
+{!!props.timeline ? 
           <div className="section summary-item overflow-hidden" >
           <motion.h5 className="subtitle" variants={item}>Timeline</motion.h5>
           <motion.p className='description-text' variants={item}>{props.timeline}</motion.p>
         </div>
           : ''}
 
-          {props.listen ? 
+          {!!props.listen ? 
           <div className="section summary-item overflow-hidden">
           <motion.h5 className="subtitle" variants={item}>Listen</motion.h5>
           <motion.p className='description-text' variants={item}>{props.listen}</motion.p>
         </div>
           : ''}
 
-{props.connect ? 
+{!!props.connect ? 
           <div className="section summary-item overflow-hidden">
           <motion.h5 className="subtitle" variants={item}>Connect</motion.h5>
           <motion.p className='description-text' variants={item}>{props.connect}</motion.p>

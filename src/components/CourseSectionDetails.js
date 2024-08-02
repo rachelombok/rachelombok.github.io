@@ -28,14 +28,14 @@ export const CourseSectionDetails = (props) => {
               {props.overview}
             </motion.p>
           </div>
-          {props.skills ? 
+          {!!props.skills ? 
           <div className="section summary-item overflow-hidden">
           <motion.h5 className="subtitle" variants={item}>Skills Learned</motion.h5>
           <motion.p className='description-text' variants={item}>{props.skills}</motion.p>
         </div>
           : ''}
 
-          {props.projects ? 
+          {!!props.projects ? 
           <div className="section summary-item overflow-hidden">
           <motion.h5 className="subtitle" variants={item}>Projects</motion.h5>
           <motion.p className='description-text' variants={item}>{props.projects}</motion.p>
