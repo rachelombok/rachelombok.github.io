@@ -92,7 +92,7 @@ export default function JustShootPage() {
         to be shared, and also photospot suggestions based on where locations
         people search for. Check out the repo{" "}
         <a
-          class="link justshoot"
+          className="link justshoot"
           href="https://github.com/rachelombok/JustShoot"
         >
           here
@@ -105,7 +105,7 @@ export default function JustShootPage() {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-          class="mx-auto my-14"
+          className="mx-auto my-14"
         ></iframe>
       </ProjectSectionDescription>
 

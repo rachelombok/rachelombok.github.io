@@ -102,7 +102,7 @@ export default function CovideasPage() {
 
 					<img src={slide3} alt="Covidforecasts First Sprint landing page" width='1350' className="mx-auto"/>
 					  
-					<h3 class="covideas-title">2nd Sprint</h3>
+					<h3 className="covideas-title">2nd Sprint</h3>
 				
 					<p>
 						The second sprint consisted of us refactoring the site with React, and organizing a separate frontend and backend for the structure. 
@@ -126,10 +126,10 @@ export default function CovideasPage() {
 					<p>
 						At the end of the 10 week program we wanted to do a soft release of the product that we could send out to people and have them make their predictions. 
 						For this final product we added an evaluation metric (Mean Squared Error), and a Top Forecasters page which ranks results of user and official forecaster predictions. 
-						The site was deployed on Heroku and is public and available for anyone to use. Click <a href='https://www.covidforecasts.com/#/' class='link covideas-link'>here </a>to see the live site.
+						The site was deployed on Heroku and is public and available for anyone to use. Click <a href='https://www.covidforecasts.com/#/' className='link covideas-link'>here </a>to see the live site.
 					</p>
 					
-					<iframe width="800" height="470" src="https://www.youtube.com/embed/OQNwDep53Ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen class="mx-auto"></iframe>
+					<iframe width="800" height="470" src="https://www.youtube.com/embed/OQNwDep53Ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="mx-auto"></iframe>
 					
 					
 					

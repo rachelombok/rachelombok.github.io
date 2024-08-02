@@ -35,7 +35,7 @@ export default function GameProgrammingPage() {
       applications using C# and the Unity game engine. This course was a core
       class in my minor,{" "}
       <a
-        class="link nyu"
+        className="link nyu"
         href="'http://bulletin.engineering.nyu.edu/preview_program.php?catoid=15&poid=4473"
       >
         Game Engineering.
@@ -45,27 +45,27 @@ export default function GameProgrammingPage() {
 
   const objectives = (
     <ol>
-      <li class="course-bullet cs3113">
-        <span class="course-text">
+      <li className="course-bullet cs3113">
+        <span className="course-text">
           Gain proficiency in C# and the Unity development pipeline.
         </span>
       </li>
-      <li class="course-bullet cs3113">
-        <span class="course-text">
+      <li className="course-bullet cs3113">
+        <span className="course-text">
           Develop a range of methods for the expression and articulation of
           ideas, including experimentation, information gathering, testing and
           refinement.
         </span>
       </li>
-      <li class="course-bullet cs3113">
-        <span class="course-text">
+      <li className="course-bullet cs3113">
+        <span className="course-text">
           Be comfortable working with software and hardware limitations, and be
           able to come up with creative workarounds both in design and
           development.
         </span>
       </li>
-      <li class="course-bullet cs3113">
-        <span class="course-text">
+      <li className="course-bullet cs3113">
+        <span className="course-text">
           Create work of technical and conceptual depth, suitable for a
           professional portfolio
         </span>
@@ -95,19 +95,19 @@ export default function GameProgrammingPage() {
   const projects = (
     <>
       <p className="not-prose my-0 font-medium">
-        <a href="https://razzve.itch.io/elemental-fury" class="cs3113">
+        <a href="https://razzve.itch.io/elemental-fury" className="cs3113">
           Elemental Fury
         </a>
       </p>
       <p className="not-prose my-0 font-medium">
-        <a href="https://mjm1175.itch.io/adventure-game" class="cs3113">
+        <a href="https://mjm1175.itch.io/adventure-game" className="cs3113">
           Great Escape
         </a>
       </p>
       <p className="not-prose my-0 font-medium">
         <a
           href="https://alok-roy-chatterjee.itch.io/maze-platformer-rush"
-          class="cs3113"
+          className="cs3113"
         >
           Pixel Maze Mobile Game
         </a>
@@ -146,7 +146,7 @@ export default function GameProgrammingPage() {
           of M2 the block is pushed away from the player. In air mode you gain
           multiple air jumps. Using elemental abilities requires elemental
           charges that can be replenished by locating the elemental shrines.{" "}
-          <a class="link cs3113" href="https://razzve.itch.io/elemental-fury">
+          <a className="link cs3113" href="https://razzve.itch.io/elemental-fury">
             Play here.
           </a>{" "}
         </p>
@@ -220,21 +220,21 @@ export default function GameProgrammingPage() {
                     implementing charges for the elemental abilities, and
                     shrines to replenish those charges.
                   </p>
-                  <h3 class="cs3113">Shrines</h3>
+                  <h3 className="cs3113">Shrines</h3>
                   <img src={shrine1} alt="shrine game asset 1" />
                   <img src={shrine2} alt="shrine game asset 2"/>
                   <img src={shrine3} alt="shrine game asset 3" />
 
-                  <h3 class="cs3113">Backgrounds</h3>
+                  <h3 className="cs3113">Backgrounds</h3>
                   <img src={background1} alt="background game asset 1"/>
                   <img src={background2} alt="background game asset 2"/>
                   <img src={background3} alt="background game asset 3"/>
 
-                  <h3 class="cs3113">Player States</h3>
+                  <h3 className="cs3113">Player States</h3>
                   <img src={playerstate1} alt="player state game asset 1"/>
                   <img src={playerstate2} alt="player state game asset 2"/>
 
-                  <h3 class="cs3113">Summary of Playtests:</h3>
+                  <h3 className="cs3113">Summary of Playtests:</h3>
 
                   <p className="pt-5">Playtest Results Week 1</p>
                   <ul className="list-disc px-3">
@@ -264,7 +264,7 @@ export default function GameProgrammingPage() {
               <CollapsibleSection
                 title={<h5 className="subtitle">postmortem</h5>}
               >
-                <h3 class="cs3113">Successes</h3>
+                <h3 className="cs3113">Successes</h3>
                 <p>
                   We were able to introduce multiple mechanics into our game
                   instead of just one, which corresponds to each level. We also
@@ -273,7 +273,7 @@ export default function GameProgrammingPage() {
                   get the game working and remove all the bugs we had
                   encountered prior to finishing.{" "}
                 </p>
-                <h3 class="cs3113">Setbacks</h3>
+                <h3 className="cs3113">Setbacks</h3>
                 <p>
                   For our demo we did not have all the functioning mechanics for
                   the playtesting during class, which didn’t allow us to get
@@ -284,7 +284,7 @@ export default function GameProgrammingPage() {
                   some people’s machines and not on other’s, which made
                   collaborating a bit more difficult.{" "}
                 </p>
-                <h3 class="cs3113">Lessons Learned</h3>
+                <h3 className="cs3113">Lessons Learned</h3>
                 <p>
                   Collaboration on the game was tougher than expected in the
                   beginning, with trying to figure out how to divide the work,
@@ -295,7 +295,7 @@ export default function GameProgrammingPage() {
                   such as sounds, music, and other small details.
                 </p>
 
-                <h3 class="cs3113">Next Steps</h3>
+                <h3 className="cs3113">Next Steps</h3>
                 <p>
                   {" "}
                   If we were to do a final polish on this game, it would be good
@@ -328,7 +328,7 @@ export default function GameProgrammingPage() {
           up with seeing your fellow inmates go mysteriously missing and are
           determined to escape but not without first gathering enough evidence
           to take this place down with you.{" "}
-          <a class="cs3113 link" href="https://mjm1175.itch.io/adventure-game">
+          <a className="cs3113 link" href="https://mjm1175.itch.io/adventure-game">
             Play here.
           </a>
         </p>
@@ -398,18 +398,18 @@ export default function GameProgrammingPage() {
                   </p>
                   <p></p>
 
-                  <h3 class="cs3113">Room Description Table</h3>
+                  <h3 className="cs3113">Room Description Table</h3>
                   <img src={roomdesctable} alt="Rooms description table"/>
 
-                  <h3 class="cs3113">Debuffs</h3>
+                  <h3 className="cs3113">Debuffs</h3>
                   <p>
                     Poison debuff - loses 10 hp every second Nausea debuff -
                     slows the player speed by half.
                   </p>
-                  <h3 class="cs3113">Level Layout</h3>
+                  <h3 className="cs3113">Level Layout</h3>
                   <img src={levellayout} alt="Level layout"/>
 
-                  <h3 class="cs3113">Game Notes</h3>
+                  <h3 className="cs3113">Game Notes</h3>
                   <p>
                     <b>Note 1</b> - “Patient XE-89 seems to be showing signs of
                     change. The growth is significantly higher than other
@@ -481,7 +481,7 @@ export default function GameProgrammingPage() {
                     under control. I hear footsteps, I think someo...”
                   </p>
 
-                  <h3 class="cs3113">Summary of Playtests</h3>
+                  <h3 className="cs3113">Summary of Playtests</h3>
                   <p className="pt-5">Playtests Results Week 1</p>
                   <ul className="list-disc px-3">
                     <li>Movement instruction</li>
@@ -527,7 +527,7 @@ export default function GameProgrammingPage() {
                 title={<h5 className="subtitle">postmortem</h5>}
               >
                 <div className="space-y-4">
-                  <h3 class="cs3113">Sucesses</h3>
+                  <h3 className="cs3113">Sucesses</h3>
                   <p>
                     One success we had creating this game is that we were able
                     to build off of everyone’s ideas and could come up with an
@@ -560,7 +560,7 @@ export default function GameProgrammingPage() {
                     the way you came...
                   </p>
 
-                  <h3 class="cs3113">Challenges</h3>
+                  <h3 className="cs3113">Challenges</h3>
                   <p>
                     In the same vein, many challenges we faces were achieving
                     the successes mentioned, such as finding assets and
@@ -589,7 +589,7 @@ export default function GameProgrammingPage() {
                     the aesthetic and feel of the game.
                   </p>
 
-                  <h3 class="cs3113">What We Learned</h3>
+                  <h3 className="cs3113">What We Learned</h3>
                   <p>
                     We learned about keeping continuity in our game, for example
                     we had to work on making sure the health progress persisted
@@ -604,7 +604,7 @@ export default function GameProgrammingPage() {
                   </p>
                   <img src={greatescape4} alt="player fighting enemy"/>
 
-                  <h3 class="cs3113">Possible Future Revisons</h3>
+                  <h3 className="cs3113">Possible Future Revisons</h3>
                   <p>
                     We initially wanted to make room generation and room order
                     random, so if given more time, we would like to go back and
@@ -666,7 +666,7 @@ export default function GameProgrammingPage() {
           and uses a point reward scoring system for when the player eliminates
           more enemies as they move across the platforms.{" "}
           <a
-            class="cs3113 link"
+            className="cs3113 link"
             href="https://alok-roy-chatterjee.itch.io/maze-platformer-rush"
           >
             Play here.
@@ -729,7 +729,7 @@ export default function GameProgrammingPage() {
                 title={<h5 className="subtitle">postmortem</h5>}
               >
                <div>
-               <h3 class='cs3113'>Successes</h3>
+               <h3 className='cs3113'>Successes</h3>
 								<p>The successes we had for developing this maze platformer mobile game were that the different levels had effective narrative, good creativity 
 									in maze style platforms design, many platforms, and barriers, and creating a time limit and medal score goals that would keep the player
 									 motivated. Each of the levels were successfully made so that the player is able to make the maneuvers, have a display of the amount of time
@@ -739,7 +739,7 @@ export default function GameProgrammingPage() {
 									    destroying more enemies while navigating the maze style platformers. The barriers and maze structures were also well designed and developed 
 										so that each of the levels had more excitement, and created more interesting gameplay for the users. </p>
 								
-								<h3 class='cs3113'>Challenges</h3>
+								<h3 className='cs3113'>Challenges</h3>
 								<p>The challenges for this maze platformer mobile game was the placement of barriers, and platforms so that each of the maze platformer levels would
 									 create enough difficulty for the player. When some of the traps and barriers were placed initially as part of the level design, it occasionally 
 									 interfered with the player’s navigation by creating too much difficulty or making it too easy for the player to destroy enemies while moving 
@@ -752,7 +752,7 @@ export default function GameProgrammingPage() {
 										maintain a certain difficulty on each level and even small changes to platform sizes and positions of where enemies were would vary how the 
 										difficulty of gameplay would be. Having too many barriers or platforms also crowded the screen so there had to be enough space between barriers
 										 and platforms so that the players could navigate around enemies. </p>	
-								<h3 class="cs3113">What We Learned</h3>
+								<h3 className="cs3113">What We Learned</h3>
 								<p>We learned that the game’s difficulty on each of the levels would easily vary based on where the platforms, barriers, and enemies were placed. Even
 									 though the harder level would have less platforms and more barriers. There was a need for continuous testing of gameplay because of how the 
 									 player would still be able to find easier angles that would decrease the difficulty of a harder level even though the level had been designed as
@@ -762,7 +762,7 @@ export default function GameProgrammingPage() {
 										the next platforms that the player could jump to, so understanding how the game works on different screen sizes was good to learn so that the
 										 platforms, barriers, and a player’s would be easily visible to the player. Then, the player would have more understanding and more clarity 
 										 of how to proceed and move throughout the levels. </p>	
-								<h3 class="cs3113">Possible Future Revisions</h3>
+								<h3 className="cs3113">Possible Future Revisions</h3>
 								<p>Possible future revisions for this maze platformer mobile game include adding more animations to platforms like disappearing barriers and traps.
 									 Other future revisions could be adding enemies that would automatically create new barriers for the player while they are also trying to 
 									 eliminate the player.. Also, other revisions could be adding more barriers around platforms so that the player would have to navigate better 

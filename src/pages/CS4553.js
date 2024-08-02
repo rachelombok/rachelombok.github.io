@@ -21,7 +21,7 @@ export default function GameDesignPage() {
       designed and iteratively improved by means of rapid prototyping and
       play-testing. This course was an elective class in my minor,{" "}
       <a
-        class="link nyu"
+        className="link nyu"
         href="'http://bulletin.engineering.nyu.edu/preview_program.php?catoid=15&poid=4473"
       >
         Game Engineering.
@@ -73,7 +73,7 @@ export default function GameDesignPage() {
         <p>
           In{" "}
           <a
-            class="cs4553 link"
+            className="cs4553 link"
             href="https://haroonsherjan.itch.io/dizzy-racer"
           >
             Dizzy Racer
@@ -81,7 +81,7 @@ export default function GameDesignPage() {
           , you navigate through a basic 2D maze while trying to manuever
           different character positions.{" "}
           <a
-            class="link cs4553"
+            className="link cs4553"
             href="https://haroonsherjan.itch.io/dizzy-racer"
           >
             Play here.
@@ -104,7 +104,7 @@ export default function GameDesignPage() {
           Pinky's Adventure is a prototype game showcasing different game feel
           effects.{" "}
           <a
-            class="cs4553 link"
+            className="cs4553 link"
             href="https://powerfulduck.itch.io/pinkys-adventure"
           >
             Play here.
@@ -133,7 +133,7 @@ export default function GameDesignPage() {
         <p>
           Rush is a racing game where it's limitations help the player develop
           skills that help them succeed over time.{" "}
-          <a class="cs4553 link" href="https://rachelombok.itch.io/rush">
+          <a className="cs4553 link" href="https://rachelombok.itch.io/rush">
             Play here.
           </a>
         </p>
@@ -169,7 +169,7 @@ export default function GameDesignPage() {
           either good or bad, and you'll need to adapt your strategy to what
           luck has in store for you!
           <a
-            class="cs4553 link"
+            className="cs4553 link"
             href="https://orbitalics.itch.io/city-of-schemes"
           >
             Play here.
@@ -193,7 +193,7 @@ export default function GameDesignPage() {
       >
         <p>
           Garden of Flora is a PCG collecting game.{" "}
-          <a class="cs4553 link" href="https://amykwan.itch.io/garden-of-flora">
+          <a className="cs4553 link" href="https://amykwan.itch.io/garden-of-flora">
             Play here.
           </a>
         </p>
@@ -218,14 +218,14 @@ export default function GameDesignPage() {
           This is a fun survival/action game with Ford GT as the main vehicle
           for the player. There are four types of power ups: Health, Nitro,
           Shield and Mine. Have fun destroying cars if you're good at it.{" "}
-          <a class="cs4553 link" href="https://naga-b.itch.io/3d-arena-fighter">
+          <a className="cs4553 link" href="https://naga-b.itch.io/3d-arena-fighter">
             Play here.
           </a>
         </p>
 
         <iframe
           width="1060"
-          class="mx-auto"
+          className="mx-auto"
           height="615"
           src="https://www.youtube.com/embed/TkCnKNw7AqI"
           title="YouTube video player"

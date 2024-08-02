@@ -65,14 +65,14 @@ export default function RDSPage() {
         <p>
                 We created two designs for our robot, and tested to see which would be the most efficient for the course. When reworking our second design, we kept in mind the time frame we had to keep for the project’s mission. So, we created a design that could hold multiple fuel cells at once, minimizing the time taken, while also maximizing the number of fuel cells transported. 
             </p>
-            <div class="row">
-              <div class="column">
+            <div className="row">
+              <div className="column">
                 <img src={legopoppy1} alt="Leggo Poppy mindstorms render 1"/>
               </div>
-              <div class="column">
+              <div className="column">
                 <img src={legopoppy2} alt="Lego Poppy mindstorms render 1"/>
               </div>
-              <div class="column">
+              <div className="column">
                 <img src={legopoppy3} alt="Lego Poppy mindstorms render 1"/>
               </div>
             </div>

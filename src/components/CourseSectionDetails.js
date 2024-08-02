@@ -43,7 +43,7 @@ export const CourseSectionDetails = (props) => {
           : ''}
         
         </div>
-        <div class="summary-section">
+        <div className="summary-section">
         <div className="section summary-item overflow-hidden">
           <motion.h5 className="subtitle" variants={item}>Course Objectives</motion.h5>
           <motion.p className='description-text' variants={item}>{props.objectives}</motion.p>

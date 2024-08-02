@@ -22,7 +22,7 @@ export const PageHeader = (props) => {
     transition={{ delay: 0.1, duration: 0.4}}
   */
   return (
-    <motion.div class="page-title overflow-hidden" variants={container} initial='hidden' animate='show'>
+    <motion.div className="page-title overflow-hidden" variants={container} initial='hidden' animate='show'>
       <motion.h1
 variants={item}
         className="content-web emoji"
@@ -30,7 +30,7 @@ variants={item}
         {props.emoji}
       </motion.h1>
 
-      <motion.h1 variants={item} class="content-mobile">{props.emoji}</motion.h1>
+      <motion.h1 variants={item} className="content-mobile">{props.emoji}</motion.h1>
       <motion.div variants={item} className="mb-14">
         <h1 className={`${props.stylename}`}>{props.lineOne}</h1>
         <h1 className={`medium-font ${props.stylename}`}>{props.lineTwo}</h1>

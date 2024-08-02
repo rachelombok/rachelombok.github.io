@@ -32,17 +32,17 @@ export default function AboutPage() {
 <p>
     
 
-Hi, I'm Rachel! I'm a recent graduate of <a href='https://engineering.nyu.edu' class='link nyu'>New York University</a>, where I studied Computer Science
+Hi, I'm Rachel! I'm a recent graduate of <a href='https://engineering.nyu.edu' className='link nyu'>New York University</a>, where I studied Computer Science
 and Game Engineering, and am currently exploring all of the opportunities I’m given that merge tech and artistic creativity together. 
 
 
 </p>
 <p>
-I recently worked as a Software Engineer at <a href="https://www.alteryx.com" class="link alteryx">Alteryx</a> working on <a href="https://www.trifacta.com" class="link alteryx">Trifacta</a> products.
-In summer of 2021, I interned at <a href='https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview' class='link twitter'>Twitter</a> as a Software Engineering Intern,
+I recently worked as a Software Engineer at <a href="https://www.alteryx.com" className="link alteryx">Alteryx</a> working on <a href="https://www.trifacta.com" className="link alteryx">Trifacta</a> products.
+In summer of 2021, I interned at <a href='https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview' className='link twitter'>Twitter</a> as a Software Engineering Intern,
 and this past school year 
-I have taken courses such as <Link to='/cs3113' class='link cs3113'>Introduction to Game Programming</Link> and <Link to='/dm2133' class='link dm2133'>3D Modeling</Link>, and conducted research
-at Brown University in their <a href="https://explorecsr.cs.brown.edu/ai/index.html" class="link explorecsr">exploreCSR program</a>.
+I have taken courses such as <Link to='/cs3113' className='link cs3113'>Introduction to Game Programming</Link> and <Link to='/dm2133' className='link dm2133'>3D Modeling</Link>, and conducted research
+at Brown University in their <a href="https://explorecsr.cs.brown.edu/ai/index.html" className="link explorecsr">exploreCSR program</a>.
 
 
 </p>

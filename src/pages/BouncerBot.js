@@ -8,9 +8,9 @@ import bouncerbot from '../images/bouncerbot/ultrahacks.jpeg';
 import bouncerbot2 from '../images/bouncerbot/botbouncer3.jpg';
 
 export default function BouncerBotPage() {
-    const roles = <> <p className="not-prose my-0"><a href='https://twitter.com/therachelplan' class='link bouncerbot'>Rachel Ombok</a>, Team Member</p>
-    <p className="not-prose my-0"><a href='https://twitter.com/presidentsham' class='link bouncerbot'>Shameed Job</a>, Team Member</p>
-    <p className="not-prose my-0"><a href='https://twitter.com/CarlaGaMe' class='link bouncerbot'>Carla Garcia Medina</a>, Team Member</p></>;
+    const roles = <> <p className="not-prose my-0"><a href='https://twitter.com/therachelplan' className='link bouncerbot'>Rachel Ombok</a>, Team Member</p>
+    <p className="not-prose my-0"><a href='https://twitter.com/presidentsham' className='link bouncerbot'>Shameed Job</a>, Team Member</p>
+    <p className="not-prose my-0"><a href='https://twitter.com/CarlaGaMe' className='link bouncerbot'>Carla Garcia Medina</a>, Team Member</p></>;
 
     return(
 <PageContainerOutline className="site-page">
@@ -35,7 +35,7 @@ export default function BouncerBotPage() {
         heading="What is Bot Bouncer?"
       >
 <p>
-                <a href= 'https://twitter.com/bot_bouncer' class='link ultrahacks-link'>Bouncer Bot</a> is a Twitter bot that utilizes Twitter's mute function for users. The mute function can be a powerful and useful tool 
+                <a href= 'https://twitter.com/bot_bouncer' className='link ultrahacks-link'>Bouncer Bot</a> is a Twitter bot that utilizes Twitter's mute function for users. The mute function can be a powerful and useful tool 
                 to curate and censor a user's timeline and content they interact with everyday. We wanted to create a bot that could help 
                 facilitate Twitter’s built in muting function in a useful way.
 
@@ -49,8 +49,8 @@ export default function BouncerBotPage() {
             <img src={bouncerbot2} width='1100' height="550" className="mx-auto" alt='bouncer bot demo picture'/>
 
             <p>
-                This project was created for the Twitter sponsored <a href='https://ultrahacks.devpost.com' class='link bouncerbot'>#UltraHacks</a> virtual hackathon, which I got the opportunity to attend through 
-                <a href='https://techatnyu.org' class='link bouncerbotk'> Tech@NYU</a>’s program, Tech Undivided. Tech Undivided is a pilot program that connects Black and Latinx students with networking 
+                This project was created for the Twitter sponsored <a href='https://ultrahacks.devpost.com' className='link bouncerbot'>#UltraHacks</a> virtual hackathon, which I got the opportunity to attend through 
+                <a href='https://techatnyu.org' className='link bouncerbotk'> Tech@NYU</a>’s program, Tech Undivided. Tech Undivided is a pilot program that connects Black and Latinx students with networking 
                 and professional opportunities to help their journey into tech.
             </p>
       </ProjectSectionDescription>
@@ -74,7 +74,7 @@ export default function BouncerBotPage() {
                 We also started to create an extra feature to the bot that would allow the bot to mute images as well. A user would send the image they want to mute, 
                 and we would save the image into our database. Then, if that same user was sent that image, or an image similar to it, our bot would calculate the 
                 mean squared error between the sent image and the muted image, and if the images are similar, our bot would mute the message of the picture. 
-                The bot was built with Python and Django, and deployed using Heroku. You can check out our work <a href='https://github.com/rachelombok/ultrahacks' class='link bouncerbot'>here</a>. 
+                The bot was built with Python and Django, and deployed using Heroku. You can check out our work <a href='https://github.com/rachelombok/ultrahacks' className='link bouncerbot'>here</a>. 
 
             </p>
       </ProjectSectionDescription>
@@ -88,7 +88,7 @@ export default function BouncerBotPage() {
                 At the end of the weekend, we placed 2nd among everyone and were able to present our projects to all the attendees and Twitter representatives at the event. 
                 It was my first online hackathon I participated in and it was all around a successful and enjoyable experience. 
             </p>
-            <blockquote class="twitter-tweet tw-align-center">
+            <blockquote className="twitter-tweet tw-align-center">
             <p lang="en" dir="ltr">
               And the 2nd place winner of the
               <a

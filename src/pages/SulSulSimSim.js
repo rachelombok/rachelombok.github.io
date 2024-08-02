@@ -19,7 +19,7 @@ export default function SulSulSimSimPage() {
       Say "Sul Sul!" to SimSim, A Sims-Inspired Platform for Sandbox Game AI.
       <a
         href="https://webdocs.cs.ualberta.ca/~santanad/aiide/"
-        class="link sulsulsimsim"
+        className="link sulsulsimsim"
       >
         {" "}
         AIIDE-20 (16th AAAI Conference on Artificial Intelligence and
@@ -32,17 +32,17 @@ export default function SulSulSimSimPage() {
     <>
       {" "}
       <p className="not-prose my-0 font-medium">
-        <a class="link sulsulsimsim" href="https://twitter.com/err_more">
+        <a className="link sulsulsimsim" href="https://twitter.com/err_more">
           Lisa Soros
         </a>
       </p>
       <p className=" not-prose my-0 font-medium">
-        <a class="link sulsulsimsim" href="https://twitter.com/MasterMilkX">
+        <a className="link sulsulsimsim" href="https://twitter.com/MasterMilkX">
           Megan Charity
         </a>
       </p>
       <p className="not-prose my-0 font-medium">
-        <a class="link sulsulsimsim" href="https://twitter.com/dipikarajesh18">
+        <a className="link sulsulsimsim" href="https://twitter.com/dipikarajesh18">
           Dipika Rajesh
         </a>
       </p>
@@ -93,14 +93,14 @@ export default function SulSulSimSimPage() {
       >
         <p>
           In Spring of 2020 I applied to{" "}
-          <a class="link nyu" href="https://game.engineering.nyu.edu">
+          <a className="link nyu" href="https://game.engineering.nyu.edu">
             NYU’s Game Innovation Lab
           </a>{" "}
           for an internship, the lab does research focused on games as an
           innovation challenge and emphasizes on the
           technical/engineering/science side of games and simulation. For my
           internship, I worked on a project for{" "}
-          <a href="https://www.ea.com/games/the-sims" class="link sulsulsimsim">
+          <a href="https://www.ea.com/games/the-sims" className="link sulsulsimsim">
             The Sims
           </a>
           . The general goal of the project was to create general intelligence
@@ -190,7 +190,7 @@ export default function SulSulSimSimPage() {
         <img
           alt="Project workflow outline on a notebook"
           src={projectoutline}
-          class="summary-section my-5"
+          className="summary-section my-5"
         />
       </ProjectSectionDescription>
       <ProjectSectionDescription
@@ -232,17 +232,17 @@ export default function SulSulSimSimPage() {
         </p>
 
         <div className="row w-auto">
-          <div class="column">
+          <div className="column">
             <img src={badroom} alt="Bad Room for sim survival" className="h-96"/>
           </div>
-          <div class="column">
+          <div className="column">
             <img
               src={bareroom}
               alt="Bare Minimum Room for sim survival"
               className="h-96"
             />
           </div>
-          <div class="column">
+          <div className="column">
             <img src={bestroom} alt="Best Room for sim survival" className="h-96"/>
           </div>
         </div>
@@ -291,11 +291,11 @@ export default function SulSulSimSimPage() {
           <p>
                 Each Sim house generated has a set of objects placed within the rooms. The count of these objects are encoded into vectors that are compared to another house. The vector distance between each house is calculated and used for the k-nearest neighbor calculation in the vector space. A generated house is considered novel, if its fitness value is above a set threshold and its vector distance to the other novel houses is greater than some minimum novelty search criteria threshold value. This new house is then added to the novel list. Here are some ASCII representations of the generated houses.
             </p>
-            <div class="row w-auto">
-              <div class="column">
+            <div className="row w-auto">
+              <div className="column">
                 <img src={evolvedhouse1} alt="ASCII of Evolved House 1"/>
               </div>
-              <div class="column">
+              <div className="column">
                 <img src={evolvedhouse2} alt="ASCII of Evolved House 2"/>
               </div>
             </div>
@@ -320,17 +320,17 @@ export default function SulSulSimSimPage() {
             </p>
             
             <p>
-                To see our code and experiments, check out our <a class='link sulsulsimsim' href='https://github.com/lsoros/simsim'>repo</a>.
+                To see our code and experiments, check out our <a className='link sulsulsimsim' href='https://github.com/lsoros/simsim'>repo</a>.
             </p>
             
             <p>
-                To read the paper, check it out <a class='link sulsulsimsim' href='https://arxiv.org/abs/2008.11258'>here</a>.
+                To read the paper, check it out <a className='link sulsulsimsim' href='https://arxiv.org/abs/2008.11258'>here</a>.
             </p>
             
             <div className="justify-items-center grid space-y-5">
             <iframe  width="1060" height="555" src="https://www.youtube.com/embed/LxrX5QHi00k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen display='block' ></iframe>
           
-            <iframe class='items-center' src="https://onedrive.live.com/embed?cid=51C5E7B980EAB28A&amp;resid=51C5E7B980EAB28A%211845&amp;authkey=AKpJ5tc9ki6-L9Q&amp;em=2&amp;wdAr=1.7777777777777777" width="1162px" height="665px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+            <iframe className='items-center' src="https://onedrive.live.com/embed?cid=51C5E7B980EAB28A&amp;resid=51C5E7B980EAB28A%211845&amp;authkey=AKpJ5tc9ki6-L9Q&amp;em=2&amp;wdAr=1.7777777777777777" width="1162px" height="665px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
           
             <img src={simsimsdiscord} width='1060' alt="presenting our research at the virtual conference on Discord"/></div>
       </ProjectSectionDescription>

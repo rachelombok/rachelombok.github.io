@@ -15,13 +15,13 @@ export default function HandyMapPage() {
   const team = (
     <>
       {" "}
-      <p class="not-prose my-0">
+      <p className="not-prose my-0">
         <a href="https://www.jntaimo.com" className="link handymap ">
           Joseph Ntaimo
         </a>
         , Creative/Programming Lead
       </p>
-      <p class="not-prose my-0">
+      <p className="not-prose my-0">
         <a
           href="https://www.linkedin.com/in/wenmichelle/"
           className="link handymap "
@@ -30,7 +30,7 @@ export default function HandyMapPage() {
         </a>
         , Backend Developer
       </p>
-      <p class="not-prose my-0">
+      <p className="not-prose my-0">
         <a
           href="https://www.linkedin.com/in/vanessa-sun-3703b98b/"
           className="link handymap "
@@ -64,7 +64,7 @@ export default function HandyMapPage() {
         subtitle="background"
         heading="What is HandyMap?"
       >
-        <a href="https://devpost.com/software/handymap" class="link handymap">
+        <a href="https://devpost.com/software/handymap" className="link handymap">
           HandyMap
         </a>{" "}
         is an Android application created by Rachel Ombok, Michelle Wen, Joseph
@@ -115,7 +115,7 @@ export default function HandyMapPage() {
             className="size-7/12 ml-1"
           />
         </div>
-        <img alt="MIT campus map" src={mitmap} class="center"></img>
+        <img alt="MIT campus map" src={mitmap} className="center"></img>
 
        
 
@@ -155,7 +155,7 @@ export default function HandyMapPage() {
               display properly. Check out our Github repository{" "}
               <a
                 href="https://github.com/jntaimo/HandyMap"
-                class="link handymap"
+                className="link handymap"
               >
                 here
               </a>
@@ -215,9 +215,9 @@ export default function HandyMapPage() {
       >
        <p>
                 Given more time, we knew we would have added many features such as accessibility for visually impaired students to help them find entrances, alerts for issues with accessing ramps and power doors, a community rating system of entrances, using machine learning and the community feature to auto-import maps that aren't interactive, and much, much more. Most important of all, we would apply it to all colleges and even anywhere in the world.
-                Check out our <a href='https://devpost.com/software/handymap' class='link handymap'>Devpost</a> writeup!
+                Check out our <a href='https://devpost.com/software/handymap' className='link handymap'>Devpost</a> writeup!
             </p>
-            <iframe width="1100" height="670" src="https://www.youtube.com/embed/QS6WupVbfqM"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen class="mx-auto"></iframe>
+            <iframe width="1100" height="670" src="https://www.youtube.com/embed/QS6WupVbfqM"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="mx-auto"></iframe>
       
       </ProjectSectionDescription>
     </PageContainerOutline>

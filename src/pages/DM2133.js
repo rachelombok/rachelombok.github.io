@@ -23,11 +23,11 @@ export default function ModelingPage() {
     <p  className="not-prose my-0 font-medium dm2133">Squid Game Doll</p></>;
     const objectives = <ol >
 											
-    <li class='course-bullet dm2133'><span class='course-text'>Demonstrate proficiency in working with tools, menus, and keyboard shortcuts, and modeling 3D objects</span></li>
-    <li class='course-bullet dm2133'><span class='course-text'>Demonstrate proficiency in working with textures, lights, and cameras</span></li>
-    <li class='course-bullet dm2133'><span class='course-text'>Understand and utilize tools and technology, while adapting to constantly changing
+    <li className='course-bullet dm2133'><span className='course-text'>Demonstrate proficiency in working with tools, menus, and keyboard shortcuts, and modeling 3D objects</span></li>
+    <li className='course-bullet dm2133'><span className='course-text'>Demonstrate proficiency in working with textures, lights, and cameras</span></li>
+    <li className='course-bullet dm2133'><span className='course-text'>Understand and utilize tools and technology, while adapting to constantly changing
         technological paradigms by learning how to learn.</span></li>
-    <li class='course-bullet dm2133'><span class='course-text'>Students will be able to integrate/interface different technologies within a technological ecosystem.</span>
+    <li className='course-bullet dm2133'><span className='course-text'>Students will be able to integrate/interface different technologies within a technological ecosystem.</span>
     </li>
 </ol>;
 
@@ -62,15 +62,15 @@ export default function ModelingPage() {
                                   it that much easier to model and create. 
                               </p>
 								
-                                <div class='row w-auto'>
-                                <div class="column">
-                                        <img src={pic1} class='shadow image-level' alt="real life Lego Flower Bouquet" />
+                                <div className='row w-auto'>
+                                <div className="column">
+                                        <img src={pic1} className='shadow image-level' alt="real life Lego Flower Bouquet" />
                                  </div>
-                                 <div class="column ">
-                                        <img src={pic2} class='shadow image-level'alt="Work in progress Maya model lego flower bouquet"/>
+                                 <div className="column ">
+                                        <img src={pic2} className='shadow image-level'alt="Work in progress Maya model lego flower bouquet"/>
                                    </div>
-                                   <div class="column">
-                                        <img src={pic4} class='shadow image-level' alt="Final render of 3D modeled lego flower bouquet"/>
+                                   <div className="column">
+                                        <img src={pic4} className='shadow image-level' alt="Final render of 3D modeled lego flower bouquet"/>
                                    </div>
                                 </div>
                             
@@ -81,7 +81,7 @@ export default function ModelingPage() {
                                 </p>
                                 
                               
-                                <img src={pic3} alt="Final render of 3D modeled lego flower bouquet 2" class='img center'/>
+                                <img src={pic3} alt="Final render of 3D modeled lego flower bouquet 2" className='img center'/>
                                 
                                 <img src={pic5} width='100%' alt="Final render of 3D modeled lego flower bouquet 3"/>
       </ProjectSectionDescription>
