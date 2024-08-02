@@ -10,14 +10,14 @@
 * [x] create a footer component
 * [x] create an error screen component
 * [x] create a loading screen component
-* [ ] lazy load images on bubbles, skeleton for images (?)
+* [❌] lazy load images on bubbles, skeleton for images (?)
 * [x] create ProjectPage site header
 * [x] create ProjectPage site details / description component
 * [x] pages directory for all website pages
 * [x] create 'bring page back up' button
 * [x] create 'back' page button
-* [ ] pagination page for projects (?)
-* [ ] pagination page for courses (?)
+* [❌] pagination page for projects (?)
+* [❌] pagination page for courses (?)
 * [x] change font on site
 * [❌] replace some bubble pictures with daisyUI icons
 * [x] make fonts and colors accessible
@@ -76,7 +76,7 @@
 * [ ] make imports/exports cleaner
 * [❌] bold nav tab when selected
 * [ ] get transparent bp logo
-* [ ] remove scroll from canvas
+* [❌] remove scroll from canvas
 * [ ] once bubble icon is added, fix pink effect icon
 * [x] in ref to above, replace covid forecasts bubble icon w better cropped image
 * [x] fill out resume page
@@ -115,6 +115,6 @@
 * [ ] put borders on all images (?)
 * [x] put custom titles on tab depending on which page currently on
 * [ ] scale text to adjust with window zoom/size
-* [ ] use path constants where ever there is a link
+* [x] use path constants where ever there is a link
 * [ ]
 * [ ]

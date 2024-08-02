@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import errorgif from '../images/misc/404.gif';
+import { pathConstants } from '../fileinfo/pathConstants';
 
 export default function NotFoundPage() {
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ export default function NotFoundPage() {
                    
 
                 </button>
-                <Link to="/">
+                <Link to={pathConstants.MAIN}>
                 
                 <button className="w-1/2 px-5 py-2 text-sm border border-2 tracking-wide text-primary-content transition-colors duration-200 rounded-lg shrink-0 sm:w-auto hover:bg-primary-content hover:text-primary bg-primary">
                     Take me home

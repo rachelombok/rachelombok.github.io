@@ -46,7 +46,7 @@ export const projectBubbleInfo = [
         bgColor: '#50c839',
         icon: sulsulsimsimLogo,
         linkPath: '/sulsulsimsim',
-        canvasPosition: ['1100px', '300px'],
+        canvasPosition: ['900px', '100px'],
         textColor: 'white',
         tier: 1,
         showOnCanvas: true
@@ -68,7 +68,7 @@ export const projectBubbleInfo = [
         bgColor: 'linear-gradient(#1215a8, #a30084)',
         icon: justShootLogo,
         linkPath: pathConstants.JUSTSHOOT,
-        canvasPosition: ['-500px', '100px'],
+        canvasPosition: ['-600px', '300px'],
         textColor: 'white',
         tier: 1,
         showOnCanvas: true
@@ -79,20 +79,9 @@ export const projectBubbleInfo = [
         bgColor: 'linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(31,31,31,0.9738489145658263) 86%)',
         icon: covideasLogo,
         linkPath: '/covidforecasts',
-        canvasPosition: ['-650px', '750px'],
+        canvasPosition: ['50px', '-300px'],
         textColor: 'white',
         tier: 2,
-        showOnCanvas: true
-    },
-    {
-        title: 'Bouncer Bot',
-        tagline: '#UltraHacks 2020 2nd place winner.',
-        bgColor: '#c621a0',
-        icon: ultraHacksLogo,
-        linkPath: '/bouncerbot',
-        canvasPosition: ['600px', '300px'],
-        textColor: 'white',
-        tier: 3,
         showOnCanvas: true
     },
     {
@@ -113,9 +102,20 @@ export const projectBubbleInfo = [
         icon: null,
         elementIcon: pinkEffectIcon,
         linkPath: '',
-        canvasPosition: ['-252px', '850px'],
+        canvasPosition: ['-252px', '250px'],
         textColor: 'black',
-        tier: 2,
+        tier: 3,
         showOnCanvas: false
+    },
+    {
+        title: 'Bouncer Bot',
+        tagline: '#UltraHacks 2020 2nd place winner.',
+        bgColor: '#c621a0',
+        icon: ultraHacksLogo,
+        linkPath: '/bouncerbot',
+        canvasPosition: ['-200px', '300px'],
+        textColor: 'white',
+        tier: 3,
+        showOnCanvas: true
     },
 ];

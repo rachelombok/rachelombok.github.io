@@ -3,6 +3,7 @@ import { PageContainerOutline } from "../components/PageContainerOutline";
 import { PageHeader } from "../components/PageHeader";
 import { ResumeDescription } from "../components/ResumeDescription";
 import { Link } from "react-router-dom";
+import { pathConstants } from "../fileinfo/pathConstants";
 import resumeDoc from "../fileinfo/Ombok_Rachel_Resume.pdf";
 
 export default function ResumePage() {
@@ -43,15 +44,15 @@ export default function ResumePage() {
           Databases, Design and Analysis of Algorithms, Software Engineering,
           Operating Systems<b>(C)</b>, Linear Algebra and Differential
           Equations, Interactive Computer Graphics, Human Computer Interaction,{" "}
-          <Link to="/dm2133" className="link dm2133">
+          <Link to={pathConstants.DM2133} className="link dm2133">
             3D Modeling
           </Link>
           ,{" "}
-          <Link to="/cs3113" className="link cs3113">
+          <Link to={pathConstants.CS3113} className="link cs3113">
             Introduction to Game Programming
           </Link>
           ,
-          <Link to="/cs4553" className="link cs4553">
+          <Link to={pathConstants.CS4553} className="link cs4553">
             {" "}
             Game Design
           </Link>
@@ -59,7 +60,7 @@ export default function ResumePage() {
         </p>
         <p>
           <b>Other Coursework: </b>
-          <Link className="link huztle" to="/huztle">
+          <Link className="link huztle" to={pathConstants.HUZTLE}>
             Podcasting Workshop
           </Link>
         </p>
@@ -130,7 +131,7 @@ export default function ResumePage() {
           objects affect a sims’ mood and environment. Analyze and interpret
           experiment results alongside graduate students and postdocs, and
           organize notes & data within a thesis paper. This was the{" "}
-          <Link to="/sulsulsimsim" className="link sulsulsimsim">
+          <Link to={pathConstants.SULSULSIMSIM} className="link sulsulsimsim">
             SulSulSimSim project
           </Link>
           .
@@ -138,7 +139,7 @@ export default function ResumePage() {
       </ResumeDescription>
 
       <ResumeDescription
-        resumeLink="/covideas"
+        resumeLink={pathConstants.COVIDFORECASTS}
         company="Georgia Tech - COVIDEAS 2020 REU"
         id="covideas"
         subline="Research Intern · June 2020 to December 2020"
@@ -156,7 +157,7 @@ export default function ResumePage() {
       </ResumeDescription>
       <h5 className="subtitle base-300">Experience</h5>
       <ResumeDescription
-        resumeLink="/handymap"
+        resumeLink={pathConstants.HANDYMAP}
         company="HandyMap"
         id="handymap"
         subline="Java & Python · Sep 2019"
@@ -172,7 +173,7 @@ export default function ResumePage() {
         </p>
       </ResumeDescription>
       <ResumeDescription
-        resumeLink="/justshoot"
+        resumeLink={pathConstants.JUSTSHOOT}
         company="JustShoot"
         id="justshoot"
         subline="MERN Stack & AWS S3"
@@ -188,7 +189,7 @@ export default function ResumePage() {
 
       <h5 className="subtitle base-300">Leadership Activities</h5>
       <ResumeDescription
-        resumeLink="/gwc"
+        resumeLink='' // {pathConstants.GIRLSWHOCODE}
         company="NYU Girls Who Code College Loop"
         id="nyu"
         subline="Founder/President · Oct 2019 to May 2022"
@@ -207,7 +208,7 @@ export default function ResumePage() {
 
       <h5 className="subtitle base-300">Awards</h5>
       <ResumeDescription
-        resumeLink="/rds"
+        resumeLink={pathConstants.RDS}
         company="Nick Russo Award for Outstanding General Engineering Design"
         id="rds"
         subline="Aug 2019"

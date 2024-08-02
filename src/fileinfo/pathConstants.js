@@ -17,5 +17,4 @@ export const pathConstants = {
     GIRLSWHOCODE: '/gwc',
     STARHACKS: '/starhacks',
     EXPLORECSR: '/exploreCSR',
-
 }
