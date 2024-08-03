@@ -72,7 +72,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {currentTheme == "light" && (
+        {currentTheme === "light" && (
           <motion.img
             src={roavilight}
             className="avi object-cover "
@@ -84,7 +84,7 @@ export default function AboutPage() {
             transition={{ duration: 1.5 }}
           />
         )}
-        {currentTheme == "luxury" && (
+        {currentTheme === "luxury" && (
           <motion.img
             src={roaviluxury}
             className="avi object-cover"
@@ -95,7 +95,7 @@ export default function AboutPage() {
             transition={{ duration: 1.5 }}
           />
         )}
-        {currentTheme == "cupcake" && (
+        {currentTheme === "cupcake" && (
           <motion.img
             src={roavicupcake}
             className="avi object-cover"
@@ -106,7 +106,7 @@ export default function AboutPage() {
             transition={{ duration: 1.5 }}
           />
         )}
-        {currentTheme == "valentine" && (
+        {currentTheme === "valentine" && (
           <motion.img
             src={roavivalentine}
             className="avi object-cover"

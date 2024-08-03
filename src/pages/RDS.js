@@ -178,13 +178,14 @@ export default function RDSPage() {
             src="https://onedrive.live.com/embed?cid=51C5E7B980EAB28A&amp;resid=51C5E7B980EAB28A%211839&amp;authkey=AEtkPXvW5RZSBYk&amp;em=2&amp;wdAr=1.7777777777777777"
             width="910px"
             height="497px"
+            title="RDS Presentation"
           >
             This is an embedded{" "}
-            <a target="_blank" href="https://office.com">
+            <a target="_blank" rel="noreferrer" href="https://office.com">
               Microsoft Office
             </a>{" "}
             presentation, powered by{" "}
-            <a target="_blank" href="https://office.com/webapps">
+            <a target="_blank" rel="noreferrer" href="https://office.com/webapps">
               Office
             </a>
             .
@@ -196,6 +197,7 @@ export default function RDSPage() {
             src="https://www.youtube.com/embed/K-kFgggJ1Ag"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            title="RDS Poppy Robot course video"
           ></iframe>
         </div>
       </ProjectSectionDescription>

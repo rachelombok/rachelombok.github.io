@@ -169,6 +169,7 @@ export default function HandyMapPage() {
             src="https://www.youtube.com/embed/rDeRYoFUZjI"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            title="Demo of HandyMap"
             className="mx-8"
           ></iframe>
         </div>
@@ -272,6 +273,7 @@ export default function HandyMapPage() {
         <iframe
           width="1100"
           height="670"
+          title="HackMIT ending demo presentation for HandyMap"
           src="https://www.youtube.com/embed/QS6WupVbfqM"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

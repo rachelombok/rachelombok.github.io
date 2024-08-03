@@ -26,10 +26,7 @@ import Beijing8 from './travel/beijing8.jpeg';
 import Beijing9 from './travel/beijing9.jpeg';
 import Beijing10 from './travel/beijing10.jpeg';
 
-import Dallas1 from './travel/dallas1.jpg';
-
 import DR1 from './travel/dr1.jpg';
-import DR2 from './travel/dr2.jpg';
 import DR3 from './travel/dr3.jpg';
 import DR4 from './travel/dr4.jpg';
 import DR5 from './travel/dr5.jpg';

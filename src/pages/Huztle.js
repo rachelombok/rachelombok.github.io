@@ -130,6 +130,7 @@ export default function HuztlePage() {
           src="https://widget.spreaker.com/player?episode_id=45948613&theme=dark&chapters-image=true"
           width="100%"
           height="200px"
+          title="Huztle Episode 1: Anna Zhang - Youth Advocate, Photographer, Creative Director"
         ></iframe>
 
         <h4>Resources</h4>

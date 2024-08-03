@@ -19,7 +19,6 @@ import greatescape2 from "../images/cs3113/greatescape2.png";
 import greatescape3 from "../images/cs3113/greatescape3.png";
 import greatescape4 from "../images/cs3113/greatescape4.png";
 import maze1 from "../images/cs3113/maze1.jpeg";
-import maze2 from "../images/cs3113/maze3.jpeg";
 import maze3 from "../images/cs3113/maze4.jpeg";
 import maze4 from "../images/cs3113/maze5.jpeg";
 
@@ -549,7 +548,7 @@ export default function GameProgrammingPage() {
                   </p>
                   <img
                     src={greatescape1}
-                    alt="in game picture of part of map"
+                    alt="in game part of map"
                     className="border border-8 rounded border-neutral"
                   />
                   <p>
@@ -618,7 +617,7 @@ export default function GameProgrammingPage() {
                     random, so if given more time, we would like to go back and
                     implement that feature.
                   </p>
-                  <img src={greatescape3} alt="in game image" className="border border-8 rounded border-neutral"/>
+                  <img src={greatescape3} alt="in game" className="border border-8 rounded border-neutral"/>
                   <p>
                     We also would like to add a way to force the player to drink
                     debuffs when they enter a room with one, since right now
@@ -646,6 +645,7 @@ export default function GameProgrammingPage() {
                     src="https://docs.google.com/presentation/d/e/2PACX-1vQ4u9HqdVIElnsNB6G79tWcN9g1pwpVvDiEATQ-3x5TITJOLKZ4KqM2z_o4WvU9Nhli0uop7It8-dDN/embed?start=false&loop=false&delayms=3000"
                     frameborder="0"
                     width="90%"
+                    title="Great Escape presentation"
                     height="569"
                     allowfullscreen="true"
                     mozallowfullscreen="true"
@@ -728,7 +728,7 @@ export default function GameProgrammingPage() {
                     around smaller spaces. The player can move in any direction
                     and can also have motion towards the ground.{" "}
                   </p>
-                  <img src={maze4} alt="start image for game" className="border border-8 rounded border-neutral"/>
+                  <img src={maze4} alt="start screen for game" className="border border-8 rounded border-neutral"/>
                   <p>
                     The medium level was developed so that the player having to
                     navigate through many maze style platforms while having to

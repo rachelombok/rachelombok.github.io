@@ -393,6 +393,7 @@ export default function SulSulSimSimPage() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             display="block"
+            title="Video description of SulSul! SimSim!"
           ></iframe>
 
           <iframe
@@ -401,13 +402,14 @@ export default function SulSulSimSimPage() {
             width="1162px"
             height="665px"
             frameborder="0"
+            title="SulSul! SimSim! presentation"
           >
             This is an embedded{" "}
-            <a target="_blank" href="https://office.com">
+            <a target="_blank" rel="noreferrer" href="https://office.com">
               Microsoft Office
             </a>{" "}
             presentation, powered by{" "}
-            <a target="_blank" href="https://office.com/webapps">
+            <a target="_blank" rel="noreferrer" href="https://office.com/webapps">
               Office
             </a>
             .

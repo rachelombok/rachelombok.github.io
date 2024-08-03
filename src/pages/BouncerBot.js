@@ -80,7 +80,7 @@ export default function BouncerBotPage() {
           width="1100"
           height="550"
           className="mx-auto border border-8 rounded border-neutral-content"
-          alt="bouncer bot demo picture"
+          alt="bouncer bot demo"
         />
 
         <p>
@@ -119,6 +119,7 @@ export default function BouncerBotPage() {
           className="mx-auto"
           width="1160"
           height="655"
+          title="Bouncerbot Demo"
           src="https://www.youtube.com/embed/7f5pdKDcfJk"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
