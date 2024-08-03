@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState } from "react";
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+  const [theme, setTheme] = useState(localStorage.getItem("theme") ?? 'light');
 
   const toggleTheme = (newTheme) => {
     if (["cupcake", "light", "luxury", "valentine"].includes(newTheme)) {
