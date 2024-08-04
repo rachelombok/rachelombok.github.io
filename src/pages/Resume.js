@@ -77,7 +77,7 @@ export default function ResumePage() {
           {" "}
           Drove a significant increase in user activation for Alteryx Analytics
           Cloud platform, by implementing customer-centric features like
-          Intercom chat messenger and a streamlined trial registration process,
+          Intercom chat messenger and a streamlined trial registration process;
           Spearheaded the development and launch of an integration between
           Alteryx’s Designer Cloud and Databricks, Enabling seamless data
           transfer and a unified user experience between the two platforms, and
@@ -98,7 +98,7 @@ export default function ResumePage() {
           Developed a Reply Prompt box prototype for embedded Tweets using React
           to introduce more non-users to the Twitter platform, then Conducted a
           user experiment to evaluate an alternative prompt box design,
-          Resulting in a 7.5% increase in conversion clicks to on-platform
+          resulting in a 7.5% increase in conversion clicks to on-platform
           content. Prototyped and tested a solution for Video Embeds that
           boosted conversion rates and user engagement with embedded Tweets
           containing video.{" "}
