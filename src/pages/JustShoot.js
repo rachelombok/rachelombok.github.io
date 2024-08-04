@@ -93,12 +93,10 @@ export default function JustShootPage() {
         addition, the web application also uses MapBox to provide its location
         data and show the places data and photo spots. Finally, JustShoot is
         deployed using Heroku. JustShoot was the first full stack project I
-        created this past summer, and it taught me a lot about backend
+        created by myself, and it taught me a lot about backend
         development and creating fully responsive web applications. In the
         future, I hope to add more features and functionality to the site, such
-        as adding logins and profile pages for users, allowing multiple pictures
-        to be shared, and also photospot suggestions based on where locations
-        people search for. Check out the repo{" "}
+        as adding an explore page for finding posts, and photoshoot suggestions based on locations people search for. Check out the repo{" "}
         <a
           className="link justshoot"
           href="https://github.com/rachelombok/JustShoot"
