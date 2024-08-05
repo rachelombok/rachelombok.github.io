@@ -21,8 +21,10 @@ import greatescape4 from "../images/cs3113/greatescape4.png";
 import maze1 from "../images/cs3113/maze1.jpeg";
 import maze3 from "../images/cs3113/maze4.jpeg";
 import maze4 from "../images/cs3113/maze5.jpeg";
+import ReactGA from "react-ga4";
 
 export default function GameProgrammingPage() {
+    ReactGA.send({ hitType: "pageview", page: "/cs3113", title: "Game Programming" });
   const overview = (
     <p>
       Intro to Game Programming is a comprehensive course designed to provide an

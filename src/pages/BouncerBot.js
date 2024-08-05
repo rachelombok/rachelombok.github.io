@@ -5,8 +5,10 @@ import { PageDetails } from "../components/PageDetails";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 import bouncerbot from "../images/bouncerbot/ultrahacks.jpeg";
 import bouncerbot2 from "../images/bouncerbot/botbouncer3.jpg";
+import ReactGA from "react-ga4";
 
 export default function BouncerBotPage() {
+    ReactGA.send({ hitType: "pageview", page: "/bouncerbot", title: "BouncerBot" });
   const roles = (
     <>
       {" "}

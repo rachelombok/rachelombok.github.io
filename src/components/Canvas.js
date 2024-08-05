@@ -4,8 +4,11 @@ import { TierTwoBubble } from "./TierTwoBubble";
 import { TierThreeBubble } from "./TierThreeBubble";
 import { projectBubbleInfo } from "../fileinfo/projectbubbleinfo";
 import { motion } from "framer-motion";
+import ReactGA from "react-ga4";
 
 export const Canvas = () => {
+  ReactGA.send({ hitType: "pageview", page: "/", title: "homepage" });
+
   return (
     <motion.div
       className="site-background"

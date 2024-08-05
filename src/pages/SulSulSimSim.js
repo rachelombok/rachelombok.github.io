@@ -10,10 +10,12 @@ import bestroom from "../images/sulsulsimsim/bestroomnew.jpg";
 import evolvedhouse1 from "../images/sulsulsimsim/evolvedhouse1.PNG";
 import evolvedhouse2 from "../images/sulsulsimsim/evolvedhouse2.PNG";
 import simsimsdiscord from "../images/sulsulsimsim/simsimdiscord.jpg";
+import ReactGA from "react-ga4";
 
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 
 export default function SulSulSimSimPage() {
+    ReactGA.send({ hitType: "pageview", page: "/sulsulsimsim", title: "SulSul! SimSim" });
   const overview = (
     <>
       Say "Sul Sul!" to SimSim, A Sims-Inspired Platform for Sandbox Game AI.

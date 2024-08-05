@@ -8,8 +8,10 @@ import slide1 from "../images/covidforecasts/slide1.png";
 import slide6 from "../images/covidforecasts/slide6.png";
 import slide3 from "../images/covidforecasts/slide3.png";
 import slide7 from "../images/covidforecasts/slide7.png";
+import ReactGA from "react-ga4";
 
 export default function CovideasPage() {
+    ReactGA.send({ hitType: "pageview", page: "/covideas", title: "COVIDforecasts" });
   const team = (
     <>
       <p className="not-prose my-0">Jacob Abernethy, Project Lead</p>

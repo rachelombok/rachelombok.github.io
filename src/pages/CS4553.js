@@ -3,8 +3,10 @@ import { PageContainerOutline } from "../components/PageContainerOutline";
 import { PageHeader } from "../components/PageHeader";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 import { CourseSectionDetails } from "../components/CourseSectionDetails";
+import ReactGA from "react-ga4";
 
 export default function GameDesignPage() {
+    ReactGA.send({ hitType: "pageview", page: "/cs4553", title: "Game Design" });
   const overview = (
     <p>
       CS 4553 is about experimental game design. Design in this context pertains

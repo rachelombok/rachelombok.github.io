@@ -5,8 +5,10 @@ import { ResumeDescription } from "../components/ResumeDescription";
 import { Link } from "react-router-dom";
 import { pathConstants } from "../fileinfo/pathConstants";
 import resumeDoc from "../fileinfo/Ombok_Rachel_Resume.pdf";
+import ReactGA from "react-ga4";
 
 export default function ResumePage() {
+    ReactGA.send({ hitType: "pageview", page: "/resume", title: "Resume" });
   const resumeDownload = (
     <>
       Click{" "}

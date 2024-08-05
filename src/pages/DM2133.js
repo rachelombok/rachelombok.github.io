@@ -9,8 +9,10 @@ import pic3 from "../images/dm2133/3.jpg";
 import pic4 from "../images/dm2133/4.JPG";
 import pic5 from "../images/dm2133/5.JPG";
 import pic6 from "../images/dm2133/6.jpg";
+import ReactGA from "react-ga4";
 
 export default function ModelingPage() {
+    ReactGA.send({ hitType: "pageview", page: "/dm2133", title: "3D Modeling" });
   const overview =
     "In this course, students learn to produce and render high-quality 3D models, and upon completion of this course, students will have a solid understanding of the fundamentals of modeling, texturing, animation and lighting using industry-standard software. Students may create content for video games, web, film, or other interfaces.";
 

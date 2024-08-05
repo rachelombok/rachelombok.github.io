@@ -2,10 +2,12 @@ import React from "react";
 import { PageContainerOutline } from "../components/PageContainerOutline";
 import { PageHeader } from "../components/PageHeader";
 import travelimgs from "../images";
+import ReactGA from "react-ga4";
 
 import TravelLocationCarousel from "../components/TravelLocationCarousel";
 
 export default function TravelPage() {
+    ReactGA.send({ hitType: "pageview", page: "/travel", title: "Travel" });
   const names = {
     amsterdam: "Amsterdam, Netherlands",
     austria: "Innsbruck, Austria",

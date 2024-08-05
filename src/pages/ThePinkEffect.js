@@ -3,6 +3,7 @@ import { PageContainerOutline } from "../components/PageContainerOutline";
 import { PageHeader } from "../components/PageHeader";
 import { PageDetails } from "../components/PageDetails";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
+import ReactGA from "react-ga4";
 
 export default function RDSPage() {
   return (

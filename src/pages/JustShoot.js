@@ -6,10 +6,12 @@ import jslogo from "../images/justshoot/jstextlogo.jpg";
 import jsimg1 from "../images/justshoot/justshoot1.jpg";
 import jsimg2 from "../images/justshoot/justshoot2.jpg";
 import jsimg3 from "../images/justshoot/justshoot3.png";
+import ReactGA from "react-ga4";
 
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 
 export default function JustShootPage() {
+    ReactGA.send({ hitType: "pageview", page: "/justshoot", title: "JustShoot" });
   const overview = (
     <>
       <a href="https://justshoot.netlify.app" className="justshoot-link">

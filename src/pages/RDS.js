@@ -11,8 +11,10 @@ import legopoppy2 from "../images/rds/legopoppy2.png";
 import legopoppy3 from "../images/rds/legopoppy3.png";
 import poppy from "../images/rds/poppy1.png";
 import mindstormscode from "../images/rds/mindstormscode2.png";
+import ReactGA from "react-ga4";
 
 export default function RDSPage() {
+    ReactGA.send({ hitType: "pageview", page: "/rds", title: "RDS" });
   const overview =
     "A project that solved a unique problem statement for my General Engineering & Prototyping course. Winner of Nick Russo Award for Outstanding General Engineering Design.";
   const team = (

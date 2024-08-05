@@ -5,8 +5,10 @@ import { PageDetails } from "../components/PageDetails";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 import { CollapsibleSection } from "../components/CollapsibleSection";
 import huztleart from "../images/huztle/huztleart.jpg";
+import ReactGA from "react-ga4";
 
 export default function HuztlePage() {
+    ReactGA.send({ hitType: "pageview", page: "/huztle", title: "Huztle" });
   const listen = (
     <>
       <p className="not-prose my-0 font-semibold">

@@ -9,8 +9,10 @@ import { Link } from "react-router-dom";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { motion } from "framer-motion";
 import { pathConstants } from "../fileinfo/pathConstants";
+import ReactGA from "react-ga4";
 
 export default function AboutPage() {
+    ReactGA.send({ hitType: "pageview", page: "/about", title: "About" });
   const [currentTheme, setCurrentTheme] = useState("");
   const { theme } = useContext(ThemeContext);
 

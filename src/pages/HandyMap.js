@@ -7,8 +7,10 @@ import handymapgroupwin from "../images/handymap/handymapgroup2.png";
 import handymapgroupnight from "../images/handymap/handymapgroup3.png";
 import mitmap from "../images/handymap/mitmap.jpg";
 import handymapgroup1 from "../images/handymap/handymapgroup1.png";
+import ReactGA from "react-ga4";
 
 export default function HandyMapPage() {
+    ReactGA.send({ hitType: "pageview", page: "/handymap", title: "HandyMap" });
   const overview =
     "An app that identifies wheelchair accessible entrances in buildings and helps users naviagate to the location in the easiest possible way.";
   const team = (
