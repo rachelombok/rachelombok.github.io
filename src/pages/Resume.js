@@ -240,6 +240,19 @@ export default function ResumePage() {
         </p>
       </ResumeDescription>
 
+      <ResumeDescription
+        resumeLink='https://animfund.org/programs/gdc-scholarship-program/gdc-scholars/'
+        company="Animation Diversity Foundation GDC 2022 Scholar"
+        id=""
+        subline="March 2022"
+      >
+        <p>
+          {" "}
+          The ADF GDC Scholarship provides All Access passes to GDC in San Francisco. Consistent with the ADF mission statement, they aim to increase access and opportunity to marginalized or under-represented groups 
+          in the games industry, in order to improve diversity and inclusion. Scholarship recipients focus on animation-related disciplines, such as character animation, technical animation/rigging, animation programming, etc.
+           </p>
+      </ResumeDescription>
+
       <h5 className="subtitle base-300">Skills</h5>
       <ResumeDescription resumeLink="" company="Technical" id="" subline="">
         <p>

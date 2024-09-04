@@ -61,7 +61,7 @@
 * [x] change red canvas border color to theme dependent color
 * [x] add gif and theme appropriate bg to 404 page
 * [ ] figure out why bubbles dont have text on canvas in safari
-* [ ] compare fonts/images to old site, consider making them larger
+* [❌] compare fonts/images to old site, consider making them larger
 * [x] link navigation tabs to pages
 * [x] create Tier 2 bubbles
 * [x] create Tier 3 bubbles
@@ -80,7 +80,7 @@
 * [ ] once bubble icon is added, fix pink effect icon
 * [x] in ref to above, replace covid forecasts bubble icon w better cropped image
 * [x] fill out resume page
-* [ ] update justshoot timeline on resume
+* [x] update justshoot timeline on resume
 * [x] create rds page
 * [x] create handymap page
 * [x] create covideas page
@@ -106,9 +106,9 @@
 * [ ] customize course objective bullet points
 * [ ] download not owned videos/assets
 * [x] update/fix social icons on bottom page
-* [ ] add google analytics to site
+* [x] add google analytics to site
 * [x] replace appropriate href with Links
-* [ ] fix glitching routing
+* [❌] fix glitching routing
 * [x] fix resume page links
 * [ ] make all elements scalable on sites
 * [x] in all lists/maps, give elements unique keys
@@ -116,7 +116,8 @@
 * [x] put custom titles on tab depending on which page currently on
 * [ ] scale text to adjust with window zoom/size
 * [x] use path constants where ever there is a link
-* [ ] replace cupcake photo to remove line on photo
+* [❌] replace cupcake photo to remove line on photo
 * [ ] add more demo photos to just shoot, consider making it a carousel
 * [ ] make list of possible future events/telemetry
 * [ ] replace events paths w/ pathConstants
+* [ ] hide ga tag and add var to gitignore and netlify
