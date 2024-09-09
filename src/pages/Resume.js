@@ -260,6 +260,7 @@ export default function ResumePage() {
           React, Node.js, Progressive Web Development(HTML,CSS,Javascript),
           Python, C++, Flask
         </p>
+        <p><b>Certifications: </b><a href='https://www.credly.com/badges/96c1c556-dc48-473a-a201-510e9f6a89f4' className="underline link">Google Cloud Digital Leader</a></p>
       </ResumeDescription>
       <ResumeDescription resumeLink="" company="Software" id="" subline="">
         <p>
