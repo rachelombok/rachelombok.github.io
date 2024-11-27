@@ -27,7 +27,7 @@ export default function AboutPage() {
         lineOne="Hey there,"
         lineTwo="Nice to meet you."
       />
-      <div className="c15 prose-2xl space-x-2">
+      <div className="c15 prose-2xl space-x-28">
         <div>
           <p>
             Hi, I'm Rachel! I'm a graduate of{" "}
@@ -43,11 +43,10 @@ export default function AboutPage() {
             <a href="https://www.alteryx.com" className="link alteryx">
               Alteryx
             </a>{" "}
-            for two years working on{" "}
-            <a href="https://www.trifacta.com" className="link alteryx">
-              Trifacta
-            </a>{" "}
-            products. In summer of 2021, I interned at{" "}
+            for two years working on their Cloud Analytics platform, mainly {" "}
+            <a href="https://www.alteryx.com/about-us/trifacta-is-now-alteryx-designer-cloud" className="link alteryx">
+              Alteryx Designer Cloud.
+            </a>{" "} In summer of 2021, I interned at{" "}
             <a
               href="https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview"
               className="link twitter"
