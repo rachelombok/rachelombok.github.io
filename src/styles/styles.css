@@ -514,6 +514,12 @@
     color: #c621a0;
 
 }
+.gwc {
+    color: #6eceb2;
+}
+.adf {
+    color: rgb(230, 182, 124);
+}
 .paris {
     background: url(../images//travel/paris7.jpeg) center / cover no-repeat;
     -webkit-background-clip: text;

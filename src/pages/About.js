@@ -12,7 +12,7 @@ import { pathConstants } from "../fileinfo/pathConstants";
 import ReactGA from "react-ga4";
 
 export default function AboutPage() {
-    ReactGA.send({ hitType: "pageview", page: "/about", title: "About" });
+  ReactGA.send({ hitType: "pageview", page: "/about", title: "About" });
   const [currentTheme, setCurrentTheme] = useState("");
   const { theme } = useContext(ThemeContext);
 
@@ -70,7 +70,7 @@ export default function AboutPage() {
             >
               exploreCSR program
             </a>
-            .
+            . Check out some of <Link to={pathConstants.MAIN} className="link">my projects</Link> I've done, such as the fullstack web-app I created <Link to={pathConstants.JUSTSHOOT} className="link justshoot">JustShoot</Link>.
           </p>
         </div>
 

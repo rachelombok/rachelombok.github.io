@@ -56,7 +56,7 @@ export default function HuztlePage() {
 
   const title = (
     <h3 className="not-prose text-4xl font-semibold my-0">
-      Episode 1: Anna Zhang - Youth Advocate, Photographer, Creative Director
+    Episode 1: Anna Zhang - Youth Advocate, Photographer, Creative Director
     </h3>
   );
 
@@ -71,7 +71,7 @@ export default function HuztlePage() {
       <PageDetails
         id="huztle"
         icon={huztleart}
-        overview="A podcast about Gen-Z entrepreneurs, tech enthusiasts, founders and innovators who are at the intersection of STEM and leadership. Hosted by Rachel Ombok."
+        overview="A podcast about Gen-Z entrepreneurs, tech enthusiasts, founders and innovators who are at the intersection of STEM and leadership. Hosted by Rachel Ombok. 💡 "
         listen={listen}
         connect={connect}
         useBorder

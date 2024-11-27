@@ -87,10 +87,10 @@ export default function ModelingPage() {
         heading="Lego Flower Bouquet"
       >
         <p>
-          Develop one polygnal model, usually a character or inanimate object.
+          <i>Develop one polygnal model, usually a character or inanimate object.
           If the object is a character, it can either be an original or a
           pre-existing character. One of the primary goals of this project is
-          learning how to keep topology clean.{" "}
+          learning how to keep topology clean.</i>{" "}
         </p>
 
         <p>
@@ -109,7 +109,7 @@ export default function ModelingPage() {
               alt="real life Lego Flower Bouquet"
             />
           </div>
-          <div className="column ">
+          <div className="column">
             <img
               src={pic2}
               className="shadow image-level border border-8 rounded border-neutral-content"
