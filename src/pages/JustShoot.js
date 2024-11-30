@@ -101,7 +101,7 @@ export default function JustShootPage() {
         as adding an explore page for finding posts, and photoshoot suggestions based on locations people search for. Check out the repo{" "}
         <a
           className="link justshoot"
-          href="https://github.com/rachelombok/JustShoot"
+          href="https://github.com/rachelombok/photologapp"
         >
           here
         </a>

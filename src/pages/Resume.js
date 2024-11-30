@@ -58,7 +58,7 @@ export default function ResumePage() {
             {" "}
             Game Design
           </Link>
-          , Introduction to Data Science, Java & Web Design
+          , Introduction to Data Science, Java & Web Design<b>(Java)</b>
         </p>
         <p>
           <b>Other Coursework: </b>
