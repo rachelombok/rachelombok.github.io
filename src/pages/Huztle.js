@@ -97,7 +97,7 @@ export default function HuztlePage() {
             Forbes 30 Under 30 2021
           </a>{" "}
           nominee. Anna has worked with brands such as Uniqlo, Fujifilm,
-          Walgreens, and creates editorial content for her nonprofit magazine,
+          Walgreens, and creates editorial content for her nonprofit magazine, {" "}
           <a href="http://pulsespikes.com/" className="huztle link">
             Pulse Spikes
           </a>
@@ -210,7 +210,7 @@ export default function HuztlePage() {
         </a>
         , which features audio samples from all students work, including mine.
         Listen to more episodes{" "}
-        <a href="https://unmutepodcast.org" className="nyu link">
+        <a href="https://open.spotify.com/show/0EXE5JyZq1YBx82MB4AmSM?si=b164f1d0a26f4e4c" className="nyu link">
           here
         </a>
         .
