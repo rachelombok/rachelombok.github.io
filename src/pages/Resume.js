@@ -70,6 +70,12 @@ export default function ResumePage() {
 
       <h5 className="subtitle base-300">Experience</h5>
       <ResumeDescription
+        resumeLink="https://distyl.ai/"
+        company="Distyl"
+        id="distyl"
+        subline="Front End Engineer · April 2025 - Now"
+      />
+      <ResumeDescription
         resumeLink="https://www.alteryx.com/products/alteryx-cloud"
         company="Alteryx - Growth Team"
         id="alteryx"

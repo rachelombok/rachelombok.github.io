@@ -30,31 +30,40 @@ export default function AboutPage() {
       <div className="c15 prose-2xl space-x-28">
         <div>
           <p>
-            Hi, I'm Rachel! I'm a graduate of{" "}
+            Hi, I'm Rachel! I am currently a frontend engineer working at{" "}
+            <a href="https://distyl.ai/" className="link distyl">
+              Distyl. {" "}
+            </a>
+             I'm a graduate of{" "}
             <a href="https://engineering.nyu.edu" className="link nyu">
               New York University
             </a>
-            , where I studied Computer Science and Game Engineering at the Tandon School of Engineering, and am
-            currently exploring all of the opportunities I’m given that merge
-            tech and artistic creativity together.
+            , where I studied Computer Science and Game Engineering at the
+            Tandon School of Engineering, and am currently exploring all of the
+            opportunities I’m given that merge tech and artistic creativity
+            together.
           </p>
           <p>
             After graduation I worked as a Software Engineer at{" "}
             <a href="https://www.alteryx.com" className="link alteryx">
               Alteryx
             </a>{" "}
-            for two years working on their Cloud Analytics platform, mainly {" "}
-            <a href="https://www.alteryx.com/about-us/trifacta-is-now-alteryx-designer-cloud" className="link alteryx">
+            for two years working on their Cloud Analytics platform, mainly{" "}
+            <a
+              href="https://www.alteryx.com/about-us/trifacta-is-now-alteryx-designer-cloud"
+              className="link alteryx"
+            >
               Alteryx Designer Cloud.
-            </a>{" "} In summer of 2021, I interned at{" "}
+            </a>{" "}
+            In summer of 2021, I interned at{" "}
             <a
               href="https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview"
               className="link twitter"
             >
               Twitter
             </a>{" "}
-            as a Software Engineering Intern, and in school I had
-            taken courses such as{" "}
+            as a Software Engineering Intern, and in school I had taken courses
+            such as{" "}
             <Link to={pathConstants.CS3113} className="link cs3113">
               Introduction to Game Programming
             </Link>{" "}
@@ -69,14 +78,22 @@ export default function AboutPage() {
             >
               exploreCSR program
             </a>
-            . Check out some of <Link to={pathConstants.MAIN} className="link">my projects</Link> I've done, such as the fullstack web-app I created <Link to={pathConstants.JUSTSHOOT} className="link justshoot">JustShoot</Link>.
+            . Check out some of{" "}
+            <Link to={pathConstants.MAIN} className="link">
+              my projects
+            </Link>{" "}
+            I've done, such as the fullstack web-app I created{" "}
+            <Link to={pathConstants.JUSTSHOOT} className="link justshoot">
+              JustShoot
+            </Link>
+            .
           </p>
         </div>
 
         {currentTheme === "light" && (
           <motion.img
             src={roavilight}
-            className="avi object-cover "
+            className="avi object-cover"
             alt="picture of Rachel Ombok light theme"
             key="1"
             initial={{ opacity: 0.5 }}

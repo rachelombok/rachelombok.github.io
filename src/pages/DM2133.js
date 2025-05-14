@@ -105,7 +105,7 @@ export default function ModelingPage() {
           <div className="column">
             <img
               src={pic1}
-              className="shadow image-level border border-8 rounded border-neutral-content"
+              className="shadow image-level border border-8 rounded border-neutral-content object-cover"
               alt="real life Lego Flower Bouquet"
             />
           </div>

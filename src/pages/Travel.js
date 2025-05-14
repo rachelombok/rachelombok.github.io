@@ -24,6 +24,7 @@ export default function TravelPage() {
     seattle: "Seattle, Washington",
     shanghai: "Shanghai, China",
     washdc: "Washington, District of Columbia",
+    la: 'Los Angeles, California'
   };
   return (
     <PageContainerOutline className="site-page" title="Travel">

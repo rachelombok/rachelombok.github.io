@@ -120,6 +120,15 @@ import WashDC7 from './travel/washdc7.JPG';
 import WashDC8 from './travel/washdc8.JPG';
 import WashDC9 from './travel/washdc9.JPG';
 
+import LA1 from './travel/la1.JPG';
+import LA2 from './travel/la2.JPG';
+import LA3 from './travel/la3.jpg';
+import LA4 from './travel/la4.JPG';
+import LA5 from './travel/la5.JPG';
+import LA6 from './travel/la6.jpg';
+import LA7 from './travel/la7.jpg';
+import LA8 from './travel/la8.jpg';
+
 export default {
     'paris': [Paris1, Paris2, Paris3, Paris4, Paris5, Paris6, Paris7],
     'heidelberg':[Heidelberg1, Heidelberg2, Heidelberg3, Heidelberg4, Heidelberg5, Heidelberg6, Heidelberg7, Heidelberg8],
@@ -137,7 +146,7 @@ export default {
    
     'london': [London1, London2, London3, London4, London5],
     
-   
+   'la': [LA1, LA2, LA3, LA4, LA5, LA6, LA7, LA8],
     
     'shanghai': [Shanghai1, Shanghai2, Shanghai3],
     'washdc' : [WashDC1, WashDC2, WashDC3, WashDC4, WashDC5, WashDC6, WashDC7, WashDC8, WashDC9],
