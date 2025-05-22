@@ -34,8 +34,8 @@ export const Navigation = () => {
                 <li>
                   <Link to={pathConstants.TRAVEL}>Travel</Link>
                 </li>
-                <li className="disabled">
-                  <Link to={pathConstants.MAIN}>Portfolio (WIP 🚧)</Link>
+                <li >
+                  <Link to="https://portfolio.rachelombok.com/concerts" target="_blank" rel="noopener noreferrer">Portfolio</Link>
                 </li>
               </ul>
             </details>
