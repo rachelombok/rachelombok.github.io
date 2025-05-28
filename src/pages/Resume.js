@@ -73,7 +73,7 @@ export default function ResumePage() {
         resumeLink="https://distyl.ai/"
         company="Distyl"
         id="distyl"
-        subline="Front End Engineer · April 2025 - Now"
+        subline="Front End Engineer · April 2025 to Present"
       />
       <ResumeDescription
         resumeLink="https://www.alteryx.com/products/alteryx-cloud"
@@ -260,7 +260,7 @@ export default function ResumePage() {
       <ResumeDescription resumeLink="" company="Technical" id="" subline="">
         <p>
           {" "}
-          Javascript, React, Node.js, Progressive Web Development(HTML,CSS,Javascript),
+          Javascript, React, Node.js, Typescript, Progressive Web Development(HTML,CSS,Javascript), TailwindCSS, 
           Python, C++, Flask
         </p>
         <p><b>Certifications: </b><a href='https://www.credly.com/badges/96c1c556-dc48-473a-a201-510e9f6a89f4' className="underline link">Google Cloud Digital Leader</a></p>
@@ -268,7 +268,7 @@ export default function ResumePage() {
       <ResumeDescription resumeLink="" company="Software" id="" subline="">
         <p>
           {" "}
-          Microsoft Office, G Suite, Heroku, Netlify, VS Code, Figma, Autodesk
+          Microsoft Office, G Suite, Heroku, Netlify, VS Code, Autodesk
           Maya
         </p>
       </ResumeDescription>

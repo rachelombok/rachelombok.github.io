@@ -31,11 +31,13 @@ export default function AboutPage() {
         <div>
           <p>
             Hi, I'm Rachel! I am currently a frontend engineer working at{" "}
-            <a href="https://distyl.ai/" className="link distyl">
-              Distyl. {" "}
+            <a href="https://distyl.ai/" className="link distyl" target="_blank"
+           rel="noreferrer">
+              Distyl.{" "}
             </a>
-             I'm a graduate of{" "}
-            <a href="https://engineering.nyu.edu" className="link nyu">
+            I'm a graduate of{" "}
+            <a href="https://engineering.nyu.edu" className="link nyu" target="_blank"
+           rel="noreferrer">
               New York University
             </a>
             , where I studied Computer Science and Game Engineering at the
@@ -45,13 +47,16 @@ export default function AboutPage() {
           </p>
           <p>
             After graduation I worked as a Software Engineer at{" "}
-            <a href="https://www.alteryx.com" className="link alteryx">
+            <a href="https://www.alteryx.com" className="link alteryx" target="_blank"
+           rel="noreferrer">
               Alteryx
             </a>{" "}
             for two years working on their Cloud Analytics platform, mainly{" "}
             <a
               href="https://www.alteryx.com/about-us/trifacta-is-now-alteryx-designer-cloud"
               className="link alteryx"
+              target="_blank"
+            rel="noreferrer"
             >
               Alteryx Designer Cloud.
             </a>{" "}
@@ -59,6 +64,8 @@ export default function AboutPage() {
             <a
               href="https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview"
               className="link twitter"
+              target="_blank"
+           rel="noreferrer"
             >
               Twitter
             </a>{" "}
@@ -75,6 +82,8 @@ export default function AboutPage() {
             <a
               href="https://explorecsr.cs.brown.edu/ai/index.html"
               className="link explorecsr"
+              target="_blank"
+           rel="noreferrer"
             >
               exploreCSR program
             </a>
@@ -82,11 +91,16 @@ export default function AboutPage() {
             <Link to={pathConstants.MAIN} className="link">
               my projects
             </Link>{" "}
-            I've done, such as the fullstack web-app I created{" "}
+            I've done, such as the fullstack web-app I created,{" "}
             <Link to={pathConstants.JUSTSHOOT} className="link justshoot">
               JustShoot
             </Link>
-            .
+            , or my own{" "}
+            <a href="https://portfolio.rachelombok.com/" className="link portfolio" target="_blank"
+           rel="noreferrer">
+               photography portfolio site.
+            </a>
+            
           </p>
         </div>
 

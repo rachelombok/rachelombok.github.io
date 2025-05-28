@@ -517,6 +517,10 @@
 .adf {
   color: rgb(230, 182, 124);
 }
+.portfolio {
+  color: #fbb6ce;
+}
+
 .paris {
   background: url(../images//travel/paris7.jpeg) center / cover no-repeat;
   -webkit-background-clip: text;
