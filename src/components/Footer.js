@@ -28,8 +28,9 @@ export const Footer = () => {
           data-choose-theme
           className="w-full bg-neutral h-14 text-5xl"
           onChange={changeTheme}
+          defaultValue="light"
         >
-          <option selected value="light">
+          <option value="light">
             💡
           </option>
           <option value="luxury">🌒</option>

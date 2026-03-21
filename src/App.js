@@ -1,7 +1,7 @@
 import "./App.css";
 import "./styles/styles.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Canvas } from "./components/Canvas";
+import BubbleCanvas from "./components/BubbleCanvas";
 import { pathConstants } from "./fileinfo/pathConstants";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ReactGA from 'react-ga4';
@@ -33,7 +33,7 @@ function App() {
       children: [
         {
           path: pathConstants.MAIN,
-          element: <Canvas />,
+          element: <BubbleCanvas />,
         },
         // other pages....
         {
