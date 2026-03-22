@@ -14,9 +14,9 @@ export default function JustShootPage() {
   ReactGA.send({ hitType: "pageview", page: "/justshoot", title: "JustShoot" });
   const overview = (
     <>
-      <a href="https://justshoot.netlify.app" className="justshoot-link">
-        JustShoot
-      </a>{" "}
+
+      JustShoot
+
       is a community and platform for photo enthusiasts to find cool locations
       for photo shoots.
     </>
