@@ -23,7 +23,7 @@ export const PageDetails = (props) => {
   };
   return (
     <>
-      <div className="c12">
+      <div className="c12 font-body">
         <motion.div
           className="summary"
           variants={container}
@@ -32,7 +32,7 @@ export const PageDetails = (props) => {
         >
           <div className="summary-section">
             <div className="section summary-item overflow-hidden">
-              <motion.h5 className="subtitle base-300 " variants={item}>
+              <motion.h5 className="subtitle base-300 font-display" variants={item}>
                 Overview
               </motion.h5>
               <motion.p className="description-text" variants={item}>
@@ -41,7 +41,7 @@ export const PageDetails = (props) => {
             </div>
             {!!props.roles ? (
               <div className="section summary-item overflow-hidden">
-                <motion.h5 className="subtitle" variants={item}>
+                <motion.h5 className="subtitle font-display" variants={item}>
                   Roles
                 </motion.h5>
                 <motion.p className="description-text" variants={item}>
@@ -54,7 +54,7 @@ export const PageDetails = (props) => {
 
             {!!props.team ? (
               <div className="section summary-item overflow-hidden">
-                <motion.h5 className="subtitle" variants={item}>
+                <motion.h5 className="subtitle font-display" variants={item}>
                   Team
                 </motion.h5>
                 <motion.p className="description-text" variants={item}>
@@ -67,7 +67,7 @@ export const PageDetails = (props) => {
 
             {!!props.timeline ? (
               <div className="section summary-item overflow-hidden">
-                <motion.h5 className="subtitle" variants={item}>
+                <motion.h5 className="subtitle font-display" variants={item}>
                   Timeline
                 </motion.h5>
                 <motion.p className="description-text" variants={item}>
@@ -80,7 +80,7 @@ export const PageDetails = (props) => {
 
             {!!props.listen ? (
               <div className="section summary-item overflow-hidden">
-                <motion.h5 className="subtitle" variants={item}>
+                <motion.h5 className="subtitle font-display" variants={item}>
                   Listen
                 </motion.h5>
                 <motion.p className="description-text" variants={item}>
@@ -93,7 +93,7 @@ export const PageDetails = (props) => {
 
             {!!props.connect ? (
               <div className="section summary-item overflow-hidden">
-                <motion.h5 className="subtitle" variants={item}>
+                <motion.h5 className="subtitle font-display" variants={item}>
                   Connect
                 </motion.h5>
                 <motion.p className="description-text" variants={item}>

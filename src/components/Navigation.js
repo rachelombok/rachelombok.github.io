@@ -10,17 +10,17 @@ export const Navigation = () => {
   }, []);
 
   return (
-    <Navbar className="px-28 pt-12 pb-20">
-      <div className="flex-1">
+    <Navbar className="absolute top-8 z-20">
+      <div className="flex-1 pl-8 font-semibold font-display">
         <Link
           to={pathConstants.MAIN}
-          className="btn btn-ghost text-5xl site-title"
+          className=" text-5xl site-title"
         >
           rachel ombok
         </Link>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1 text-2xl space-x-1">
+        <ul className="menu menu-horizontal pr-12 text-2xl space-x-1 font-body">
           <li>
             <Link to={pathConstants.MAIN}>Work</Link>
           </li>

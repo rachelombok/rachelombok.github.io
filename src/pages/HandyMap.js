@@ -10,7 +10,7 @@ import handymapgroup1 from "../images/handymap/handymapgroup1.png";
 import ReactGA from "react-ga4";
 
 export default function HandyMapPage() {
-    ReactGA.send({ hitType: "pageview", page: "/handymap", title: "HandyMap" });
+  ReactGA.send({ hitType: "pageview", page: "/handymap", title: "HandyMap" });
   const overview =
     "An app that identifies wheelchair accessible entrances in buildings and helps users naviagate to the location in the easiest possible way.";
   const team = (
@@ -183,7 +183,7 @@ export default function HandyMapPage() {
       >
         <div className="flex space-x-2">
           <img
-            width="100px"
+            width="120px"
             alt="Python"
             src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white"
           />
@@ -193,12 +193,12 @@ export default function HandyMapPage() {
             src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=javascript&logoColor=white"
           />
           <img
-            width="160px"
+            width="180px"
             alt="Android Studio"
             src="https://img.shields.io/badge/-AndroidStudio-3DDC84?style=flat-square&logo=android-studio&logoColor=white"
           />
           <img
-            width="150px"
+            width="160px"
             alt="Google Maps"
             src="https://img.shields.io/badge/-GoogleMaps-4285F4?style=flat-square&logo=google-maps&logoColor=white"
           />

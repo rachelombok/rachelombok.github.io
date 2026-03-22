@@ -2,8 +2,9 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { projectBubbleInfo } from "../fileinfo/projectbubbleinfo";
+import { Link } from "react-router-dom";
 
-const SIZE_MAP = { major: 140, medium: 100, minor: 70 };
+const SIZE_MAP = { major: 200, medium: 140, minor: 80 };
 const HOVER_SCALE = 1.6;
 const SQUISH_AMOUNT = 0.18;
 const SQUISH_DURATION = 400; // ms
@@ -230,6 +231,7 @@ const BubbleCanvas = () => {
         const Icon = project.icon;
         const isLarge = project.importance === "major";
         const squish = squishes[project.id];
+        const isDimmed = isAnyHovered && !isHovered;
 
         const squishTransform = squish
           ? `rotate(${squish.rotation}deg) scale(${squish.scaleX}, ${squish.scaleY}) rotate(${-squish.rotation}deg)`
@@ -247,7 +249,6 @@ const BubbleCanvas = () => {
             }}
             animate={{
               scale: isHovered ? HOVER_SCALE : isAnyHovered ? 0.92 : 1,
-              opacity: isAnyHovered && !isHovered ? 0.4 : undefined,
               zIndex: isHovered ? 50 : 1,
             }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
@@ -268,174 +269,186 @@ const BubbleCanvas = () => {
                 style={{
                   inset: "-15%",
                   background: `linear-gradient(135deg, hsl(${c1} / 0.3), hsl(${c2} / 0.25))`,
+                  opacity: isDimmed ? 0.45 : 1,
+                  transition: "opacity 0.25s ease-out",
                 }}
               />
 
-              {/* Bubble body - 3D gradient */}
-              <div
-                className="relative w-full h-full rounded-full flex items-center justify-center overflow-hidden"
-                style={{
-                  background: `
+              <Link to={project.linkPath}>
+                {/* Bubble body - 3D gradient */}
+                <div
+                  className="relative w-full h-full rounded-full flex items-center justify-center overflow-hidden"
+                  style={{
+                    background: `
                     radial-gradient(circle at 35% 25%, hsl(${c1} / 0.15) 0%, transparent 50%),
-                    linear-gradient(145deg, hsl(${c1} / 0.55) 0%, hsl(${c2} / 0.45) 60%, hsl(${c2} / 0.3) 100%)
+                    linear-gradient(145deg, hsl(${c1} / 0.85) 0%, hsl(${c2} / 0.85) 60%, hsl(${c2} / 0.85) 100%)
                   `,
-                  border: `1.5px solid hsl(${c1} / 0.35)`,
-                  backdropFilter: "blur(12px)",
-                  boxShadow: `
+                    border: `1.5px solid hsl(${c1} / 0.35)`,
+                    backdropFilter: "blur(12px)",
+                    boxShadow: `
                     inset 0 -${size * 0.15}px ${size * 0.3}px hsl(${c2} / 0.15),
                     inset 0 ${size * 0.05}px ${size * 0.15}px hsl(${c1} / 0.2),
                     0 ${size * 0.06}px ${size * 0.2}px hsl(${c1} / 0.2)
                   `,
-                }}
-              >
-                {/* Specular highlight - 3D shine */}
-                <div
-                  className="absolute rounded-full pointer-events-none"
-                  style={{
-                    width: "60%",
-                    height: "45%",
-                    top: "8%",
-                    left: "15%",
-                    background: `radial-gradient(ellipse at 50% 40%, hsl(0 0% 100% / 0.25), hsl(0 0% 100% / 0.05) 60%, transparent 100%)`,
-                    filter: "blur(2px)",
                   }}
-                />
-
-                {/* Bottom rim light */}
-                <div
-                  className="absolute rounded-full pointer-events-none"
-                  style={{
-                    width: "70%",
-                    height: "20%",
-                    bottom: "10%",
-                    left: "15%",
-                    background: `radial-gradient(ellipse, hsl(${c2} / 0.15), transparent 70%)`,
-                    filter: "blur(4px)",
-                  }}
-                />
-
-                {/* Default icon */}
-                <motion.div
-                  initial={false}
-                  animate={
-                    isHovered
-                      ? isLarge
-                        ? { opacity: 0, y: -10 }
-                        : { opacity: 0, x: 20 }
-                      : { opacity: undefined, x: 0, y: 0 }
-                  }
-                  transition={{ duration: 0.25, ease: "easeInOut" }}
-                  className="relative z-10"
-                  style={{ filter: "drop-shadow(0 2px 4px hsl(0 0% 0% / 0.3))" }}
                 >
-
-                  <img
-                    alt="tier one project bubble icon"
-                    width={size * 0.28}
-                    src={project.icon}
-                    style={{ color: `hsl(0 0% 100% / 0.9)` }}
-                    strokeWidth={1.5}
+                  <div
+                    className="absolute inset-0 rounded-full pointer-events-none"
+                    style={{
+                      background: `linear-gradient(180deg, hsl(var(--background) / 0.02), hsl(var(--foreground) / 0.16))`,
+                      opacity: isDimmed ? 1 : 0,
+                      transition: "opacity 0.25s ease-out",
+                    }}
                   />
-                </motion.div>
+                  {/* Specular highlight - 3D shine */}
+                  <div
+                    className="absolute rounded-full pointer-events-none"
+                    style={{
+                      width: "60%",
+                      height: "45%",
+                      top: "8%",
+                      left: "15%",
+                      background: `radial-gradient(ellipse at 50% 40%, hsl(0 0% 100% / 0.25), hsl(0 0% 100% / 0.05) 60%, transparent 100%)`,
+                      filter: "blur(2px)",
+                    }}
+                  />
 
-                {/* Hover content overlay */}
-                <AnimatePresence>
-                  {isHovered && (
-                    <motion.div
-                      className="absolute inset-0 rounded-full flex items-center justify-center"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: undefined }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <div
-                        className="absolute inset-0 rounded-full"
-                        style={{
-                          background: `
+                  {/* Bottom rim light */}
+                  <div
+                    className="absolute rounded-full pointer-events-none"
+                    style={{
+                      width: "70%",
+                      height: "20%",
+                      bottom: "10%",
+                      left: "15%",
+                      background: `radial-gradient(ellipse, hsl(${c2} / 0.15), transparent 70%)`,
+                      filter: "blur(4px)",
+                    }}
+                  />
+
+                  {/* Default icon */}
+                  <motion.div
+                    initial={false}
+                    animate={
+                      isHovered
+                        ? isLarge
+                          ? { opacity: 0, y: -10 }
+                          : { opacity: 0, x: 20 }
+                        : { opacity: 2, x: 0, y: 0 }
+                    }
+                    transition={{ duration: 0.25, ease: "easeInOut" }}
+                    className="relative z-10"
+                    style={{ filter: "drop-shadow(0 2px 4px hsl(0 0% 0% / 0.3))" }}
+                  >
+
+                    <img
+                      alt="tier one project bubble icon"
+                      width={size * 0.4}
+                      src={project.icon}
+                      style={{ color: `hsl(0 0% 100% / 0.9)` }}
+                      strokeWidth={1.5}
+                    />
+                  </motion.div>
+
+                  {/* Hover content overlay */}
+                  <AnimatePresence>
+                    {isHovered && (
+                      <motion.div
+                        className="absolute inset-0 rounded-full flex items-center justify-center"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 2 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <div
+                          className="absolute inset-0 rounded-full"
+                          style={{
+                            background: `
                             radial-gradient(circle at 35% 25%, hsl(${c1} / 0.12) 0%, transparent 50%),
                             linear-gradient(145deg, hsl(${c1} / 0.6), hsl(${c2} / 0.5) 60%, hsl(var(--background) / 0.7))
                           `,
-                        }}
-                      />
-                      {/* Keep specular on hover */}
-                      <div
-                        className="absolute rounded-full pointer-events-none"
-                        style={{
-                          width: "60%",
-                          height: "45%",
-                          top: "8%",
-                          left: "15%",
-                          background: `radial-gradient(ellipse at 50% 40%, hsl(0 0% 100% / 0.2), transparent 60%)`,
-                          filter: "blur(2px)",
-                        }}
-                      />
+                          }}
+                        />
+                        {/* Keep specular on hover */}
+                        <div
+                          className="absolute rounded-full pointer-events-none"
+                          style={{
+                            width: "60%",
+                            height: "45%",
+                            top: "8%",
+                            left: "15%",
+                            background: `radial-gradient(ellipse at 50% 40%, hsl(0 0% 100% / 0.2), transparent 60%)`,
+                            filter: "blur(2px)",
+                          }}
+                        />
 
-                      {isLarge ? (
-                        <div className="relative z-10 flex flex-col items-center text-center px-4">
-                          <motion.div
-                            initial={{ opacity: 0, y: 15 }}
-                            animate={{ opacity: undefined, y: 0 }}
-                            exit={{ opacity: 0, y: 15 }}
-                            transition={{ duration: 0.3, delay: 0.05 }}
-                          >
-                            <img
-                              alt="tier one project bubble icon"
-                              width={size * 0.28}
-                              src={project.icon}
-                              style={{ color: `hsl(0 0% 100% / 0.9)` }}
-                              strokeWidth={1.5}
-                              className="mx-auto mb-2"
-                            />
-                          </motion.div>
-                          <motion.p
-                            className="font-display font-semibold leading-tight"
-                            style={{ fontSize: Math.max(12, size * 0.1), color: "hsl(0 0% 100% / 0.95)", textShadow: "0 1px 3px hsl(0 0% 0% / 0.3)" }}
-                            initial={{ opacity: 0, y: 18 }}
-                            animate={{ opacity: undefined, y: 0 }}
-                            exit={{ opacity: 0, y: 18 }}
-                            transition={{ duration: 0.3, delay: 0.1 }}
-                          >
-                            {project.name}
-                          </motion.p>
-                          <motion.p
-                            style={{ fontSize: Math.max(9, size * 0.075), color: "hsl(0 0% 100% / 0.7)", textShadow: "0 1px 2px hsl(0 0% 0% / 0.2)" }}
-                            className="mt-0.5 leading-snug"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: undefined, y: 0 }}
-                            exit={{ opacity: 0, y: 20 }}
-                            transition={{ duration: 0.3, delay: 0.15 }}
-                          >
-                            {project.tagline}
-                          </motion.p>
-                        </div>
-                      ) : (
-                        <div className="relative z-10 flex flex-col items-center text-center px-3">
-                          <motion.p
-                            className="font-display font-semibold leading-tight"
-                            style={{ fontSize: Math.max(10, size * 0.1), color: "hsl(0 0% 100% / 0.95)", textShadow: "0 1px 3px hsl(0 0% 0% / 0.3)" }}
-                            initial={{ opacity: 0, x: -15 }}
-                            animate={{ opacity: undefined, x: 0 }}
-                            exit={{ opacity: 0, x: -15 }}
-                            transition={{ duration: 0.25, delay: 0.05 }}
-                          >
-                            {project.name}
-                          </motion.p>
-                          <motion.p
-                            style={{ fontSize: Math.max(8, size * 0.07), color: "hsl(0 0% 100% / 0.7)", textShadow: "0 1px 2px hsl(0 0% 0% / 0.2)" }}
-                            className="mt-0.5 leading-snug"
-                            initial={{ opacity: 0, x: -18 }}
-                            animate={{ opacity: undefined, x: 0 }}
-                            exit={{ opacity: 0, x: -18 }}
-                            transition={{ duration: 0.25, delay: 0.1 }}
-                          >
-                            {project.tagline}
-                          </motion.p>
-                        </div>
-                      )}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                        {isLarge ? (
+                          <div className="relative z-10 flex flex-col items-center text-center px-4">
+                            <motion.div
+                              initial={{ opacity: 0, y: 15 }}
+                              animate={{ opacity: 2, y: 0 }}
+                              exit={{ opacity: 0, y: 15 }}
+                              transition={{ duration: 0.3, delay: 0.05 }}
+                            >
+                              <img
+                                alt="tier one project bubble icon"
+                                width={size * 0.4}
+                                src={project.icon}
+                                style={{ color: `hsl(0 0% 100% / 0.9)` }}
+                                strokeWidth={1.5}
+                                className="mx-auto mb-0"
+                              />
+                            </motion.div>
+                            <motion.p
+                              className="font-display font-semibold leading-tight"
+                              style={{ fontSize: Math.max(12, size * 0.1), color: "hsl(0 0% 100% / 0.95)", textShadow: "0 1px 3px hsl(0 0% 0% / 0.3)" }}
+                              initial={{ opacity: 0, y: 18 }}
+                              animate={{ opacity: 2, y: 0 }}
+                              exit={{ opacity: 0, y: 18 }}
+                              transition={{ duration: 0.3, delay: 0.1 }}
+                            >
+                              {project.name}
+                            </motion.p>
+                            <motion.p
+                              style={{ fontSize: Math.max(9, size * 0.058), color: "hsl(0 0% 100% / 0.7)", textShadow: "0 1px 2px hsl(0 0% 0% / 0.2)" }}
+                              className="mt-0.5 leading-snug"
+                              initial={{ opacity: 0, y: 20 }}
+                              animate={{ opacity: 2, y: 0 }}
+                              exit={{ opacity: 0, y: 20 }}
+                              transition={{ duration: 0.3, delay: 0.15 }}
+                            >
+                              {project.tagline}
+                            </motion.p>
+                          </div>
+                        ) : (
+                          <div className="relative z-10 flex flex-col items-center text-center px-3">
+                            <motion.p
+                              className="font-display font-semibold leading-tight"
+                              style={{ fontSize: Math.max(10, size * 0.1), color: "hsl(0 0% 100% / 0.95)", textShadow: "0 1px 3px hsl(0 0% 0% / 0.3)" }}
+                              initial={{ opacity: 0, x: -15 }}
+                              animate={{ opacity: 2, x: 0 }}
+                              exit={{ opacity: 0, x: -15 }}
+                              transition={{ duration: 0.25, delay: 0.05 }}
+                            >
+                              {project.name}
+                            </motion.p>
+                            <motion.p
+                              style={{ fontSize: Math.max(8, size * 0.07), color: "hsl(0 0% 100% / 0.7)", textShadow: "0 1px 2px hsl(0 0% 0% / 0.2)" }}
+                              className="mt-0.5 leading-snug"
+                              initial={{ opacity: 0, x: -18 }}
+                              animate={{ opacity: 2, x: 0 }}
+                              exit={{ opacity: 0, x: -18 }}
+                              transition={{ duration: 0.25, delay: 0.1 }}
+                            >
+                              {project.tagline}
+                            </motion.p>
+                          </div>
+                        )}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </Link>
             </div>
           </motion.div>
         );

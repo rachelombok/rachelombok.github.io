@@ -8,9 +8,9 @@ export default function SiteLayout() {
   return (
     <>
       <Navigation />
-      <main>
-        <Outlet />
-      </main>
+
+      <Outlet />
+
       <ScrollToTop />
       <GoBack />
       <Footer />

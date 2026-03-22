@@ -379,10 +379,9 @@
   margin-bottom: 1.5em;
 }
 .summary-section {
-  width: 100%;
+  width: 95%;
 }
 .subtitle {
-  margin-bottom: auto;
   text-transform: uppercase;
   font-size: 24px;
 }
@@ -394,7 +393,6 @@
 .project-heading {
   font-size: 70px;
   font-weight: bold;
-  margin-top: auto;
 }
 
 .justshoot-link {
@@ -435,10 +433,6 @@
 
 .site-title:hover:after {
   width: 100%;
-}
-
-.resume-description {
-  margin-bottom: 3em;
 }
 
 .nyu {
@@ -623,6 +617,15 @@
   width: 700px;
   border-radius: 8px;
 }
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-body {
+  font-family: 'DM Sans', sans-serif;
+}
+
 @media screen and (min-width: 550px) {
   /* GLOBAL */
   .content-web {

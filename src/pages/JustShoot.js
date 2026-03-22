@@ -11,7 +11,7 @@ import ReactGA from "react-ga4";
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 
 export default function JustShootPage() {
-    ReactGA.send({ hitType: "pageview", page: "/justshoot", title: "JustShoot" });
+  ReactGA.send({ hitType: "pageview", page: "/justshoot", title: "JustShoot" });
   const overview = (
     <>
       <a href="https://justshoot.netlify.app" className="justshoot-link">
@@ -126,7 +126,7 @@ export default function JustShootPage() {
           <img
             alt="React"
             src="https://img.shields.io/badge/-React-red?style=flat-square&logo=react&logoColor=white"
-            width="100px"
+            width="110px"
           />
 
           <img
@@ -138,17 +138,17 @@ export default function JustShootPage() {
           <img
             alt="MongoDB"
             src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"
-            width="120px"
+            width="140px"
           />
           <img
             alt="NodeJS"
             src="https://img.shields.io/badge/-NodeJS-339933?style=flat-square&logo=node.js&logoColor=white"
-            width="110px"
+            width="130px"
           />
           <img
             alt="Bootstrap"
             src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"
-            width="120px"
+            width="140px"
           />
         </p>
       </ProjectSectionDescription>

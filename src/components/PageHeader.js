@@ -35,7 +35,7 @@ export const PageHeader = (props) => {
       <motion.h1 variants={item} className="content-mobile">
         {props.emoji}
       </motion.h1>
-      <motion.div variants={item} className="mb-14">
+      <motion.div variants={item} className="mb-14 font-display">
         <h1 className={`${props.stylename}`}>{props.lineOne}</h1>
         <h1 className={`medium-font ${props.stylename}`}>{props.lineTwo}</h1>
       </motion.div>

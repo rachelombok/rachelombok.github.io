@@ -8,7 +8,7 @@ export const Footer = () => {
     toggleTheme(event.target.value);
   }
   return (
-    <footer className="footer items-center p-10 bg-neutral text-neutral-content text-3xl">
+    <footer className="footer items-center p-10 bg-neutral text-neutral-content text-3xl font-body">
       <aside className="items-center grid-flow-col">
         <p>
           made by rachel

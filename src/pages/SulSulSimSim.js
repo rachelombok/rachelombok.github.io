@@ -10,12 +10,13 @@ import bestroom from "../images/sulsulsimsim/bestroomnew.jpg";
 import evolvedhouse1 from "../images/sulsulsimsim/evolvedhouse1.PNG";
 import evolvedhouse2 from "../images/sulsulsimsim/evolvedhouse2.PNG";
 import simsimsdiscord from "../images/sulsulsimsim/simsimdiscord.jpg";
+import { SquareCheck } from "lucide-react";
 import ReactGA from "react-ga4";
 
 import { ProjectSectionDescription } from "../components/ProjectSectionDescription";
 
 export default function SulSulSimSimPage() {
-    ReactGA.send({ hitType: "pageview", page: "/sulsulsimsim", title: "SulSul! SimSim" });
+  ReactGA.send({ hitType: "pageview", page: "/sulsulsimsim", title: "SulSul! SimSim" });
   const overview = (
     <>
       Say "Sul Sul!" to SimSim, A Sims-Inspired Platform for Sandbox Game AI.
@@ -289,10 +290,10 @@ export default function SulSulSimSimPage() {
         </p>
 
         <ul>
-          <li>✅ Random Search</li>
-          <li>✅ Minimal Criterion Novelty Search</li>
-          <li>✅ Regular Novelty Search</li>
-          <li>✅ Regular Fitness-Based Evolutionary Algorithm</li>
+          <li><SquareCheck className="inline-block mr-2" color="#50c839" /> Random Search</li>
+          <li><SquareCheck className="inline-block mr-2" color="#50c839" /> Minimal Criterion Novelty Search</li>
+          <li><SquareCheck className="inline-block mr-2" color="#50c839" /> Regular Novelty Search</li>
+          <li><SquareCheck className="inline-block mr-2" color="#50c839" /> Regular Fitness-Based Evolutionary Algorithm</li>
         </ul>
         <p></p>
       </ProjectSectionDescription>

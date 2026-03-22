@@ -5,7 +5,7 @@ export default function TravelLocationCarousel(props) {
 
   return (
     <div className="not-prose my-16">
-      <h2 className={`text-7xl font-bold mb-6 ${props.stylename}`}>
+      <h2 className={`text-7xl font-bold mb-6 font-display ${props.stylename}`}>
         {city},<span className="medium"> {country}</span>
       </h2>
       <div className="carousel carousel-center bg-neutral rounded-box space-x-6 p-6">

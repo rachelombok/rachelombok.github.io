@@ -44,7 +44,7 @@ const pinkEffectIcon = (
 export const projectBubbleInfo = [
   {
     id: "sulsulsimsim",
-    title: "SulSul! SimSim!",
+    name: "SulSul! SimSim!",
     tagline: "Understanding how to play with life.",
     color: "simsimgreen",
     colorEnd: "simsimgreen",
@@ -57,7 +57,7 @@ export const projectBubbleInfo = [
   },
   {
     id: "handymap",
-    title: "HandyMap",
+    name: "HandyMap",
     tagline: "Find accessible entrances easier than ever before.",
     color: "handyMapred",
     colorEnd: "handyMapred",
@@ -70,7 +70,7 @@ export const projectBubbleInfo = [
   },
   {
     id: "justshoot",
-    title: "JustShoot",
+    name: "JustShoot",
     tagline: "Improving community for photographers everywhere.",
     color: "justshootpurple",
     colorEnd: "justshootpink",
@@ -83,7 +83,7 @@ export const projectBubbleInfo = [
   },
   {
     id: "covidforecasts",
-    title: "COVIDforecasts",
+    name: "COVIDforecasts",
     tagline: "Creating a pandemic prediction market.",
     color: "nearblack",
     colorEnd: "gray",
@@ -91,12 +91,12 @@ export const projectBubbleInfo = [
     linkPath: "/covidforecasts",
     canvasPosition: ["-150px", "-300px"],
     textColor: "white",
-    tier: "medium",
+    importance: "medium",
     showOnCanvas: true,
   },
   {
     id: "rds",
-    title: "RDS",
+    name: "RDS",
     tagline: "A solution to a unique robotics problem.",
     color: "rdsgray",
     colorEnd: "rdsgray",
@@ -109,7 +109,7 @@ export const projectBubbleInfo = [
   },
   {
     id: "bouncer-bot",
-    title: "Bouncer Bot",
+    name: "Bouncer Bot",
     tagline: "#UltraHacks 2020 2nd place winner.",
     color: "bouncerbotpink",
     colorEnd: "bouncerbotpink",

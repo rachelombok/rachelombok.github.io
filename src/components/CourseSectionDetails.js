@@ -19,7 +19,7 @@ export const CourseSectionDetails = (props) => {
   };
   return (
     <>
-      <div className="c12">
+      <div className="c12 font-body">
         <motion.div
           className="summary"
           variants={container}
@@ -28,7 +28,7 @@ export const CourseSectionDetails = (props) => {
         >
           <div className="summary-section">
             <div className="section summary-item overflow-hidden">
-              <motion.h5 className="subtitle base-300" variants={item}>
+              <motion.h5 className="subtitle base-300 font-display" variants={item}>
                 Overview
               </motion.h5>
               <motion.p className="description-text" variants={item}>
@@ -37,7 +37,7 @@ export const CourseSectionDetails = (props) => {
             </div>
             {!!props.skills ? (
               <div className="section summary-item overflow-hidden">
-                <motion.h5 className="subtitle" variants={item}>
+                <motion.h5 className="subtitle font-display" variants={item}>
                   Skills Learned
                 </motion.h5>
                 <motion.p className="description-text" variants={item}>
@@ -50,7 +50,7 @@ export const CourseSectionDetails = (props) => {
 
             {!!props.projects ? (
               <div className="section summary-item overflow-hidden">
-                <motion.h5 className="subtitle" variants={item}>
+                <motion.h5 className="subtitle font-display" variants={item}>
                   Projects
                 </motion.h5>
                 <motion.p className="description-text" variants={item}>
@@ -63,7 +63,7 @@ export const CourseSectionDetails = (props) => {
           </div>
           <div className="summary-section">
             <div className="section summary-item overflow-hidden">
-              <motion.h5 className="subtitle" variants={item}>
+              <motion.h5 className="subtitle font-display" variants={item}>
                 Course Objectives
               </motion.h5>
               <motion.p className="description-text" variants={item}>

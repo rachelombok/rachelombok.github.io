@@ -27,17 +27,17 @@ export default function AboutPage() {
         lineOne="Hey there,"
         lineTwo="Nice to meet you."
       />
-      <div className="c15 prose-2xl space-x-28">
+      <div className="c15 prose-2xl space-x-28 font-body">
         <div>
           <p>
             Hi, I'm Rachel! I am currently a frontend engineer working at{" "}
             <a href="https://distyl.ai/" className="link distyl" target="_blank"
-           rel="noreferrer">
+              rel="noreferrer">
               Distyl.{" "}
             </a>
             I'm a graduate of{" "}
             <a href="https://engineering.nyu.edu" className="link nyu" target="_blank"
-           rel="noreferrer">
+              rel="noreferrer">
               New York University
             </a>
             , where I studied Computer Science and Game Engineering at the
@@ -48,7 +48,7 @@ export default function AboutPage() {
           <p>
             After graduation I worked as a Software Engineer at{" "}
             <a href="https://www.alteryx.com" className="link alteryx" target="_blank"
-           rel="noreferrer">
+              rel="noreferrer">
               Alteryx
             </a>{" "}
             for two years working on their Cloud Analytics platform, mainly{" "}
@@ -56,7 +56,7 @@ export default function AboutPage() {
               href="https://www.alteryx.com/about-us/trifacta-is-now-alteryx-designer-cloud"
               className="link alteryx"
               target="_blank"
-            rel="noreferrer"
+              rel="noreferrer"
             >
               Alteryx Designer Cloud.
             </a>{" "}
@@ -65,7 +65,7 @@ export default function AboutPage() {
               href="https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview"
               className="link twitter"
               target="_blank"
-           rel="noreferrer"
+              rel="noreferrer"
             >
               Twitter
             </a>{" "}
@@ -83,7 +83,7 @@ export default function AboutPage() {
               href="https://explorecsr.cs.brown.edu/ai/index.html"
               className="link explorecsr"
               target="_blank"
-           rel="noreferrer"
+              rel="noreferrer"
             >
               exploreCSR program
             </a>
@@ -97,10 +97,10 @@ export default function AboutPage() {
             </Link>
             , or my own{" "}
             <a href="https://portfolio.rachelombok.com/" className="link portfolio" target="_blank"
-           rel="noreferrer">
-               photography portfolio site.
+              rel="noreferrer">
+              photography portfolio site.
             </a>
-            
+
           </p>
         </div>
 

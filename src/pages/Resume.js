@@ -8,7 +8,7 @@ import resumeDoc from "../fileinfo/Rachel_Ombok_Resume_2024.pdf";
 import ReactGA from "react-ga4";
 
 export default function ResumePage() {
-    ReactGA.send({ hitType: "pageview", page: "/resume", title: "Resume" });
+  ReactGA.send({ hitType: "pageview", page: "/resume", title: "Resume" });
   const resumeDownload = (
     <>
       Click{" "}
@@ -132,7 +132,7 @@ export default function ResumePage() {
         subline="Research Intern · Feb 2020 to August 2020"
       >
         <p>
-        Developed general game-playing AI agents for The Sims 4 using a quality diversity evolutionary algorithm. Analyzed and interpreted
+          Developed general game-playing AI agents for The Sims 4 using a quality diversity evolutionary algorithm. Analyzed and interpreted
           experiment results alongside graduate students and postdocs, and
           organized notes & data within a thesis paper. This was the{" "}
           <Link to={pathConstants.SULSULSIMSIM} className="link sulsulsimsim">
@@ -207,8 +207,8 @@ export default function ResumePage() {
           computer science skills, and provided professional development
           opportunities with industry professionals and Girls Who Code corporate
           partners. Won numerous awards at Tandon Student Leader Awards, including Outstanding New Initiative and Outstanding Organizational Collaboration.
-          Recognized as an exceptional leader within the Girls Who Code community by receiving the prestigious <a className="underline" href='https://www.linkedin.com/posts/tarikabarrett_womenempoweringwomenwednesday-activity-7181387765807288321-k-gF?utm_source=share&utm_medium=member_desktop'>Reshma Saujani Girls First
-    Leadership Award</a>, for my participation in many different Girls Who Code initiatives.
+          Recognized as an exceptional leader within the Girls Who Code community by receiving the prestigious <a className="underline hover:opacity-60" href='https://www.linkedin.com/posts/tarikabarrett_womenempoweringwomenwednesday-activity-7181387765807288321-k-gF?utm_source=share&utm_medium=member_desktop'>Reshma Saujani Girls First
+            Leadership Award</a>, for my participation in many different Girls Who Code initiatives.
         </p>
       </ResumeDescription>
 
@@ -251,16 +251,16 @@ export default function ResumePage() {
       >
         <p>
           {" "}
-          The ADF GDC Scholarship provides All Access passes to GDC in San Francisco. Consistent with the ADF mission statement, they aim to increase access and opportunity to marginalized or under-represented groups 
-          in the games industry, in order to improve diversity and inclusion. Scholarship recipients focus on animation-related disciplines, such as character animation, technical animation/rigging, animation programming, etc. <a className="link adf" href='https://www.linkedin.com/posts/rachelombok_animation-gdc-gamedevelopersconference-activity-6914229793211183105-qLjH?utm_source=share&utm_medium=member_desktop'>My post about the experience.</a>
-           </p>
+          The ADF GDC Scholarship provides All Access passes to GDC in San Francisco. Consistent with the ADF mission statement, they aim to increase access and opportunity to marginalized or under-represented groups
+          in the games industry, in order to improve diversity and inclusion. Scholarship recipients focus on animation-related disciplines, such as character animation, technical animation/rigging, animation programming, etc. <a className="link adf" href='https://www.linkedin.com/posts/rachelombok_animation-gdc-gamedevelopersconference-activity-6914229793211183105-qLjH?utm_source=share&utm_medium=member_desktop' target="_blank" rel="noopener">My post about the experience.</a>
+        </p>
       </ResumeDescription>
 
       <h5 className="subtitle base-300">Skills</h5>
       <ResumeDescription resumeLink="" company="Technical" id="" subline="">
         <p>
           {" "}
-          Javascript, React, Node.js, Typescript, Progressive Web Development(HTML,CSS,Javascript), TailwindCSS, 
+          Javascript, React, Node.js, Typescript, Progressive Web Development(HTML,CSS,Javascript), TailwindCSS,
           Python, C++, Flask
         </p>
         <p><b>Certifications: </b><a href='https://www.credly.com/badges/96c1c556-dc48-473a-a201-510e9f6a89f4' className="underline link">Google Cloud Digital Leader</a></p>
