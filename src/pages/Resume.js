@@ -94,7 +94,7 @@ export default function ResumePage() {
       </ResumeDescription>
 
       <ResumeDescription
-        resumeLink="https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview"
+        resumeLink="https://publish.twitter.com/#"
         company="Twitter - Embed Client Team"
         id="twitter"
         subline="Software Engineering Intern · June 2021 to August 2021"
