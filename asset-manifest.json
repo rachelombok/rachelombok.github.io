@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a7a30875.css",
-    "main.js": "/static/js/main.b7ea7bad.js",
+    "main.css": "/static/css/main.39d841a9.css",
+    "main.js": "/static/js/main.3f61b7dd.js",
     "static/js/453.c757f483.chunk.js": "/static/js/453.c757f483.chunk.js",
     "static/media/seattle6.png": "/static/media/seattle6.b4a1e1ba8402c5dbc6eb.png",
     "static/media/seattle8.png": "/static/media/seattle8.8be6527af3cff57562d4.png",
@@ -17,15 +17,23 @@
     "static/media/washdc3.jpg": "/static/media/washdc3.97b370724bfea7fb41a9.jpg",
     "static/media/dr3.jpg": "/static/media/dr3.a764f52e52fc75a43b29.jpg",
     "static/media/dr5.jpg": "/static/media/dr5.c147dbb6882a4782501c.jpg",
+    "static/media/la1.JPG": "/static/media/la1.0b4daa2f01f4919bff00.JPG",
+    "static/media/la5.JPG": "/static/media/la5.34027e7885c3bd9d7c10.JPG",
+    "static/media/la4.JPG": "/static/media/la4.c57e8c171d71eefba42b.JPG",
     "static/media/justshoot1.jpg": "/static/media/justshoot1.f1e94f5cd1f4a45d9643.jpg",
     "static/media/seattle4.jpg": "/static/media/seattle4.238e66c12624c02022eb.jpg",
     "static/media/dr1.jpg": "/static/media/dr1.8795e11e56645a8bcaf1.jpg",
+    "static/media/la2.JPG": "/static/media/la2.2a0db695ecf6ef5ca02a.JPG",
+    "static/media/la6.jpg": "/static/media/la6.90aeb9b8c156e0b4390b.jpg",
     "static/media/kenya3.jpeg": "/static/media/kenya3.c670a7af7b2582c2d778.jpeg",
+    "static/media/la8.jpg": "/static/media/la8.135fe8db208d9ca5733a.jpg",
     "static/media/handymapgroup1.png": "/static/media/handymapgroup1.aebfe4ea6b270732dd4b.png",
+    "static/media/la7.jpg": "/static/media/la7.89a54dd4268e7205f4cd.jpg",
     "static/media/handymapgroup3.png": "/static/media/handymapgroup3.e1d1040ba7a541d0189b.png",
     "static/media/washdc1.jpg": "/static/media/washdc1.beb839949cf6c645b3b9.jpg",
     "static/media/beijing3.jpeg": "/static/media/beijing3.41da6f7b54b5b362d2dc.jpeg",
     "static/media/kenya1.jpeg": "/static/media/kenya1.b426046e98dbb1f4f919.jpeg",
+    "static/media/la3.jpg": "/static/media/la3.87776c1eef99d0ffc338.jpg",
     "static/media/washdc6.JPG": "/static/media/washdc6.3367d80257743b804968.JPG",
     "static/media/beijing8.jpeg": "/static/media/beijing8.e318790d2186c1899428.jpeg",
     "static/media/handymapgroup2.png": "/static/media/handymapgroup2.88f85722878d084c8dc5.png",
@@ -143,7 +151,7 @@
     "static/media/slide3.png": "/static/media/slide3.b79e9622d4fccfeeac1f.png",
     "static/media/nickrussoaward.JPG": "/static/media/nickrussoaward.b1693d51ec4e999249f7.JPG",
     "static/media/slide6.png": "/static/media/slide6.fefb09f4958c903e1598.png",
-    "static/media/Ombok_Rachel_Resume.pdf": "/static/media/Ombok_Rachel_Resume.cfe2e2464fa79f228036.pdf",
+    "static/media/Rachel_Ombok_Resume_2024.pdf": "/static/media/Rachel_Ombok_Resume_2024.adbf11c7279737d02b44.pdf",
     "static/media/rcclogo.png": "/static/media/rcclogo.ca3366e6290a9133e5a0.png",
     "static/media/3.jpg": "/static/media/3.17ee584a36d4b8e05018.jpg",
     "static/media/badroomnew.jpg": "/static/media/badroomnew.49a79c2d6cf34639b940.jpg",
@@ -169,12 +177,12 @@
     "index.html": "/index.html",
     "static/media/chevron-left.svg": "/static/media/chevron-left.15e440a5778391867622.svg",
     "static/media/chevron-up.svg": "/static/media/chevron-up.adcc2ff7cdcf1b87449f.svg",
-    "main.a7a30875.css.map": "/static/css/main.a7a30875.css.map",
-    "main.b7ea7bad.js.map": "/static/js/main.b7ea7bad.js.map",
+    "main.39d841a9.css.map": "/static/css/main.39d841a9.css.map",
+    "main.3f61b7dd.js.map": "/static/js/main.3f61b7dd.js.map",
     "453.c757f483.chunk.js.map": "/static/js/453.c757f483.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7a30875.css",
-    "static/js/main.b7ea7bad.js"
+    "static/css/main.39d841a9.css",
+    "static/js/main.3f61b7dd.js"
   ]
 }
