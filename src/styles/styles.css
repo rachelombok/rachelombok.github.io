@@ -404,6 +404,7 @@
   grid-template-columns: 100%;
   margin-top: 1em;
   margin-bottom: 2em;
+  gap: 0;
 }
 .summary-item {
   margin-bottom: 1.5em;
@@ -689,6 +690,7 @@
   /* SUMMARY */
   .collapsible-summary {
     grid-template-columns: 50% 50%;
+    gap: 1.5rem;
   }
 
   /* BACK, FORWARD, SCROLL TO TOP */

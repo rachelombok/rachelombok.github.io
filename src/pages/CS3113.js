@@ -164,7 +164,7 @@ export default function GameProgrammingPage() {
           exposition, dialogue, or text.
         </p>
         <div className="c12">
-          <div className="collapsible-summary space-x-6">
+          <div className="collapsible-summary">
             <div className="summary-section">
               <CollapsibleSection
                 title={<h5 className="subtitle">development log</h5>}
@@ -347,7 +347,7 @@ export default function GameProgrammingPage() {
         </p>
 
         <div className="c12">
-          <div className="collapsible-summary space-x-6">
+          <div className="collapsible-summary">
             <div className="summary-section">
               <CollapsibleSection
                 title={<h5 className="subtitle">development log</h5>}
@@ -690,7 +690,7 @@ export default function GameProgrammingPage() {
           feedback. It is also presented with a trailer.
         </p>
         <div className="c12">
-          <div className="collapsible-summary space-x-6">
+          <div className="collapsible-summary">
             <div className="summary-section">
               <CollapsibleSection
                 title={<h5 className="subtitle">development log</h5>}
