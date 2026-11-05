@@ -228,16 +228,16 @@ export default function GameDesignPage() {
           </a>
         </p>
 
-        <iframe
-          width="1060"
-          className="mx-auto"
-          height="615"
-          src="https://www.youtube.com/embed/TkCnKNw7AqI"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/TkCnKNw7AqI"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </ProjectSectionDescription>
     </PageContainerOutline>
   );

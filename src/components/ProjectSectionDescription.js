@@ -15,7 +15,7 @@ export const ProjectSectionDescription = (props) => {
       ) : (
         ""
       )}
-      <p className="not-prose space-y-8 font-body">{props.children}</p>
+      <div className="not-prose space-y-8 font-body">{props.children}</div>
     </div>
   );
 };

@@ -892,15 +892,15 @@ export default function GameProgrammingPage() {
                     have the animation of sliding in towards the middle and
                     slide out towards the side walls.{" "}
                   </p>
-                  <iframe
-                    className="mx-auto my-4"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/dxaseGN2D-c"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <div className="relative w-full my-4" style={{ paddingTop: "56.25%" }}>
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src="https://www.youtube.com/embed/dxaseGN2D-c"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
                 </div>
               </CollapsibleSection>
             </div>
