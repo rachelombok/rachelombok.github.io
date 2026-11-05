@@ -722,13 +722,13 @@
 
 @media screen and (max-width: 639px) {
   .page-container h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
   .page-container h2 {
-    font-size: 28px;
+    font-size: 36px;
   }
   .page-container h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
