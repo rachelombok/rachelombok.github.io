@@ -4,7 +4,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { projectBubbleInfo } from "../fileinfo/projectbubbleinfo";
 import { Link } from "react-router-dom";
 
-const SIZE_MAP = { major: 200, medium: 140, minor: 80 };
+const BASE_SIZE_MAP = { major: 200, medium: 140, minor: 80 };
+
+function computeSizeMap(width) {
+  if (width < 480) return { major: 100, medium: 72, minor: 44 };
+  if (width < 768) return { major: 140, medium: 100, minor: 60 };
+  if (width < 1024) return { major: 165, medium: 116, minor: 68 };
+  return BASE_SIZE_MAP;
+}
+
 const HOVER_SCALE = 1.6;
 const SQUISH_AMOUNT = 0.18;
 const SQUISH_DURATION = 400; // ms
@@ -12,6 +20,17 @@ const SQUISH_DURATION = 400; // ms
 const BubbleCanvas = () => {
   const containerRef = useRef(null);
   const [hoveredId, setHoveredId] = useState(null);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 640);
+  const sizeMapRef = useRef(computeSizeMap(window.innerWidth));
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+      sizeMapRef.current = computeSizeMap(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const bubblesRef = useRef([]);
   const [positions, setPositions] = useState([]);
   const [squishes, setSquishes] = useState({});
@@ -25,7 +44,7 @@ const BubbleCanvas = () => {
     const { width, height } = el.getBoundingClientRect();
 
     const initial = projectBubbleInfo.map((p, i) => {
-      const size = SIZE_MAP[p.importance];
+      const size = sizeMapRef.current[p.importance];
       const angle = (i / projectBubbleInfo.length) * Math.PI * 2;
       const radius = Math.min(width, height) * 0.25;
       return {
@@ -69,13 +88,13 @@ const BubbleCanvas = () => {
 
     // Bubble-to-bubble collision
     for (let i = 0; i < bubbles.length; i++) {
-      const sizeI = SIZE_MAP[projectBubbleInfo[i].importance];
+      const sizeI = sizeMapRef.current[projectBubbleInfo[i].importance];
       const rI = sizeI / 2;
       const cxI = bubbles[i].x + rI;
       const cyI = bubbles[i].y + rI;
 
       for (let j = i + 1; j < bubbles.length; j++) {
-        const sizeJ = SIZE_MAP[projectBubbleInfo[j].importance];
+        const sizeJ = sizeMapRef.current[projectBubbleInfo[j].importance];
         const rJ = sizeJ / 2;
         const cxJ = bubbles[j].x + rJ;
         const cyJ = bubbles[j].y + rJ;
@@ -122,7 +141,7 @@ const BubbleCanvas = () => {
     // Wall bounce
     for (let i = 0; i < bubbles.length; i++) {
       const b = bubbles[i];
-      const size = SIZE_MAP[projectBubbleInfo[i].importance];
+      const size = sizeMapRef.current[projectBubbleInfo[i].importance];
 
       if (b.x <= 0) {
         b.vx = Math.abs(b.vx);
@@ -224,7 +243,7 @@ const BubbleCanvas = () => {
       {projectBubbleInfo.map((project, i) => {
         const pos = positions[i];
         if (!pos) return null;
-        const size = SIZE_MAP[project.importance];
+        const size = sizeMapRef.current[project.importance];
         const isHovered = hoveredId === project.id;
         const isAnyHovered = hoveredId !== null;
         const { c1, c2 } = getColors(project);
@@ -232,6 +251,7 @@ const BubbleCanvas = () => {
         const isLarge = project.importance === "major";
         const squish = squishes[project.id];
         const isDimmed = isAnyHovered && !isHovered;
+        const showContent = isHovered || isMobile;
 
         const squishTransform = squish
           ? `rotate(${squish.rotation}deg) scale(${squish.scaleX}, ${squish.scaleY}) rotate(${-squish.rotation}deg)`
@@ -254,6 +274,15 @@ const BubbleCanvas = () => {
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
             onMouseEnter={() => handleHover(project.id)}
             onMouseLeave={() => handleHover(null)}
+            onTouchStart={(e) => {
+              if (hoveredId !== project.id) {
+                e.preventDefault();
+                handleHover(project.id);
+              }
+            }}
+            onTouchEnd={() => {
+              setTimeout(() => handleHover(null), 1200);
+            }}
           >
             {/* Squish wrapper */}
             <div
@@ -350,9 +379,9 @@ const BubbleCanvas = () => {
                     />
                   </motion.div>
 
-                  {/* Hover content overlay */}
+                  {/* Hover / mobile content overlay */}
                   <AnimatePresence>
-                    {isHovered && (
+                    {showContent && (
                       <motion.div
                         className="absolute inset-0 rounded-full flex items-center justify-center"
                         initial={{ opacity: 0 }}

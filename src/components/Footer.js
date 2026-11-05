@@ -8,7 +8,7 @@ export const Footer = () => {
     toggleTheme(event.target.value);
   }
   return (
-    <footer className="footer items-center p-10 bg-neutral text-neutral-content text-3xl font-body">
+    <footer className="footer items-center px-6 py-8 md:p-10 bg-neutral text-neutral-content text-xl md:text-3xl font-body">
       <aside className="items-center grid-flow-col">
         <p>
           made by rachel
@@ -23,10 +23,10 @@ export const Footer = () => {
           </a>
         </p>
       </aside>
-      <nav className="grid-flow-col gap-6 md:place-self-center md:justify-self-end">
+      <nav className="grid-flow-col gap-4 md:gap-6 md:place-self-center md:justify-self-end">
         <select
           data-choose-theme
-          className="w-full bg-neutral h-14 text-5xl"
+          className="w-full bg-neutral h-10 md:h-14 text-3xl md:text-5xl"
           onChange={changeTheme}
           defaultValue="light"
         >

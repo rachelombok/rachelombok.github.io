@@ -107,7 +107,7 @@ export const PageDetails = (props) => {
           <motion.img
             variants={imgitem}
             src={props.icon}
-            className={`${props.id}-description-img ml-8 ${props.useBorder ? 'border border-8 rounded border-neutral-content' : ''}`}
+            className={`${props.id}-description-img ml-0 md:ml-8 max-w-full ${props.useBorder ? 'border border-8 rounded border-neutral-content' : ''}`}
           />
         </motion.div>
       </div>

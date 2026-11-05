@@ -103,7 +103,9 @@
   overflow: "hidden";
 }
 .carousel-img {
-  height: 1000px;
+  height: clamp(300px, 60vw, 1000px);
+  width: 100%;
+  object-fit: cover;
 }
 
 .bubble-link:hover {
@@ -227,8 +229,17 @@
 
 .justshoot-description-img {
   border-radius: 10%;
-  width: 400px;
-  margin-left: 120px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .justshoot-description-img {
+    width: 400px;
+    margin-left: 0;
+  }
 }
 
 .justshoot-title {
@@ -241,16 +252,23 @@
 
 /* PAGE */
 .page-container {
-  margin: auto 10% 50px 10%;
+  margin: auto 5% 50px 5%;
+}
+
+@media screen and (min-width: 640px) {
+  .page-container {
+    margin: auto 10% 50px 10%;
+  }
 }
 
 .page-title {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-size: 32px;
   margin-bottom: 50px;
   height: fit-content;
-  max-width: 90%;
+  max-width: 100%;
   * {
     margin-bottom: 5px;
   }
@@ -263,7 +281,15 @@
 .c15 {
   grid-column: 2 / 15;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .c15 {
+    grid-template-columns: 50% 50%;
+    gap: 4rem;
+  }
 }
 
 .medium-font {
@@ -277,12 +303,14 @@
   text-align: center;
 }
 .avi {
-  margin-top: 0em;
-  margin-left: 300px;
+  margin-top: 0;
+  margin-left: auto;
   margin-right: auto;
-  height: 25em;
-  width: 25em;
+  height: 18em;
+  width: 18em;
   border-radius: 100em;
+  max-width: 100%;
+  display: block;
 }
 
 .scrollable-area {
@@ -328,7 +356,9 @@
 }
 
 .image-level {
-  height: 850px;
+  height: clamp(250px, 55vw, 850px);
+  width: 100%;
+  object-fit: cover;
 }
 
 .goBack {
@@ -386,12 +416,12 @@
   font-size: 24px;
 }
 .description-text {
-  font-size: 30px;
+  font-size: clamp(18px, 2.5vw, 30px);
   margin: 0 auto 0 auto;
 }
 
 .project-heading {
-  font-size: 70px;
+  font-size: clamp(36px, 6vw, 70px);
   font-weight: bold;
 }
 
@@ -614,7 +644,8 @@
 }
 
 .huztle-description-img {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   border-radius: 8px;
 }
 
@@ -671,6 +702,7 @@
   .avi {
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 0;
     height: 30em;
     width: 30em;
   }

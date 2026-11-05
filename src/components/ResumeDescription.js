@@ -3,7 +3,7 @@ import React from "react";
 export const ResumeDescription = (props) => {
   return (
     <div className="not-prose resume-description font-body my-12">
-      <div className="text-6xl font-semibold mb-2 font-display">
+      <div className="text-3xl md:text-6xl font-semibold mb-2 font-display">
         {!!props.resumeLink ? (
           <a
             href={props.resumeLink}

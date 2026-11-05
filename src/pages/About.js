@@ -27,7 +27,7 @@ export default function AboutPage() {
         lineOne="Hey there,"
         lineTwo="Nice to meet you."
       />
-      <div className="c15 prose-2xl space-x-28 font-body">
+      <div className="c15 prose-2xl font-body">
         <div>
           <p>
             Hi, I'm Rachel! I am currently a frontend engineer working at{" "}
