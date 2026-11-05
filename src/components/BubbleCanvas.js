@@ -205,6 +205,46 @@ const BubbleCanvas = () => {
     pausedRef.current = id !== null;
   };
 
+  // Mobile: render a simple project card grid instead of the physics canvas
+  if (isMobile) {
+    return (
+      <div className="relative w-full min-h-screen bg-background overflow-auto pt-24 pb-16 px-4">
+        <div
+          className="fixed inset-0 pointer-events-none"
+          style={{
+            backgroundImage: "radial-gradient(circle, hsl(var(--foreground)) 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
+            opacity: 0.08,
+          }}
+        />
+        <div className="relative z-10 grid grid-cols-2 gap-6 max-w-sm mx-auto pt-2">
+          {projectBubbleInfo.map((project) => {
+            const { c1, c2 } = getColors(project);
+            return (
+              <Link
+                key={project.id}
+                to={project.linkPath}
+                className="flex flex-col items-center text-center no-underline"
+              >
+                <div
+                  className="w-28 h-28 rounded-full flex items-center justify-center mb-3 transition-transform active:scale-95"
+                  style={{
+                    background: `linear-gradient(145deg, hsl(${c1} / 0.85) 0%, hsl(${c2} / 0.85) 100%)`,
+                    boxShadow: `0 4px 18px hsl(${c1} / 0.35)`,
+                  }}
+                >
+                  <img src={project.icon} width={56} alt={project.name} />
+                </div>
+                <p className="font-display font-semibold text-sm leading-tight mb-1">{project.name}</p>
+                <p className="text-xs opacity-60 leading-snug font-body">{project.tagline}</p>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
   const colorMap = {
     coral: "15 85% 55%",
     teal: "172 55% 42%",
@@ -251,7 +291,7 @@ const BubbleCanvas = () => {
         const isLarge = project.importance === "major";
         const squish = squishes[project.id];
         const isDimmed = isAnyHovered && !isHovered;
-        const showContent = isHovered || isMobile;
+        const showContent = isHovered;
 
         const squishTransform = squish
           ? `rotate(${squish.rotation}deg) scale(${squish.scaleX}, ${squish.scaleY}) rotate(${-squish.rotation}deg)`
@@ -274,15 +314,6 @@ const BubbleCanvas = () => {
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
             onMouseEnter={() => handleHover(project.id)}
             onMouseLeave={() => handleHover(null)}
-            onTouchStart={(e) => {
-              if (hoveredId !== project.id) {
-                e.preventDefault();
-                handleHover(project.id);
-              }
-            }}
-            onTouchEnd={() => {
-              setTimeout(() => handleHover(null), 1200);
-            }}
           >
             {/* Squish wrapper */}
             <div
