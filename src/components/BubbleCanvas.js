@@ -205,6 +205,29 @@ const BubbleCanvas = () => {
     pausedRef.current = id !== null;
   };
 
+  const colorMap = {
+    coral: "15 85% 55%",
+    teal: "172 55% 42%",
+    amber: "38 85% 50%",
+    violet: "270 55% 55%",
+    sky: "200 70% 48%",
+    rose: "340 65% 50%",
+    simsimgreen: '110.35 56.52% 50.39%',
+    handyMapred: '0 60.26% 30.59%',
+    justshootpurple: '238.8 80.65% 36.47%',
+    justshootpink: '311.41 100% 31.96%',
+    gray: '0 0% 19.61%',
+    nearblack: '0 0% 3.92%',
+    rdsgray: '0 0% 14.12%',
+    bouncerbotpink: '313.82 71.43% 45.29%'
+  };
+
+  const getColors = (project) => {
+    const c1 = colorMap[project.color] || colorMap.coral;
+    const c2 = colorMap[project.colorEnd || project.color] || c1;
+    return { c1, c2 };
+  };
+
   // Mobile: render a simple project card grid instead of the physics canvas
   if (isMobile) {
     return (
@@ -244,29 +267,6 @@ const BubbleCanvas = () => {
       </div>
     );
   }
-
-  const colorMap = {
-    coral: "15 85% 55%",
-    teal: "172 55% 42%",
-    amber: "38 85% 50%",
-    violet: "270 55% 55%",
-    sky: "200 70% 48%",
-    rose: "340 65% 50%",
-    simsimgreen: '110.35 56.52% 50.39%',
-    handyMapred: '0 60.26% 30.59%',
-    justshootpurple: '238.8 80.65% 36.47%',
-    justshootpink: '311.41 100% 31.96%',
-    gray: '0 0% 19.61%',
-    nearblack: '0 0% 3.92%',
-    rdsgray: '0 0% 14.12%',
-    bouncerbotpink: '313.82 71.43% 45.29%'
-  };
-
-  const getColors = (project) => {
-    const c1 = colorMap[project.color] || colorMap.coral;
-    const c2 = colorMap[project.colorEnd || project.color] || c1;
-    return { c1, c2 };
-  };
 
   return (
     <div ref={containerRef} className="relative w-full h-screen overflow-hidden bg-background">
